@@ -79,9 +79,9 @@ frontpage_cards:
     button_label: ''
     button_link: ''
     rule_color: ''
-  - title: SDGs in Malta
+  - title: my-custom-translations.my-frontpage-cards-title-2
     content: |
-      Visit UNs Website here
+      my-custom-translations.my-frontpage-cards-content-2
     include: ''
     button_label: Read more
     button_link: 'https://example.com'
