@@ -2,3 +2,16 @@ h1, h2{
   color: #1e526e;
   font-weight: 600;
 }
+
+header{
+  box-shadow: 0 2px 4px 0 rgba(0,0,0,.2);
+  margin-bottom: 50px
+}
+
+#disclaimer{
+  margin-bottom: 20px;
+}
+
+.navbar .navbar-nav > .nav-item.active > .nav-link {
+    border-bottom: 3px solid #32bacd;
+}
