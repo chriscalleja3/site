@@ -2810,10 +2810,5 @@ body.contrast-high.layout-search form input, body.contrast-high.layout-search fo
   color: black; }
 
 h1, h2 {
-  color: #1e526e; }
-
-h1 {
+  color: #1e526e;
   font-weight: 600; }
-
-h2 {
-  font-weight: 300; }
