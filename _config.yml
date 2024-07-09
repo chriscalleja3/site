@@ -7,7 +7,10 @@ remote_theme: open-sdg/open-sdg@2.3.0
 title: general.site_title
 url: ""
 environment: staging
-
+languages:
+  - en
+  - es
+  - ru
 # Pages
 collections:
   pages:
