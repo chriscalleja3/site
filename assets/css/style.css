@@ -2808,3 +2808,6 @@ body.contrast-high #search-bar-on-page button:hover {
 
 body.contrast-high.layout-search form input, body.contrast-high.layout-search form label {
   color: black; }
+
+h1 {
+  color: #1e526e; }
