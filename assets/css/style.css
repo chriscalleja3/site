@@ -2809,5 +2809,11 @@ body.contrast-high #search-bar-on-page button:hover {
 body.contrast-high.layout-search form input, body.contrast-high.layout-search form label {
   color: black; }
 
-h1 {
+h1, h2 {
   color: #1e526e; }
+
+h1 {
+  font-weight: 600px; }
+
+h2 {
+  font-weight: 300px; }
