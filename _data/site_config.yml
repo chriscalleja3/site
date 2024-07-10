@@ -194,6 +194,8 @@ menu:
   - path: /about
     translation_key: menu.about
     dropdown: []
+  - path: nso/
+    translation_key: NSO
 metadata_edit_url: metadata
 metadata_tabs:
   - scope: national
