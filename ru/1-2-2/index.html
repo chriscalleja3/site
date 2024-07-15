@@ -121,7 +121,7 @@ var translations = {
         
         Показатель 1.2.2 -
         
-        Proportion of men, women and children of all ages living in poverty in all its dimensions according to national definitions - Показатели Целей устойчивого развития
+        Доля мужчин, женщин и детей всех возрастов, живущих в нищете во всех ее проявлениях, согласно национальным определениям - Показатели Целей устойчивого развития
     </title>
 
 
@@ -145,7 +145,7 @@ var translations = {
         <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
         <link res="stylesheet" href="https://cdn.datatables.net/1.11.5/css/dataTables.bootstrap5.min.css">
         <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css" crossorigin="">
-        <link rel="stylesheet" href="/site/assets/css/style.css?v=20240715102914">
+        <link rel="stylesheet" href="/site/assets/css/style.css?v=20240715113954">
         <link rel="stylesheet" href="https://unpkg.com/leaflet@1.3.4/dist/leaflet.css"
           integrity="sha512-puBpdR0798OZvTTbP4A8Ix/l+A4dHDD0DGqYW6RQ+9jxkRFclaxxQb/SJAWZfWAkuyeQUytO7+7N4QKrDh+drA=="
           crossorigin=""/>
@@ -420,7 +420,7 @@ data-event-label="high"
                         
                         Показатель 1.2.2
                         
-                        <span class="lead-copy">Proportion of men, women and children of all ages living in poverty in all its dimensions according to national definitions</span>
+                        <span class="lead-copy">Доля мужчин, женщин и детей всех возрастов, живущих в нищете во всех ее проявлениях, согласно национальным определениям</span>
                     </h1>
                 </div>
             </div>
@@ -431,8 +431,26 @@ data-event-label="high"
   
 
   
+<div class="row metadata-available-indicator">
+  <div class="col-xs-12">
+    <h2>Percentage of the population living in households at risk of persistent poverty</h2>
+  </div>
+</div>
+
 
   
+<div class="row proxy-banner my-4 mx-1 px-2 gx-2">
+  <div class="col col-auto align-self-center">
+    <span aria-describedby="proxy-description" class="proxy-pill">Прокси</span>
+  </div>
+  <div class="col col-auto align-self-center">
+    =
+  </div>
+  <div id="proxy-description" class="col">
+    Этот показатель содержит некоторые данные, альтернативные тем, которые указаны Организацией Объединенных Наций (ООН). Этот индикатор является наиболее подходящим соответствием, доступным в настоящее время.
+  </div>
+</div>
+
 
   
 
@@ -447,10 +465,10 @@ data-event-label="high"
   id="indicatorData"
   data-indicatorid='indicator_1-2-2'
   data-id="1-2-2"
-  data-country="Malta"
-  data-charttitle="Доля мужчин, женщин и детей всех возрастов, живущих в нищете во всех ее проявлениях, согласно национальным определениям"
+  data-country="United Kingdom"
+  data-charttitle="Percentage of the population living in households at risk of persistent poverty"
   data-charttitles="[]"
-  data-measurementunit="Percentage"
+  data-measurementunit="Percentage (%)"
   data-xaxislabel=""
   data-showdata="true"
   data-graphtype="line"
@@ -467,7 +485,7 @@ data-event-label="high"
   data-dataschema="{&quot;fields&quot;:[{&quot;name&quot;:&quot;Year&quot;,&quot;type&quot;:&quot;integer&quot;,&quot;title&quot;:&quot;Год&quot;},{&quot;name&quot;:&quot;Sex&quot;,&quot;type&quot;:&quot;string&quot;,&quot;constraints&quot;:{&quot;enum&quot;:[&quot;Males&quot;,&quot;Females&quot;,&quot;&quot;]},&quot;title&quot;:&quot;Sex&quot;},{&quot;name&quot;:&quot;Age&quot;,&quot;type&quot;:&quot;string&quot;,&quot;constraints&quot;:{&quot;enum&quot;:[&quot;&lt;18Y&quot;,&quot;18-64&quot;,&quot;65+&quot;,&quot;&quot;]},&quot;title&quot;:&quot;Age&quot;},{&quot;name&quot;:&quot;Value&quot;,&quot;type&quot;:&quot;number&quot;,&quot;title&quot;:&quot;Value&quot;}]}"
   data-compositebreakdownlabel=""
   data-precision="[]"
-  data-proxy=""
+  data-proxy="proxy"
   data-proxyseries="null"
 >
   
@@ -508,7 +526,7 @@ data-event-label="high"
     
     <h3>Данные заголовка</h3>
     <table class="table-responsive table table-hover dataTable no-footer" role="grid">
-      <caption>Доля мужчин, женщин и детей всех возрастов, живущих в нищете во всех ее проявлениях, согласно национальным определениям</caption>
+      <caption>Percentage of the population living in households at risk of persistent poverty</caption>
       <thead>
         
         
@@ -686,13 +704,13 @@ data-event-label="high"
   
   <div id="datatableFooter">
     
-    <p>Источник: NSO</p>
+    <p>Источник: Eurostat</p>
     
     
-    <p>Географический район: </p>
+    <p>Географический район: United Kingdom</p>
     
     
-    <p>Единица измерения: Percentage</p>
+    <p>Единица измерения: Percentage (%)</p>
     
     
     <p>Сноска: </p>
@@ -781,7 +799,7 @@ data-event-label="Change to Table tab"
       <figure role="group">
         <div id="chart-canvas">
           <h4 id="chart-heading" class="chart-title">
-            Доля мужчин, женщин и детей всех возрастов, живущих в нищете во всех ее проявлениях, согласно национальным определениям
+            Percentage of the population living in households at risk of persistent poverty
           </h4>
           <div id="chart" class="plot-container">
             <canvas
@@ -802,9 +820,12 @@ data-event-label="Change to Table tab"
     <dl>
         
         <dt>Источник:</dt>
-        <dd>NSO</dd>
+        <dd>Eurostat</dd>
         
 
+        
+        <dt>Географический район:</dt>
+        <dd>United Kingdom</dd>
         
 
         <dt class="data-controlled-footer-field unit-from-data">Единица измерения:</dt>
@@ -875,9 +896,12 @@ data-event-label="Change to Table tab"
     <dl>
         
         <dt>Источник:</dt>
-        <dd>NSO</dd>
+        <dd>Eurostat</dd>
         
 
+        
+        <dt>Географический район:</dt>
+        <dd>United Kingdom</dd>
         
 
         <dt class="data-controlled-footer-field unit-from-data">Единица измерения:</dt>
@@ -1544,8 +1568,19 @@ data-event-label="Change to indicator.sources tab"
       
       
       
-        
+      
+      <tr>
+        <th scope="row">Назначенный ООН уровень </th>
+        <td>
           
+            <p>Tier II</p>
+
+          
+        </td>
+        </tr>
+        
+      
+  
   </tbody>
 </table>
 
@@ -1635,7 +1670,7 @@ data-event-label="Change to indicator.sources tab"
         <th scope="row">Организация </th>
         <td>
           
-            <p>NSO</p>
+            <p>Eurostat</p>
 
           
         </td>
@@ -1646,18 +1681,51 @@ data-event-label="Change to indicator.sources tab"
       
       
       
-        
+      
+      <tr>
+        <th scope="row">Периодичность </th>
+        <td>
           
-      
-      
-      
-        
+            <p>Annual</p>
+
           
-      
-      
-      
+        </td>
+        </tr>
         
+      
+  
+      
+      
+      
+      
+      <tr>
+        <th scope="row">Самые ранние доступные данные </th>
+        <td>
           
+            <p>1998</p>
+
+          
+        </td>
+        </tr>
+        
+      
+  
+      
+      
+      
+      
+      <tr>
+        <th scope="row">Географический охват </th>
+        <td>
+          
+            <p>Malta</p>
+
+          
+        </td>
+        </tr>
+        
+      
+  
       
       
       
@@ -1671,8 +1739,8 @@ data-event-label="Change to indicator.sources tab"
             
             
             
-              <a href="https://test.org" target="_blank">
-                Link <span class="visuallyhidden">открывается в новой вкладке</span>
+              <a href="http://ec.europa.eu/eurostat/web/income-and-living-conditions/data/database" target="_blank">
+                Persistent at-risk-of-poverty rate by sex and age - EU-SILC survey (ilc_li21) <span class="visuallyhidden">открывается в новой вкладке</span>
               </a>
             
 
@@ -1685,33 +1753,88 @@ data-event-label="Change to indicator.sources tab"
       
       
       
-        
+      
+      
+  
+      
+      
+      
+      
+      <tr>
+        <th scope="row">Дата выпуска </th>
+        <td>
           
-      
-      
-      
-        
+            май 06, 2020
           
-      
-      
-      
+        </td>
+        </tr>
         
+      
+  
+      
+      
+      
+      
+      <tr>
+        <th scope="row">Следующий выпуск </th>
+        <td>
           
-      
-      
-      
+            <p>TBC</p>
+
+          
+        </td>
+        </tr>
         
+      
+  
+      
+      
+      
+      
+      <tr>
+        <th scope="row">Статистическая классификация </th>
+        <td>
           
-      
-      
-      
+            <p>Official International</p>
+
+          
+        </td>
+        </tr>
         
+      
+  
+      
+      
+      
+      
+      <tr>
+        <th scope="row">Контактные данные </th>
+        <td>
           
-      
-      
-      
+            <p>http://ec.europa.eu/eurostat/help/support</p>
+
+          
+        </td>
+        </tr>
         
+      
+  
+      
+      
+      
+      
+      <tr>
+        <th scope="row">Другая информация </th>
+        <td>
           
+            <p><a href="http://ec.europa.eu/eurostat/cache/metadata/en/ilc_esms.htm">Income and living conditions (ilc) metadata</a></p>
+
+          
+        </td>
+        </tr>
+        
+      
+  
   
   
   
@@ -1888,12 +2011,12 @@ data-event-label="Change to indicator.sources tab"
 <script>translations['search'] = translations['search'] || {};
     translations['search']['search'] = 'Поиск';</script>
 
-<script src='/site/assets/js/sdg.js?v=20240715102914'></script>
+<script src='/site/assets/js/sdg.js?v=20240715113954'></script>
 
 
     
     
-    <script src="/site/assets/js/custom.js?v=20240715102914"></script><script>
+    <script src="/site/assets/js/custom.js?v=20240715113954"></script><script>
     new indicatorInit();
     new accessibilitySwitcher();
 </script>
