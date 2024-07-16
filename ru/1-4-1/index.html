@@ -121,7 +121,7 @@ var translations = {
         
         Показатель 1.4.1 -
         
-        Proportion of population living in households with access to basic service - Показатели Целей устойчивого развития
+        Доля населения, живущего в домохозяйствах с доступом к базовым услугам - Показатели Целей устойчивого развития
     </title>
 
 
@@ -145,7 +145,7 @@ var translations = {
         <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
         <link res="stylesheet" href="https://cdn.datatables.net/1.11.5/css/dataTables.bootstrap5.min.css">
         <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css" crossorigin="">
-        <link rel="stylesheet" href="/site/assets/css/style.css?v=20240716105407">
+        <link rel="stylesheet" href="/site/assets/css/style.css?v=20240716110127">
         <link rel="stylesheet" href="https://unpkg.com/leaflet@1.3.4/dist/leaflet.css"
           integrity="sha512-puBpdR0798OZvTTbP4A8Ix/l+A4dHDD0DGqYW6RQ+9jxkRFclaxxQb/SJAWZfWAkuyeQUytO7+7N4QKrDh+drA=="
           crossorigin=""/>
@@ -420,7 +420,7 @@ data-event-label="high"
                         
                         Показатель 1.4.1
                         
-                        <span class="lead-copy">Proportion of population living in households with access to basic service</span>
+                        <span class="lead-copy">Доля населения, живущего в домохозяйствах с доступом к базовым услугам</span>
                     </h1>
                 </div>
             </div>
@@ -431,8 +431,26 @@ data-event-label="high"
   
 
   
+<div class="row metadata-available-indicator">
+  <div class="col-xs-12">
+    <h2>Proportion of population using basic drinking water and sanitation services</h2>
+  </div>
+</div>
+
 
   
+<div class="row proxy-banner my-4 mx-1 px-2 gx-2">
+  <div class="col col-auto align-self-center">
+    <span aria-describedby="proxy-description" class="proxy-pill">Прокси</span>
+  </div>
+  <div class="col col-auto align-self-center">
+    =
+  </div>
+  <div id="proxy-description" class="col">
+    Этот показатель содержит некоторые данные, альтернативные тем, которые указаны Организацией Объединенных Наций (ООН). Этот индикатор является наиболее подходящим соответствием, доступным в настоящее время.
+  </div>
+</div>
+
 
   
 
@@ -447,10 +465,10 @@ data-event-label="high"
   id="indicatorData"
   data-indicatorid='indicator_1-4-1'
   data-id="1-4-1"
-  data-country="Malta"
+  data-country="United Kingdom"
   data-charttitle="Доля населения, живущего в домохозяйствах с доступом к базовым услугам"
-  data-charttitles="[]"
-  data-measurementunit="Percentage"
+  data-charttitles="[{&quot;series&quot;:&quot;Proportion of population using basic drinking water services&quot;,&quot;title&quot;:&quot;Proportion of population using basic drinking water services&quot;},{&quot;series&quot;:&quot;Proportion of population using basic sanitation services&quot;,&quot;title&quot;:&quot;Proportion of population using basic sanitation services&quot;}]"
+  data-measurementunit="Percentage (%)"
   data-xaxislabel=""
   data-showdata="true"
   data-graphtype="line"
@@ -467,7 +485,7 @@ data-event-label="high"
   data-dataschema="{&quot;fields&quot;:[{&quot;name&quot;:&quot;Year&quot;,&quot;type&quot;:&quot;integer&quot;,&quot;title&quot;:&quot;Год&quot;},{&quot;name&quot;:&quot;Series&quot;,&quot;type&quot;:&quot;string&quot;,&quot;constraints&quot;:{&quot;enum&quot;:[&quot;Proportion of population using basic drinking water services&quot;,&quot;Proportion of population using basic sanitation services&quot;,&quot;&quot;]},&quot;title&quot;:&quot;Series&quot;},{&quot;name&quot;:&quot;Location&quot;,&quot;type&quot;:&quot;string&quot;,&quot;constraints&quot;:{&quot;enum&quot;:[&quot;Urban&quot;,&quot;Rural&quot;,&quot;&quot;]},&quot;title&quot;:&quot;Location&quot;},{&quot;name&quot;:&quot;Value&quot;,&quot;type&quot;:&quot;number&quot;,&quot;title&quot;:&quot;Value&quot;}]}"
   data-compositebreakdownlabel=""
   data-precision="[]"
-  data-proxy=""
+  data-proxy="proxy"
   data-proxyseries="null"
 >
   
@@ -1110,13 +1128,13 @@ data-event-label="high"
   
   <div id="datatableFooter">
     
-    <p>Источник: NSO</p>
+    <p>Источник: WHO/UNICEF Joint Monitoring Programme for Water Supply, Sanitation and Hygiene (2021)</p>
     
     
-    <p>Географический район: </p>
+    <p>Географический район: United Kingdom</p>
     
     
-    <p>Единица измерения: Percentage</p>
+    <p>Единица измерения: Percentage (%)</p>
     
     
     <p>Сноска: </p>
@@ -1205,7 +1223,7 @@ data-event-label="Change to Table tab"
       <figure role="group">
         <div id="chart-canvas">
           <h4 id="chart-heading" class="chart-title">
-            Доля населения, живущего в домохозяйствах с доступом к базовым услугам
+            Proportion of population using basic drinking water services
           </h4>
           <div id="chart" class="plot-container">
             <canvas
@@ -1226,9 +1244,12 @@ data-event-label="Change to Table tab"
     <dl>
         
         <dt>Источник:</dt>
-        <dd>NSO</dd>
+        <dd>WHO/UNICEF Joint Monitoring Programme for Water Supply, Sanitation and Hygiene (2021)</dd>
         
 
+        
+        <dt>Географический район:</dt>
+        <dd>United Kingdom</dd>
         
 
         <dt class="data-controlled-footer-field unit-from-data">Единица измерения:</dt>
@@ -1299,9 +1320,12 @@ data-event-label="Change to Table tab"
     <dl>
         
         <dt>Источник:</dt>
-        <dd>NSO</dd>
+        <dd>WHO/UNICEF Joint Monitoring Programme for Water Supply, Sanitation and Hygiene (2021)</dd>
         
 
+        
+        <dt>Географический район:</dt>
+        <dd>United Kingdom</dd>
         
 
         <dt class="data-controlled-footer-field unit-from-data">Единица измерения:</dt>
@@ -1405,191 +1429,102 @@ data-event-label="Change to Sources tab"
   
   
   
+  
+  
+  
+  
       
       
       
-        
+      
+      <tr>
+        <th scope="row">Indicator available </th>
+        <td>
           
-      
-      
-      
-        
+            <p>Proportion of population using basic drinking water and sanitation services</p>
+
           
-      
-      
-      
+        </td>
+        </tr>
         
+      
+  
+      
+      
+      
+      
+      <tr>
+        <th scope="row">Описание показателя </th>
+        <td>
           
-      
-      
-      
+            <p>Proportion of population using basic drinking water and sanitation services</p>
+
+          
+        </td>
+        </tr>
         
+      
+  
+      
+      
+      
+      
+      <tr>
+        <th scope="row">Географический охват </th>
+        <td>
           
-      
-      
-      
+            <p>United Kingdom</p>
+
+          
+        </td>
+        </tr>
         
+      
+  
+      
+      
+      
+      
+      <tr>
+        <th scope="row">Единица измерения </th>
+        <td>
           
-      
-      
-      
+            <p>Percentage (%)</p>
+
+          
+        </td>
+        </tr>
         
+      
+  
+      
+      
+      
+      
+      <tr>
+        <th scope="row">Определения </th>
+        <td>
           
-      
-      
-      
+            <p> Basic Services refer to public service provision systems that meet human basic needs including drinking water, sanitation, hygiene, energy, mobility, waste collection, health care, education and information technologies. This indicator is based on 9 components which are captured in various standalone indicators of the SDGs which each have their own indicator page. </p>
+<p> <a href="https://sdgdata.gov.uk/3-7-1/">Indicator 3.7.1</a></p>
+<p> <a href="https://sdgdata.gov.uk/3-8-1/">Indicator 3.8.1</a></p>
+<p> <a href="https://sdgdata.gov.uk/4-1-1/">Indicator 4.1.1</a></p>
+<p> <a href="https://sdgdata.gov.uk/5-b-1/">Indicator 5.b.1</a></p>
+<p> <a href="https://sdgdata.gov.uk/6-2-1/">Indicator 6.2.1</a></p>
+<p> <a href="https://sdgdata.gov.uk/6-1-1/">Indicator 6.1.1</a></p>
+<p> <a href="https://sdgdata.gov.uk/7-1-1/">Indicator 7.1.1</a></p>
+<p> <a href="https://sdgdata.gov.uk/7-1-2/">Indicator 7.1.2</a></p>
+<p> <a href="https://sdgdata.gov.uk/9-1-1/">Indicator 9.1.1</a></p>
+<p> <a href="https://sdgdata.gov.uk/9-c-1/">Indicator 9.c.1</a></p>
+<p> <a href="https://sdgdata.gov.uk/11-2-1/">Indicator 11.2.1</a></p>
+<p> <a href="https://sdgdata.gov.uk/11-6-1/">Indicator 11.6.1</a></p>
+
+          
+        </td>
+        </tr>
         
-          
       
-      
-      
-        
-          
-      
-      
-      
-        
-          
-      
-      
-      
-        
-          
-      
-      
-      
-        
-          
-      
-      
-      
-        
-          
-      
-      
-      
-        
-          
-      
-      
-      
-        
-          
-      
-      
-      
-        
-          
-      
-      
-      
-        
-          
-      
-      
-      
-        
-          
-      
-      
-      
-        
-          
-      
-      
-      
-        
-          
-      
-      
-      
-        
-          
-      
-      
-      
-        
-          
-      
-      
-      
-        
-          
-      
-      
-      
-        
-          
-      
-      
-      
-        
-          
-      
-      
-      
-        
-          
-      
-      
-      
-        
-          
-      
-      
-      
-        
-          
-      
-      
-      
-        
-          
-      
-      
-      
-        
-          
-      
-      
-      
-        
-          
-      
-      
-      
-        
-          
-      
-      
-      
-        
-          
-      
-      
-      
-        
-          
-      
-      
-      
-        
-          
-      
-      
-      
-        
-          
-      
-      
-      
-        
-          
-      
-      
-      
-        
-          
+  
       
       
       
@@ -1605,7 +1540,23 @@ data-event-label="Change to Sources tab"
       
       
       <tr>
-        <th scope="row">Последний раз данные обновлялись </th>
+        <th scope="row">Другая информация </th>
+        <td>
+          
+            <p>This indicator is being used as an approximation of the UN SDG Indicator. Where possible, we will work to identify or develop UK data to meet the global indicator specification. This indicator has not been identified in collaboration with topic experts.</p>
+
+          
+        </td>
+        </tr>
+        
+      
+  
+      
+      
+      
+      
+      <tr>
+        <th scope="row">Data last updated </th>
         <td>
           
             Jul 15, 2024
@@ -1620,15 +1571,59 @@ data-event-label="Change to Sources tab"
       
       
       <tr>
-        <th scope="row">Последнее обновление метаданных </th>
+        <th scope="row">Metadata last updated </th>
         <td>
           
-            Jul 15, 2024
+            Jul 16, 2024
           
         </td>
         </tr>
         
       
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
   
   
   
@@ -1722,10 +1717,45 @@ data-event-label="Change to Sources tab"
       
       
       <tr>
-        <th scope="row">Показатель </th>
+        <th scope="row">Название показателя </th>
         <td>
           
-            <p>Indicator 1.4.1: Proportion of population living in households with access to basic services</p>
+            <p>Доля населения, живущего в домохозяйствах с доступом к базовым услугам</p>
+
+          
+        </td>
+        </tr>
+        
+      
+  
+  
+  
+      
+      
+      
+      
+      <tr>
+        <th scope="row">Target name </th>
+        <td>
+          
+            <p>К 2030 году обеспечить, чтобы все мужчины и женщины, особенно малоимущие и уязвимые, имели равные права на экономические ресурсы, а также доступ к базовым услугам, владению и распоряжению землей и другими формами собственности, наследуемому имуществу, природным ресурсам, соответствующим новым технологиям и финансовым услугам, включая микрофинансирование</p>
+
+          
+        </td>
+        </tr>
+        
+      
+  
+  
+      
+      
+      
+      
+      <tr>
+        <th scope="row">Назначенный ООН уровень </th>
+        <td>
+          
+            <p>Tier I</p>
 
           
         </td>
@@ -1738,10 +1768,10 @@ data-event-label="Change to Sources tab"
       
       
       <tr>
-        <th scope="row">Цель </th>
+        <th scope="row">Депозитарное учреждение ООН </th>
         <td>
           
-            <p>Target 1.4: By 2030, ensure that all men and women, in particular the poor and the vulnerable, have equal rights to economic resources, as well as access to basic services, ownership and control over land and other forms of property, inheritance, natural resources, appropriate new technology and financial services, including microfinance</p>
+            <p>UN-Habitat</p>
 
           
         </td>
@@ -1754,27 +1784,166 @@ data-event-label="Change to Sources tab"
       
       
       <tr>
-        <th scope="row">Обновление метаданных </th>
+        <th scope="row">Ссылка на метаданные ООН </th>
         <td>
           
-            <p>2023-07-18</p>
+            
+            
+            
+            
+            
+              <a href="https://unstats.un.org/sdgs/metadata/files/Metadata-01-04-01.pdf" target="_blank">
+                United Nations Sustainable Development Goals Metadata (PDF 4.0 MB) <span class="visuallyhidden">открывается в новой вкладке</span>
+              </a>
+            
 
           
         </td>
         </tr>
         
       
+  
+      
+      
+      
+      
+      
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
   
       
       
       
       
       <tr>
-        <th scope="row">0.g. Международные организации, ответственные за глобальный мониторинг </th>
+        <th scope="row">Назначенный ООН уровень </th>
         <td>
           
-            <p>United Nations Human Settlements Programme (UN-Habitat)</p>
-<p>WHO/UNICEF Joint Monitoring Programme for Water Supply, Sanitation and Hygiene (1.4.1a, b and c)</p>
+            <p>Tier I</p>
 
           
         </td>
@@ -1782,140 +1951,6 @@ data-event-label="Change to Sources tab"
         
       
   
-      
-      
-      
-      
-      <tr>
-        <th scope="row">Связанные показатели </th>
-        <td>
-          
-            <p>SDG global targets 1.2, 2.2, 3.2, 3.7, 3.8, 3.9, 4.1, 4.a, 5.4, 5.b, 6.1, 6.2, 7.1, 7.2, 9.1 and 11.2.</p>
-
-          
-        </td>
-        </tr>
-        
-      
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-      
-      
-      
-        
-          
   </tbody>
 </table>
 
@@ -1968,25 +2003,6 @@ data-event-label="Change to Sources tab"
   
   
   
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
       
       
       
@@ -1995,7 +2011,7 @@ data-event-label="Change to Sources tab"
         <th scope="row">Организация </th>
         <td>
           
-            <p>NSO</p>
+            <p>WHO/UNICEF Joint Monitoring Programme for Water Supply, Sanitation and Hygiene (2021)</p>
 
           
         </td>
@@ -2006,18 +2022,51 @@ data-event-label="Change to Sources tab"
       
       
       
-        
+      
+      <tr>
+        <th scope="row">Периодичность </th>
+        <td>
           
-      
-      
-      
-        
+            <p>Annual</p>
+
           
-      
-      
-      
+        </td>
+        </tr>
         
+      
+  
+      
+      
+      
+      
+      <tr>
+        <th scope="row">Самые ранние доступные данные </th>
+        <td>
           
+            <p>2000</p>
+
+          
+        </td>
+        </tr>
+        
+      
+  
+      
+      
+      
+      
+      <tr>
+        <th scope="row">Географический охват </th>
+        <td>
+          
+            <p>United Kingdom</p>
+
+          
+        </td>
+        </tr>
+        
+      
+  
       
       
       
@@ -2031,8 +2080,8 @@ data-event-label="Change to Sources tab"
             
             
             
-              <a href="https://test.org" target="_blank">
-                Link <span class="visuallyhidden">открывается в новой вкладке</span>
+              <a href="https://unstats.un.org/sdgs/indicators/database/" target="_blank">
+                UN SDGs Database <span class="visuallyhidden">открывается в новой вкладке</span>
               </a>
             
 
@@ -2040,6 +2089,12 @@ data-event-label="Change to Sources tab"
         </td>
         </tr>
         
+      
+  
+      
+      
+      
+      
       
   
       
@@ -2055,23 +2110,76 @@ data-event-label="Change to Sources tab"
       
       
       
+      
+      <tr>
+        <th scope="row">Статистическая классификация </th>
+        <td>
+          
+            <p>Official</p>
+
+          
+        </td>
+        </tr>
+        
+      
+  
+      
+      
+      
+      
+      <tr>
+        <th scope="row">Контактные данные </th>
+        <td>
+          
+            <p>info@washdata.org</p>
+
+          
+        </td>
+        </tr>
+        
+      
+  
+      
+      
+      
         
           
-      
-      
-      
-        
-          
-      
-      
-      
-        
-          
-      
-      
-      
-        
-          
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
   
   
   
@@ -2246,12 +2354,12 @@ data-event-label="Change to Sources tab"
 <script>translations['search'] = translations['search'] || {};
     translations['search']['search'] = 'Поиск';</script>
 
-<script src='/site/assets/js/sdg.js?v=20240716105407'></script>
+<script src='/site/assets/js/sdg.js?v=20240716110127'></script>
 
 
     
     
-    <script src="/site/assets/js/custom.js?v=20240716105407"></script><script>
+    <script src="/site/assets/js/custom.js?v=20240716110127"></script><script>
     new indicatorInit();
     new accessibilitySwitcher();
 </script>
