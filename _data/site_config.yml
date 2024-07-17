@@ -115,6 +115,11 @@ hide_empty_metadata: false
 hide_single_series: true
 hide_single_unit: true
 ignored_disaggregations: []
+config_form:
+  enabled: false
+  dropdowns: []
+  repository_link: /tree/develop/config
+  translation_link: ''
 indicator_config_form:
   enabled: false
   dropdowns: []
