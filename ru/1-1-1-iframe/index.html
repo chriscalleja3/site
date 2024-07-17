@@ -145,7 +145,7 @@ var translations = {
         <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
         <link res="stylesheet" href="https://cdn.datatables.net/1.11.5/css/dataTables.bootstrap5.min.css">
         <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css" crossorigin="">
-        <link rel="stylesheet" href="/site/assets/css/style.css?v=20240717102050">
+        <link rel="stylesheet" href="/site/assets/css/style.css?v=20240717114152">
         <link rel="stylesheet" href="https://unpkg.com/leaflet@1.3.4/dist/leaflet.css"
           integrity="sha512-puBpdR0798OZvTTbP4A8Ix/l+A4dHDD0DGqYW6RQ+9jxkRFclaxxQb/SJAWZfWAkuyeQUytO7+7N4QKrDh+drA=="
           crossorigin=""/>
@@ -289,6 +289,12 @@ layout-indicator-iframe
   
 
   
+<div class="row metadata-available-indicator">
+  <div class="col-xs-12">
+    <h2>Proportion of population below the international poverty line</h2>
+  </div>
+</div>
+
 
   
 
@@ -307,7 +313,7 @@ layout-indicator-iframe
   data-id="1-1-1"
   data-country="Malta"
   data-charttitle="Доля населения, живущего за международной чертой бедности, в разбивке по полу, возрасту, статусу занятости и месту проживания (городское/сельское)"
-  data-charttitles="[]"
+  data-charttitles="[{&quot;series&quot;:&quot;Proportion of population using basic drinking water services&quot;,&quot;title&quot;:&quot;Proportion of population using basic drinking water services&quot;},{&quot;series&quot;:&quot;Proportion of population using basic sanitation services&quot;,&quot;title&quot;:&quot;Proportion of population using basic sanitation services&quot;}]"
   data-measurementunit=""
   data-xaxislabel=""
   data-showdata="true"
@@ -449,7 +455,7 @@ data-event-label="Change to Table tab"
       <figure role="group">
         <div id="chart-canvas">
           <h4 id="chart-heading" class="chart-title">
-            Доля населения, живущего за международной чертой бедности, в разбивке по полу, возрасту, статусу занятости и месту проживания (городское/сельское)
+            Proportion of population using basic drinking water services
           </h4>
           <div id="chart" class="plot-container">
             <canvas
@@ -469,7 +475,13 @@ data-event-label="Change to Table tab"
   <h5 class="sr-only">Chart details</h5>
     <dl>
         
+        <dt>Источник:</dt>
+        <dd>World Bank</dd>
+        
 
+        
+        <dt>Географический район:</dt>
+        <dd>Malta</dd>
         
 
         <dt class="data-controlled-footer-field unit-from-data">Единица измерения:</dt>
@@ -539,7 +551,13 @@ data-event-label="Change to Table tab"
   <h5 class="sr-only">Chart details</h5>
     <dl>
         
+        <dt>Источник:</dt>
+        <dd>World Bank</dd>
+        
 
+        
+        <dt>Географический район:</dt>
+        <dd>Malta</dd>
         
 
         <dt class="data-controlled-footer-field unit-from-data">Единица измерения:</dt>
@@ -641,23 +659,15 @@ data-event-label="Change to Sources tab"
   
   
   
-  
       
       
-      
-        
-          
-          
-          
-          
-        
       
       
       <tr>
         <th scope="row">Indicator available </th>
         <td>
           
-            <p><span class="empty-metadata-placeholder">Недоступно для данного показателя</span></p>
+            <p>Proportion of population below the international poverty line</p>
 
           
         </td>
@@ -667,20 +677,13 @@ data-event-label="Change to Sources tab"
   
       
       
-      
-        
-          
-          
-          
-          
-        
       
       
       <tr>
         <th scope="row">Описание показателя </th>
         <td>
           
-            <p><span class="empty-metadata-placeholder">Недоступно для данного показателя</span></p>
+            <p>Proportion of population below the international poverty line is defined as the percentage of the population living on less than $2.15 a day at 2017 international prices.</p>
 
           
         </td>
@@ -690,20 +693,13 @@ data-event-label="Change to Sources tab"
   
       
       
-      
-        
-          
-          
-          
-          
-        
       
       
       <tr>
         <th scope="row">Географический охват </th>
         <td>
           
-            <p><span class="empty-metadata-placeholder">Недоступно для данного показателя</span></p>
+            <p>Malta</p>
 
           
         </td>
@@ -714,42 +710,28 @@ data-event-label="Change to Sources tab"
       
       
       
+      
+      <tr>
+        <th scope="row">Определение и понятия </th>
+        <td>
+          
+            <p>The ‘international poverty line’ is currently set at $2.15 a day at 2017 international prices.</p>
+
+          
+        </td>
+        </tr>
         
-          
-          
-          
-          
-        
+      
+  
+      
+      
       
       
       <tr>
         <th scope="row">Единица измерения </th>
         <td>
           
-            <p><span class="empty-metadata-placeholder">Недоступно для данного показателя</span></p>
-
-          
-        </td>
-        </tr>
-        
-      
-  
-      
-      
-      
-        
-          
-          
-          
-          
-        
-      
-      
-      <tr>
-        <th scope="row">Определения </th>
-        <td>
-          
-            <p><span class="empty-metadata-placeholder">Недоступно для данного показателя</span></p>
+            <p>Percentage (%)</p>
 
           
         </td>
@@ -792,7 +774,7 @@ data-event-label="Change to Sources tab"
       
       
       <tr>
-        <th scope="row">Расчёты </th>
+        <th scope="row">Метод расчета </th>
         <td>
           
             <p><span class="empty-metadata-placeholder">Недоступно для данного показателя</span></p>
@@ -815,7 +797,7 @@ data-event-label="Change to Sources tab"
       
       
       <tr>
-        <th scope="row">Другая информация </th>
+        <th scope="row">Комментарии и ограничения </th>
         <td>
           
             <p><span class="empty-metadata-placeholder">Недоступно для данного показателя</span></p>
@@ -849,7 +831,7 @@ data-event-label="Change to Sources tab"
         <th scope="row">Metadata last updated </th>
         <td>
           
-            Jul 04, 2024
+            Jul 17, 2024
           
         </td>
         </tr>
@@ -991,7 +973,7 @@ data-event-label="Change to Sources tab"
       
       
       <tr>
-        <th scope="row">Название показателя </th>
+        <th scope="row">Показатель </th>
         <td>
           
             <p>Доля населения, живущего за международной чертой бедности, в разбивке по полу, возрасту, статусу занятости и месту проживания (городское/сельское)</p>
@@ -1002,8 +984,6 @@ data-event-label="Change to Sources tab"
         
       
   
-  
-  
       
       
       
@@ -1016,7 +996,7 @@ data-event-label="Change to Sources tab"
       
       
       <tr>
-        <th scope="row">Target name </th>
+        <th scope="row">Цель </th>
         <td>
           
             <p><span class="empty-metadata-placeholder">Недоступно для данного показателя</span></p>
@@ -1027,23 +1007,15 @@ data-event-label="Change to Sources tab"
         
       
   
-  
       
       
-      
-        
-          
-          
-          
-          
-        
       
       
       <tr>
         <th scope="row">Назначенный ООН уровень </th>
         <td>
           
-            <p><span class="empty-metadata-placeholder">Недоступно для данного показателя</span></p>
+            <p>Tier I</p>
 
           
         </td>
@@ -1053,20 +1025,13 @@ data-event-label="Change to Sources tab"
   
       
       
-      
-        
-          
-          
-          
-          
-        
       
       
       <tr>
-        <th scope="row">Депозитарное учреждение ООН </th>
+        <th scope="row">0.g. Международные организации, ответственные за глобальный мониторинг </th>
         <td>
           
-            <p><span class="empty-metadata-placeholder">Недоступно для данного показателя</span></p>
+            <p>World Bank</p>
 
           
         </td>
@@ -1077,12 +1042,21 @@ data-event-label="Change to Sources tab"
       
       
       
+      
+      <tr>
+        <th scope="row">Связанные показатели </th>
+        <td>
+          
+            <p>1.2.1, 10.1.1, 10.2.1</p>
+
+          
+        </td>
+        </tr>
         
-          
-          
-          
-          
-        
+      
+  
+      
+      
       
       
       <tr>
@@ -1094,7 +1068,9 @@ data-event-label="Change to Sources tab"
             
             
             
-              <span class="empty-metadata-placeholder">Недоступно для данного показателя</span>
+              <a href="https://unstats.un.org/sdgs/metadata/files/Metadata-01-04-01.pdf" target="_blank">
+                United Nations Sustainable Development Goals Metadata (PDF 4.0 MB) <span class="visuallyhidden">открывается в новой вкладке</span>
+              </a>
             
 
           
@@ -1106,14 +1082,23 @@ data-event-label="Change to Sources tab"
       
       
       
-        
-          
-          
-          
-          
-        
       
       
+  
+      
+      
+      
+      
+      <tr>
+        <th scope="row">Обновление метаданных </th>
+        <td>
+          
+            <p>31/03/2023</p>
+
+          
+        </td>
+        </tr>
+        
       
   
   
@@ -1254,6 +1239,343 @@ data-event-label="Change to Sources tab"
 
 
 
+  <div class="row">
+  
+    
+    
+    <div class="col-md-6">
+      
+        <h4 class="sr-only">Источник 1</h4>
+      
+      
+      <table class="table metadata-content">
+  <tbody>
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+      
+      
+      
+      
+      <tr>
+        <th scope="row">Организация </th>
+        <td>
+          
+            <p>World Bank</p>
+
+          
+        </td>
+        </tr>
+        
+      
+  
+      
+      
+      
+      
+      <tr>
+        <th scope="row">Периодичность </th>
+        <td>
+          
+            <p>Annual</p>
+
+          
+        </td>
+        </tr>
+        
+      
+  
+      
+      
+      
+      
+      <tr>
+        <th scope="row">Самые ранние доступные данные </th>
+        <td>
+          
+            <p>2003</p>
+
+          
+        </td>
+        </tr>
+        
+      
+  
+      
+      
+      
+      
+      <tr>
+        <th scope="row">Географический охват </th>
+        <td>
+          
+            <p>Malta</p>
+
+          
+        </td>
+        </tr>
+        
+      
+  
+      
+      
+      
+      
+      <tr>
+        <th scope="row">Ссылка на источник данных </th>
+        <td>
+          
+            
+            
+            
+            
+            
+              <a href="https://data.worldbank.org/indicator/SI.POV.DDAY?locations=IS&name_desc=false" target="_blank">
+                Proportion of population below the international poverty line <span class="visuallyhidden">открывается в новой вкладке</span>
+              </a>
+            
+
+          
+        </td>
+        </tr>
+        
+      
+  
+      
+      
+      
+      
+      
+  
+      
+      
+      
+        
+          
+          
+          
+          
+        
+      
+      
+      <tr>
+        <th scope="row">Дата выпуска </th>
+        <td>
+          
+            <p><span class="empty-metadata-placeholder">Недоступно для данного источника</span></p>
+
+          
+        </td>
+        </tr>
+        
+      
+  
+      
+      
+      
+        
+          
+          
+          
+          
+        
+      
+      
+      <tr>
+        <th scope="row">Следующий выпуск </th>
+        <td>
+          
+            <p><span class="empty-metadata-placeholder">Недоступно для данного источника</span></p>
+
+          
+        </td>
+        </tr>
+        
+      
+  
+      
+      
+      
+      
+      <tr>
+        <th scope="row">Статистическая классификация </th>
+        <td>
+          
+            <p>Official</p>
+
+          
+        </td>
+        </tr>
+        
+      
+  
+      
+      
+      
+      
+      <tr>
+        <th scope="row">Контактные данные </th>
+        <td>
+          
+            <p>Research@WorldBank.org</p>
+
+          
+        </td>
+        </tr>
+        
+      
+  
+      
+      
+      
+        
+          
+          
+          
+          
+        
+      
+      
+      <tr>
+        <th scope="row">Другая информация </th>
+        <td>
+          
+            <p><span class="empty-metadata-placeholder">Недоступно для данного источника</span></p>
+
+          
+        </td>
+        </tr>
+        
+      
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  </tbody>
+</table>
+
+    </div>
+    
+  </div>
+
 
 </div>
     
@@ -1293,12 +1615,12 @@ data-event-label="Change to Sources tab"
 <script>translations['search'] = translations['search'] || {};
     translations['search']['search'] = 'Поиск';</script>
 
-<script src='/site/assets/js/sdg.js?v=20240717102050'></script>
+<script src='/site/assets/js/sdg.js?v=20240717114152'></script>
 
 
     
     
-    <script src="/site/assets/js/custom.js?v=20240717102050"></script><script>
+    <script src="/site/assets/js/custom.js?v=20240717114152"></script><script>
     new indicatorInit();
     new accessibilitySwitcher();
 </script>
