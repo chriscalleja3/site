@@ -202,7 +202,18 @@ menu:
   - path: nso/
     translation_key: NSO
 metadata_edit_url: ''
-metadata_tabs: []
+
+metadata_tabs:
+  - scope: national
+    title: indicator.national_metadata
+    description: indicator.national_metadata_blurb
+  - scope: global
+    title: indicator.global_metadata
+    description: indicator.global_metadata_blurb
+  - scope: sources
+    title: indicator.sources
+    description: ''
+
 meta_tags: []
 news:
   category_links: false
