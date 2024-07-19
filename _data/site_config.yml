@@ -202,8 +202,17 @@ menu:
   - path: nso/
     translation_key: NSO
 metadata_edit_url: ''
-
-metadata_tabs: []
+metadata_tabs:
+  - scope: national
+    title: indicator.national_metadata
+    description: indicator.national_metadata_blurb
+  - scope: global
+    title: indicator.global_metadata
+    description: indicator.global_metadata_blurb
+  - scope: sources_alt
+    title: Sources
+    description: My blurb about the sources tab
+    placeholder: No sources are available at this time
 meta_tags: []
 news:
   category_links: false
