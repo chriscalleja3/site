@@ -48,7 +48,7 @@ opensdg.chartTypes.bar = function (info) {
     
     // Manually set the borderWidths to 0 to avoid a weird border effect on the bars.
     config.data.datasets.forEach(function(dataset) {
-        dataset.borderWidth = 1;
+        dataset.borderWidth = 100;
     });
 
     // Add these overrides onto the normal config, and return it.
