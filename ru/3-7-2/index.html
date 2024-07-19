@@ -145,7 +145,7 @@ var translations = {
         <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
         <link res="stylesheet" href="https://cdn.datatables.net/1.11.5/css/dataTables.bootstrap5.min.css">
         <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css" crossorigin="">
-        <link rel="stylesheet" href="/site/assets/css/style.css?v=20240719101431">
+        <link rel="stylesheet" href="/site/assets/css/style.css?v=20240719102150">
         <link rel="stylesheet" href="https://unpkg.com/leaflet@1.3.4/dist/leaflet.css"
           integrity="sha512-puBpdR0798OZvTTbP4A8Ix/l+A4dHDD0DGqYW6RQ+9jxkRFclaxxQb/SJAWZfWAkuyeQUytO7+7N4QKrDh+drA=="
           crossorigin=""/>
@@ -1154,36 +1154,1094 @@ data-event-label="Change to Table tab"
   <div class="mt-4">
 <ul class="nav nav-tabs" role="tablist">
     
+    
         
-
-  <li role="presentation" class="nav-item">
-    <button type="button" class="nav-link" data-bs-toggle="tab" id="tab-global" data-bs-target="#global" aria-controls="global" role="tab" data-on="click"
+        
+        
+        
+        <li role="presentation" class="nav-item">
+            <button
+                type="button"
+                class="nav-link active"
+                data-bs-toggle="tab"
+                id="tab-national"
+                data-bs-target="#national"
+                aria-controls="national"
+                role="tab"
+                data-on="click"
 data-event-category="Tab change"
 data-event-action="Change metadata view"
-data-event-label="Change to Global Metadata tab"
->Глобальные метаданные</button>
-  </li>
+data-event-label="Change to indicator.national_metadata tab"
 
-<li role="presentation" class="nav-item">
-  <button type="button" class="nav-link" data-bs-toggle="tab" id="tab-sources" data-bs-target="#sources" aria-controls="sources" role="tab" data-on="click"
+            >Национальные метаданные</button>
+        </li>
+    
+        
+        
+        
+        
+        <li role="presentation" class="nav-item">
+            <button
+                type="button"
+                class="nav-link "
+                data-bs-toggle="tab"
+                id="tab-global"
+                data-bs-target="#global"
+                aria-controls="global"
+                role="tab"
+                data-on="click"
+data-event-category="Tab change"
+data-event-action="Change metadata view"
+data-event-label="Change to indicator.global_metadata tab"
+
+            >Глобальные метаданные</button>
+        </li>
+    
+        
+        
+        
+        
+        <li role="presentation" class="nav-item">
+            <button
+                type="button"
+                class="nav-link "
+                data-bs-toggle="tab"
+                id="tab-sources_alt"
+                data-bs-target="#sources_alt"
+                aria-controls="sources_alt"
+                role="tab"
+                data-on="click"
 data-event-category="Tab change"
 data-event-action="Change metadata view"
 data-event-label="Change to Sources tab"
->Источники</button>
-</li>
 
+            >Sources</button>
+        </li>
+    
     
  </ul>
 
 <div class="tab-content">
     
         
-<div role="tabpanel" class="tab-pane" id="global">
-    <!-- Global Metadata -->
-    <div>
-        <article>
-            <p>В этой таблице представлена информация для метаданных показателей ЦУР, определенных Статистической комиссией ООН. Полные глобальные метаданные представлены Статистическим отделом ООН.</p>
-            <table class="table metadata-content">
+        
+        
+        
+        
+        
+        
+        
+        
+        <div role="tabpanel" class="tab-pane active" id="national">
+            <article>
+                <p>В этой таблице представлены метаданные для фактического показателя, доступного из статистики ближайшей к соответствующему глобальному индикатору ЦУР. Обратите внимание, что даже если глобальный индикатор ЦУР полностью доступен из статистики, по этой таблице следует проконсультироваться для получения информации о национальной методологии и других специфичных метаданных.</p>
+
+                <table class="table metadata-content">
+  <tbody>
+  
+  
+  
+  
+  
+  
+      
+      
+      
+        
+          
+          
+          
+          
+        
+      
+      
+      <tr>
+        <th scope="row">Информация об индикаторе </th>
+        <td>
+          
+            <p><span class="empty-metadata-placeholder">Недоступно для данного показателя</span></p>
+
+          
+        </td>
+        </tr>
+        
+      
+  
+      
+      
+      
+      
+      <tr>
+        <th scope="row">Цель </th>
+        <td>
+          
+            <p>Goal 3: Ensure healthy lives and promote well-being for all at all ages</p>
+
+          
+        </td>
+        </tr>
+        
+      
+  
+      
+      
+      
+      
+      <tr>
+        <th scope="row">Цель </th>
+        <td>
+          
+            <p>Target 3.7: By 2030, ensure universal access to sexual and reproductive health-care services, including for family planning,  information and education, and the integration of reproductive health into national strategies and programmes</p>
+
+          
+        </td>
+        </tr>
+        
+      
+  
+      
+      
+      
+      
+      <tr>
+        <th scope="row">Показатель </th>
+        <td>
+          
+            <p>Indicator 3.7.2: Adolescent birth rate (aged 10–14 years; aged 15–19 years) per 1,000 women in that age group</p>
+
+          
+        </td>
+        </tr>
+        
+      
+  
+      
+      
+      
+        
+          
+          
+          
+          
+        
+      
+      
+      <tr>
+        <th scope="row">Серии </th>
+        <td>
+          
+            <p><span class="empty-metadata-placeholder">Недоступно для данного показателя</span></p>
+
+          
+        </td>
+        </tr>
+        
+      
+  
+      
+      
+      
+        
+          
+          
+          
+          
+        
+      
+      
+      <tr>
+        <th scope="row">Обновление метаданных </th>
+        <td>
+          
+            <p><span class="empty-metadata-placeholder">Недоступно для данного показателя</span></p>
+
+          
+        </td>
+        </tr>
+        
+      
+  
+      
+      
+      
+        
+          
+          
+          
+          
+        
+      
+      
+      <tr>
+        <th scope="row">Связанные показатели </th>
+        <td>
+          
+            <p><span class="empty-metadata-placeholder">Недоступно для данного показателя</span></p>
+
+          
+        </td>
+        </tr>
+        
+      
+  
+      
+      
+      
+        
+          
+          
+          
+          
+        
+      
+      
+      <tr>
+        <th scope="row">Докладчик данных </th>
+        <td>
+          
+            <p><span class="empty-metadata-placeholder">Недоступно для данного показателя</span></p>
+
+          
+        </td>
+        </tr>
+        
+      
+  
+      
+      
+      
+        
+          
+          
+          
+          
+        
+      
+      
+      <tr>
+        <th scope="row">Организация </th>
+        <td>
+          
+            <p><span class="empty-metadata-placeholder">Недоступно для данного показателя</span></p>
+
+          
+        </td>
+        </tr>
+        
+      
+  
+      
+      
+      
+        
+          
+          
+          
+          
+        
+      
+      
+      <tr>
+        <th scope="row">Контактное лицо (лица) </th>
+        <td>
+          
+            <p><span class="empty-metadata-placeholder">Недоступно для данного показателя</span></p>
+
+          
+        </td>
+        </tr>
+        
+      
+  
+      
+      
+      
+        
+          
+          
+          
+          
+        
+      
+      
+      <tr>
+        <th scope="row">Контактное организационное подразделение </th>
+        <td>
+          
+            <p><span class="empty-metadata-placeholder">Недоступно для данного показателя</span></p>
+
+          
+        </td>
+        </tr>
+        
+      
+  
+      
+      
+      
+        
+          
+          
+          
+          
+        
+      
+      
+      <tr>
+        <th scope="row">Функция контактного лица </th>
+        <td>
+          
+            <p><span class="empty-metadata-placeholder">Недоступно для данного показателя</span></p>
+
+          
+        </td>
+        </tr>
+        
+      
+  
+      
+      
+      
+        
+          
+          
+          
+          
+        
+      
+      
+      <tr>
+        <th scope="row">Контактный телефон </th>
+        <td>
+          
+            <p><span class="empty-metadata-placeholder">Недоступно для данного показателя</span></p>
+
+          
+        </td>
+        </tr>
+        
+      
+  
+      
+      
+      
+        
+          
+          
+          
+          
+        
+      
+      
+      <tr>
+        <th scope="row">Контактный email </th>
+        <td>
+          
+            <p><span class="empty-metadata-placeholder">Недоступно для данного показателя</span></p>
+
+          
+        </td>
+        </tr>
+        
+      
+  
+      
+      
+      
+        
+          
+          
+          
+          
+        
+      
+      
+      <tr>
+        <th scope="row">Контактный email </th>
+        <td>
+          
+            <p><span class="empty-metadata-placeholder">Недоступно для данного показателя</span></p>
+
+          
+        </td>
+        </tr>
+        
+      
+  
+      
+      
+      
+        
+          
+          
+          
+          
+        
+      
+      
+      <tr>
+        <th scope="row">2. Определение, понятия и классификации </th>
+        <td>
+          
+            <p><span class="empty-metadata-placeholder">Недоступно для данного показателя</span></p>
+
+          
+        </td>
+        </tr>
+        
+      
+  
+      
+      
+      
+        
+          
+          
+          
+          
+        
+      
+      
+      <tr>
+        <th scope="row">Определение и понятия </th>
+        <td>
+          
+            <p><span class="empty-metadata-placeholder">Недоступно для данного показателя</span></p>
+
+          
+        </td>
+        </tr>
+        
+      
+  
+      
+      
+      
+        
+          
+          
+          
+          
+        
+      
+      
+      <tr>
+        <th scope="row">Единица измерения </th>
+        <td>
+          
+            <p><span class="empty-metadata-placeholder">Недоступно для данного показателя</span></p>
+
+          
+        </td>
+        </tr>
+        
+      
+  
+      
+      
+      
+        
+          
+          
+          
+          
+        
+      
+      
+      <tr>
+        <th scope="row">Классификация </th>
+        <td>
+          
+            <p><span class="empty-metadata-placeholder">Недоступно для данного показателя</span></p>
+
+          
+        </td>
+        </tr>
+        
+      
+  
+      
+      
+      
+        
+          
+          
+          
+          
+        
+      
+      
+      <tr>
+        <th scope="row">3. Тип источника данных и метод сбора </th>
+        <td>
+          
+            <p><span class="empty-metadata-placeholder">Недоступно для данного показателя</span></p>
+
+          
+        </td>
+        </tr>
+        
+      
+  
+      
+      
+      
+        
+          
+          
+          
+          
+        
+      
+      
+      <tr>
+        <th scope="row">Источники данных </th>
+        <td>
+          
+            <p><span class="empty-metadata-placeholder">Недоступно для данного показателя</span></p>
+
+          
+        </td>
+        </tr>
+        
+      
+  
+      
+      
+      
+        
+          
+          
+          
+          
+        
+      
+      
+      <tr>
+        <th scope="row">Метод сбора данных </th>
+        <td>
+          
+            <p><span class="empty-metadata-placeholder">Недоступно для данного показателя</span></p>
+
+          
+        </td>
+        </tr>
+        
+      
+  
+      
+      
+      
+        
+          
+          
+          
+          
+        
+      
+      
+      <tr>
+        <th scope="row">Календарь сбора данных </th>
+        <td>
+          
+            <p><span class="empty-metadata-placeholder">Недоступно для данного показателя</span></p>
+
+          
+        </td>
+        </tr>
+        
+      
+  
+      
+      
+      
+        
+          
+          
+          
+          
+        
+      
+      
+      <tr>
+        <th scope="row">Календарь выхода данных </th>
+        <td>
+          
+            <p><span class="empty-metadata-placeholder">Недоступно для данного показателя</span></p>
+
+          
+        </td>
+        </tr>
+        
+      
+  
+      
+      
+      
+        
+          
+          
+          
+          
+        
+      
+      
+      <tr>
+        <th scope="row">Поставщики данных </th>
+        <td>
+          
+            <p><span class="empty-metadata-placeholder">Недоступно для данного показателя</span></p>
+
+          
+        </td>
+        </tr>
+        
+      
+  
+      
+      
+      
+        
+          
+          
+          
+          
+        
+      
+      
+      <tr>
+        <th scope="row">Составители данных </th>
+        <td>
+          
+            <p><span class="empty-metadata-placeholder">Недоступно для данного показателя</span></p>
+
+          
+        </td>
+        </tr>
+        
+      
+  
+      
+      
+      
+        
+          
+          
+          
+          
+        
+      
+      
+      <tr>
+        <th scope="row">Институциональный мандат </th>
+        <td>
+          
+            <p><span class="empty-metadata-placeholder">Недоступно для данного показателя</span></p>
+
+          
+        </td>
+        </tr>
+        
+      
+  
+      
+      
+      
+        
+          
+          
+          
+          
+        
+      
+      
+      <tr>
+        <th scope="row">4. Другие методологические факторы, подлежащие учету </th>
+        <td>
+          
+            <p><span class="empty-metadata-placeholder">Недоступно для данного показателя</span></p>
+
+          
+        </td>
+        </tr>
+        
+      
+  
+      
+      
+      
+        
+          
+          
+          
+          
+        
+      
+      
+      <tr>
+        <th scope="row">Обоснование </th>
+        <td>
+          
+            <p><span class="empty-metadata-placeholder">Недоступно для данного показателя</span></p>
+
+          
+        </td>
+        </tr>
+        
+      
+  
+      
+      
+      
+        
+          
+          
+          
+          
+        
+      
+      
+      <tr>
+        <th scope="row">Комментарии и ограничения </th>
+        <td>
+          
+            <p><span class="empty-metadata-placeholder">Недоступно для данного показателя</span></p>
+
+          
+        </td>
+        </tr>
+        
+      
+  
+      
+      
+      
+        
+          
+          
+          
+          
+        
+      
+      
+      <tr>
+        <th scope="row">Метод расчета </th>
+        <td>
+          
+            <p><span class="empty-metadata-placeholder">Недоступно для данного показателя</span></p>
+
+          
+        </td>
+        </tr>
+        
+      
+  
+      
+      
+      
+        
+          
+          
+          
+          
+        
+      
+      
+      <tr>
+        <th scope="row">Проверка </th>
+        <td>
+          
+            <p><span class="empty-metadata-placeholder">Недоступно для данного показателя</span></p>
+
+          
+        </td>
+        </tr>
+        
+      
+  
+      
+      
+      
+        
+          
+          
+          
+          
+        
+      
+      
+      <tr>
+        <th scope="row">4.h. Доступные странам методы и руководства для составления данных на национальном уровне </th>
+        <td>
+          
+            <p><span class="empty-metadata-placeholder">Недоступно для данного показателя</span></p>
+
+          
+        </td>
+        </tr>
+        
+      
+  
+      
+      
+      
+        
+          
+          
+          
+          
+        
+      
+      
+      <tr>
+        <th scope="row">Управление качеством </th>
+        <td>
+          
+            <p><span class="empty-metadata-placeholder">Недоступно для данного показателя</span></p>
+
+          
+        </td>
+        </tr>
+        
+      
+  
+      
+      
+      
+        
+          
+          
+          
+          
+        
+      
+      
+      <tr>
+        <th scope="row">Гарантия качества </th>
+        <td>
+          
+            <p><span class="empty-metadata-placeholder">Недоступно для данного показателя</span></p>
+
+          
+        </td>
+        </tr>
+        
+      
+  
+      
+      
+      
+        
+          
+          
+          
+          
+        
+      
+      
+      <tr>
+        <th scope="row">Оценка качества </th>
+        <td>
+          
+            <p><span class="empty-metadata-placeholder">Недоступно для данного показателя</span></p>
+
+          
+        </td>
+        </tr>
+        
+      
+  
+      
+      
+      
+        
+          
+          
+          
+          
+        
+      
+      
+      <tr>
+        <th scope="row">5. Доступность и дезагрегирование данных </th>
+        <td>
+          
+            <p><span class="empty-metadata-placeholder">Недоступно для данного показателя</span></p>
+
+          
+        </td>
+        </tr>
+        
+      
+  
+      
+      
+      
+        
+          
+          
+          
+          
+        
+      
+      
+      <tr>
+        <th scope="row">6. Сопоставимость/отступление от международных стандартов </th>
+        <td>
+          
+            <p><span class="empty-metadata-placeholder">Недоступно для данного показателя</span></p>
+
+          
+        </td>
+        </tr>
+        
+      
+  
+      
+      
+      
+        
+          
+          
+          
+          
+        
+      
+      
+      <tr>
+        <th scope="row">Ссылки и документация </th>
+        <td>
+          
+            <p><span class="empty-metadata-placeholder">Недоступно для данного показателя</span></p>
+
+          
+        </td>
+        </tr>
+        
+      
+  
+      
+      
+      
+      
+      <tr>
+        <th scope="row">Последний раз данные обновлялись </th>
+        <td>
+          
+            Jul 18, 2024
+          
+        </td>
+        </tr>
+        
+      
+  
+      
+      
+      
+      
+      <tr>
+        <th scope="row">Последнее обновление метаданных </th>
+        <td>
+          
+            Jul 19, 2024
+          
+        </td>
+        </tr>
+        
+      
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  </tbody>
+</table>
+
+            </article>
+        </div>
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        <div role="tabpanel" class="tab-pane " id="global">
+            <article>
+                <p>В этой таблице представлена информация для метаданных показателей ЦУР, определенных Статистической комиссией ООН. Полные глобальные метаданные представлены Статистическим отделом ООН.</p>
+
+                <table class="table metadata-content">
   <tbody>
   
       
@@ -1407,18 +2465,217 @@ data-event-label="Change to Sources tab"
   </tbody>
 </table>
 
-        </article>
+            </article>
+        </div>
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        <div role="tabpanel" class="tab-pane " id="sources_alt">
+            <article>
+                <p>My blurb about the sources tab</p>
+
+                
+
+
+
+
+
+<div class="row">
+
+    <div class="col-md-6">
+        
+        
+        <h4>Источник 1</h4>
+        
+        <table class="table indicator-source-table">
+            
+            
+            
+            <tr>
+                <td colspan="2"><img alt="Directorate for Health Information and Research (DHIR) Malta" src="https://github.com/chriscalleja3/site/blob/develop/assets/img/DHIR.png" /></td>
+            </tr>
+            
+            
+            
+            <tr>
+                <th scope="row">Организация</th>
+                <td>Directorate for Health Information and Research (DHIR) Malta</td>
+            </tr>
+            
+            
+            
+            <tr>
+                <th scope="row">Периодичность</th>
+                <td><span class="empty-metadata-placeholder">Недоступно для данного источника</span></td>
+            </tr>
+            
+            
+            
+            <tr>
+                <th scope="row">Самые ранние доступные данные</th>
+                <td><span class="empty-metadata-placeholder">Недоступно для данного источника</span></td>
+            </tr>
+            
+            
+            
+            <tr>
+                <th scope="row">Географический охват</th>
+                <td><span class="empty-metadata-placeholder">Недоступно для данного источника</span></td>
+            </tr>
+            
+            
+            
+            
+            
+            <tr>
+                <th scope="row">Ссылка на источник данных</th>
+                
+                <td><span class="empty-metadata-placeholder">Недоступно для данного источника</span></td>
+                
+            </tr>
+            
+            
+            
+            <tr>
+                <th scope="row">Дата выпуска</th>
+                <td><span class="empty-metadata-placeholder">Недоступно для данного источника</span></td>
+            </tr>
+            
+            
+            
+            <tr>
+                <th scope="row">Следующий выпуск</th>
+                <td><span class="empty-metadata-placeholder">Недоступно для данного источника</span></td>
+            </tr>
+            
+            
+            
+            <tr>
+                <th scope="row">Статистическая классификация</th>
+                <td><span class="empty-metadata-placeholder">Недоступно для данного источника</span></td>
+            </tr>
+            
+            
+            
+            <tr>
+                <th scope="row">Контактные данные</th>
+                <td><span class="empty-metadata-placeholder">Недоступно для данного источника</span></td>
+            </tr>
+            
+            
+            
+            <tr>
+                <th scope="row">Другая информация</th>
+                <td><p><span class="empty-metadata-placeholder">Недоступно для данного источника</span></p>
+</td>
+            </tr>
+            
+        </table>
     </div>
+
+    <div class="col-md-6">
+        
+        
+        <h4>Источник 2</h4>
+        
+        <table class="table indicator-source-table">
+            
+            
+            
+            <tr>
+                <td colspan="2"><img alt="National Statistics Office (NSO) Malta" src="https://github.com/chriscalleja3/site/blob/develop/assets/img/NSO.png" /></td>
+            </tr>
+            
+            
+            
+            <tr>
+                <th scope="row">Организация</th>
+                <td>National Statistics Office (NSO) Malta</td>
+            </tr>
+            
+            
+            
+            <tr>
+                <th scope="row">Периодичность</th>
+                <td><span class="empty-metadata-placeholder">Недоступно для данного источника</span></td>
+            </tr>
+            
+            
+            
+            <tr>
+                <th scope="row">Самые ранние доступные данные</th>
+                <td><span class="empty-metadata-placeholder">Недоступно для данного источника</span></td>
+            </tr>
+            
+            
+            
+            <tr>
+                <th scope="row">Географический охват</th>
+                <td><span class="empty-metadata-placeholder">Недоступно для данного источника</span></td>
+            </tr>
+            
+            
+            
+            
+            
+            <tr>
+                <th scope="row">Ссылка на источник данных</th>
+                
+                <td><span class="empty-metadata-placeholder">Недоступно для данного источника</span></td>
+                
+            </tr>
+            
+            
+            
+            <tr>
+                <th scope="row">Дата выпуска</th>
+                <td><span class="empty-metadata-placeholder">Недоступно для данного источника</span></td>
+            </tr>
+            
+            
+            
+            <tr>
+                <th scope="row">Следующий выпуск</th>
+                <td><span class="empty-metadata-placeholder">Недоступно для данного источника</span></td>
+            </tr>
+            
+            
+            
+            <tr>
+                <th scope="row">Статистическая классификация</th>
+                <td><span class="empty-metadata-placeholder">Недоступно для данного источника</span></td>
+            </tr>
+            
+            
+            
+            <tr>
+                <th scope="row">Контактные данные</th>
+                <td><span class="empty-metadata-placeholder">Недоступно для данного источника</span></td>
+            </tr>
+            
+            
+            
+            <tr>
+                <th scope="row">Другая информация</th>
+                <td><p><span class="empty-metadata-placeholder">Недоступно для данного источника</span></p>
+</td>
+            </tr>
+            
+        </table>
+    </div>
+
 </div>
-<div role="tabpanel" class="tab-pane" id="sources">
-    <!-- Count the non-empty sources (up to 5) -->
 
 
-
-
-
-</div>
-
+            </article>
+        </div>
+        
     
     
         <div role="tabpanel" class="tab-pane" id="edit">
@@ -1515,12 +2772,12 @@ data-event-label="Change to Sources tab"
 <script>translations['search'] = translations['search'] || {};
     translations['search']['search'] = 'Поиск';</script>
 
-<script src='/site/assets/js/sdg.js?v=20240719101431'></script>
+<script src='/site/assets/js/sdg.js?v=20240719102150'></script>
 
 
     
     
-    <script src="/site/assets/js/custom.js?v=20240719101431"></script><script>
+    <script src="/site/assets/js/custom.js?v=20240719102150"></script><script>
     new indicatorInit();
     new accessibilitySwitcher();
 </script>
