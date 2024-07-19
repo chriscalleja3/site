@@ -145,7 +145,7 @@ var translations = {
         <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
         <link res="stylesheet" href="https://cdn.datatables.net/1.11.5/css/dataTables.bootstrap5.min.css">
         <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css" crossorigin="">
-        <link rel="stylesheet" href="/site/assets/css/style.css?v=20240719105039">
+        <link rel="stylesheet" href="/site/assets/css/style.css?v=20240719105440">
         <link rel="stylesheet" href="https://unpkg.com/leaflet@1.3.4/dist/leaflet.css"
           integrity="sha512-puBpdR0798OZvTTbP4A8Ix/l+A4dHDD0DGqYW6RQ+9jxkRFclaxxQb/SJAWZfWAkuyeQUytO7+7N4QKrDh+drA=="
           crossorigin=""/>
@@ -334,57 +334,270 @@ layout-indicator-iframe
   <div class="mt-4">
 <ul class="nav nav-tabs" role="tablist">
     
-    
         
-        
-        
-        
-        <li role="presentation" class="nav-item">
-            <button
-                type="button"
-                class="nav-link active"
-                data-bs-toggle="tab"
-                id="tab-sources_alt"
-                data-bs-target="#sources_alt"
-                aria-controls="sources_alt"
-                role="tab"
-                data-on="click"
+
+  <li role="presentation" class="nav-item">
+    <button type="button" class="nav-link" data-bs-toggle="tab" id="tab-global" data-bs-target="#global" aria-controls="global" role="tab" data-on="click"
+data-event-category="Tab change"
+data-event-action="Change metadata view"
+data-event-label="Change to Global Metadata tab"
+>Metadatos globales</button>
+  </li>
+
+<li role="presentation" class="nav-item">
+  <button type="button" class="nav-link" data-bs-toggle="tab" id="tab-sources" data-bs-target="#sources" aria-controls="sources" role="tab" data-on="click"
 data-event-category="Tab change"
 data-event-action="Change metadata view"
 data-event-label="Change to Sources tab"
+>Fuentes</button>
+</li>
 
-            >Sources</button>
-        </li>
-    
     
  </ul>
 
 <div class="tab-content">
     
         
-        
-        
-        
-        
-        
-        
-        
-        
-        <div role="tabpanel" class="tab-pane active" id="sources_alt">
-            <article>
-                
+<div role="tabpanel" class="tab-pane" id="global">
+    <!-- Global Metadata -->
+    <div>
+        <article>
+            <p>Esta tabla proporciona información sobre los metadatos para los indicadores de los ODS tal como los define la Comisión de Estadística de la ONU. La <a href="https://unstats.un.org/sdgs/metadata/">División de Estadística de las Naciones Unidas proporciona</a> los metadatos globales completos .</p>
+            <table class="table metadata-content">
+  <tbody>
+  
+      
+      
+      
+      
+      <tr>
+        <th scope="row">Indicador </th>
+        <td>
+          
+            <p>Indicator 15.6.1: Number of countries that have adopted legislative, administrative and policy frameworks to ensure fair and equitable sharing of benefits</p>
 
-                
+          
+        </td>
+        </tr>
+        
+      
+  
+      
+      
+      
+      
+      <tr>
+        <th scope="row">Meta </th>
+        <td>
+          
+            <p>Target 15.6: Promote fair and equitable sharing of the benefits arising from the utilization of genetic resources and promote appropriate access to such resources, as internationally agreed</p>
 
-    
-    <div class="empty-metadata-placeholder"><p>No sources are available at this time</p>
+          
+        </td>
+        </tr>
+        
+      
+  
+      
+      
+      
+      
+      <tr>
+        <th scope="row">Actualización de metadatos </th>
+        <td>
+          
+            <p>2022-04-12</p>
+
+          
+        </td>
+        </tr>
+        
+      
+  
+      
+      
+      
+      
+      <tr>
+        <th scope="row">Organizaciones internacionales responsables del seguimiento global </th>
+        <td>
+          
+            <p>Secretariat of the Convention on Biological Diversity (CBD)</p>
+
+          
+        </td>
+        </tr>
+        
+      
+  
+      
+      
+      
+      
+      <tr>
+        <th scope="row">Indicadores relacionados </th>
+        <td>
+          
+            <p>Not applicable. </p>
+<p>An indicator on numbers of permits and numbers of Material Transfer Agreements issued would provide complementary information.</p>
+
+          
+        </td>
+        </tr>
+        
+      
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+      
+      
+      
+        
+          
+          
+          
+          
+        
+      
+      
+      <tr>
+        <th scope="row">Nivel designado por la ONU </th>
+        <td>
+          
+            <p><span class="empty-metadata-placeholder">No disponible para este indicador</span></p>
+
+          
+        </td>
+        </tr>
+        
+      
+  
+  </tbody>
+</table>
+
+        </article>
+    </div>
 </div>
-    
+<div role="tabpanel" class="tab-pane" id="sources">
+    <!-- Count the non-empty sources (up to 5) -->
 
 
-            </article>
-        </div>
-        
+
+
+
+</div>
+
     
     
 </div>
@@ -422,12 +635,12 @@ data-event-label="Change to Sources tab"
 <script>translations['search'] = translations['search'] || {};
     translations['search']['search'] = 'Buscar';</script>
 
-<script src='/site/assets/js/sdg.js?v=20240719105039'></script>
+<script src='/site/assets/js/sdg.js?v=20240719105440'></script>
 
 
     
     
-    <script src="/site/assets/js/custom.js?v=20240719105039"></script><script>
+    <script src="/site/assets/js/custom.js?v=20240719105440"></script><script>
     new indicatorInit();
     new accessibilitySwitcher();
 </script>

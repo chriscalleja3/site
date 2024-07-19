@@ -145,7 +145,7 @@ var translations = {
         <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
         <link res="stylesheet" href="https://cdn.datatables.net/1.11.5/css/dataTables.bootstrap5.min.css">
         <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css" crossorigin="">
-        <link rel="stylesheet" href="/site/assets/css/style.css?v=20240719105039">
+        <link rel="stylesheet" href="/site/assets/css/style.css?v=20240719105440">
         <link rel="stylesheet" href="https://unpkg.com/leaflet@1.3.4/dist/leaflet.css"
           integrity="sha512-puBpdR0798OZvTTbP4A8Ix/l+A4dHDD0DGqYW6RQ+9jxkRFclaxxQb/SJAWZfWAkuyeQUytO7+7N4QKrDh+drA=="
           crossorigin=""/>
@@ -476,57 +476,277 @@ data-event-label="high"
   <div class="mt-4">
 <ul class="nav nav-tabs" role="tablist">
     
-    
         
-        
-        
-        
-        <li role="presentation" class="nav-item">
-            <button
-                type="button"
-                class="nav-link active"
-                data-bs-toggle="tab"
-                id="tab-sources_alt"
-                data-bs-target="#sources_alt"
-                aria-controls="sources_alt"
-                role="tab"
-                data-on="click"
+
+  <li role="presentation" class="nav-item">
+    <button type="button" class="nav-link" data-bs-toggle="tab" id="tab-global" data-bs-target="#global" aria-controls="global" role="tab" data-on="click"
+data-event-category="Tab change"
+data-event-action="Change metadata view"
+data-event-label="Change to Global Metadata tab"
+>Metadatos globales</button>
+  </li>
+
+<li role="presentation" class="nav-item">
+  <button type="button" class="nav-link" data-bs-toggle="tab" id="tab-sources" data-bs-target="#sources" aria-controls="sources" role="tab" data-on="click"
 data-event-category="Tab change"
 data-event-action="Change metadata view"
 data-event-label="Change to Sources tab"
+>Fuentes</button>
+</li>
 
-            >Sources</button>
-        </li>
-    
     
  </ul>
 
 <div class="tab-content">
     
         
-        
-        
-        
-        
-        
-        
-        
-        
-        <div role="tabpanel" class="tab-pane active" id="sources_alt">
-            <article>
-                
+<div role="tabpanel" class="tab-pane" id="global">
+    <!-- Global Metadata -->
+    <div>
+        <article>
+            <p>Esta tabla proporciona información sobre los metadatos para los indicadores de los ODS tal como los define la Comisión de Estadística de la ONU. La <a href="https://unstats.un.org/sdgs/metadata/">División de Estadística de las Naciones Unidas proporciona</a> los metadatos globales completos .</p>
+            <table class="table metadata-content">
+  <tbody>
+  
+      
+      
+      
+      
+      <tr>
+        <th scope="row">Indicador </th>
+        <td>
+          
+            <p>Indicator 16.10.1: Number of verified cases of killing, kidnapping, enforced disappearance, arbitrary detention and torture of journalists, associated media personnel, trade unionists and human rights advocates in the previous 12 months<sup><a href="#footnote-2" id="footnote-ref-2">[1]</a></sup></p>
+<div class="footnotes"><div><sup class="footnote-number" id="footnote-2">1</sup><p> Current approved formulation of the indicator (E/2017/24-E/CN.3/2017/35). Informed by ongoing efforts to improve the methodology of the indicator, and consultations with relevant stakeholders, OHCHR, UNESCO and ILO have agreed to work towards a refinement of the current formulation to streamline and closely align itwith target 16.10. The working draft of the proposed refinement is as follows:</p><p><em>&#x201C;Number of verified cases of killing, enforced disappearance, torture, arbitrary detention, kidnapping and other harmful acts against journalists, trade unionists and human rights defenders&#x201D;</em></p><p>The elements of the proposed refinement serves as the basisfor this metadata and methodological approach. <a href="#footnote-ref-2">&#x2191;</a></p></div></div>
 
-                
+          
+        </td>
+        </tr>
+        
+      
+  
+      
+      
+      
+      
+      <tr>
+        <th scope="row">Meta </th>
+        <td>
+          
+            <p>Target 16.10: Ensure public access to information and protect fundamental freedoms, in accordance with national legislation and international agreements</p>
 
-    
-    <div class="empty-metadata-placeholder"><p>No sources are available at this time</p>
+          
+        </td>
+        </tr>
+        
+      
+  
+      
+      
+      
+      
+      <tr>
+        <th scope="row">Actualización de metadatos </th>
+        <td>
+          
+            <p>2018-06-08</p>
+
+          
+        </td>
+        </tr>
+        
+      
+  
+      
+      
+      
+      
+      <tr>
+        <th scope="row">Organizaciones internacionales responsables del seguimiento global </th>
+        <td>
+          
+            <p>Office of the United Nations High Commissioner for Human Rights (OHCHR) United Nations Educational, Scientific and Cultural Organization (UNESCO) International Labour Organization (ILO)</p>
+
+          
+        </td>
+        </tr>
+        
+      
+  
+      
+      
+      
+      
+      <tr>
+        <th scope="row">Indicadores relacionados </th>
+        <td>
+          
+            <p>&#x2022; 16.1.1 Number of victims of intentional homicide per 100,000 population, by sex and age</p>
+<p>&#x2022; 16.1.2 Conflict-related deaths per 100,000 population, by sex, age and cause</p>
+<p>&#x2022; 16.1.3 Proportion of population subjected to physical, psychological or sexual violence in the previous 12 months</p>
+<p>&#x2022; 16.1.4 Proportion of population that feel safe walking alone around the area they live</p>
+<p>&#x2022; 16.10.2 Number of countries that adopt and implement constitutional, statutory and/or policy guarantees for public access to information</p>
+<p>&#x2022; 16.3.1 Proportion of victims of violence in the previous 12 months who reported their victimization to competent authorities or other officially recognized conflict resolution mechanisms</p>
+<p>&#x2022; 16.3.2 Un-sentenced detainees as a proportion of overall prison population</p>
+<p>&#x2022; 16.a.1 Existence of independent national human rights institutions in compliance with the Paris Principles</p>
+
+          
+        </td>
+        </tr>
+        
+      
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+      
+      
+      
+        
+          
+          
+          
+          
+        
+      
+      
+      <tr>
+        <th scope="row">Nivel designado por la ONU </th>
+        <td>
+          
+            <p><span class="empty-metadata-placeholder">No disponible para este indicador</span></p>
+
+          
+        </td>
+        </tr>
+        
+      
+  
+  </tbody>
+</table>
+
+        </article>
+    </div>
 </div>
-    
+<div role="tabpanel" class="tab-pane" id="sources">
+    <!-- Count the non-empty sources (up to 5) -->
 
 
-            </article>
-        </div>
-        
+
+
+
+</div>
+
     
     
         <div role="tabpanel" class="tab-pane" id="edit">
@@ -623,12 +843,12 @@ data-event-label="Change to Sources tab"
 <script>translations['search'] = translations['search'] || {};
     translations['search']['search'] = 'Buscar';</script>
 
-<script src='/site/assets/js/sdg.js?v=20240719105039'></script>
+<script src='/site/assets/js/sdg.js?v=20240719105440'></script>
 
 
     
     
-    <script src="/site/assets/js/custom.js?v=20240719105039"></script><script>
+    <script src="/site/assets/js/custom.js?v=20240719105440"></script><script>
     new indicatorInit();
     new accessibilitySwitcher();
 </script>

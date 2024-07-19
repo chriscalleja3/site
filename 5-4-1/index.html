@@ -145,7 +145,7 @@ var translations = {
         <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
         <link res="stylesheet" href="https://cdn.datatables.net/1.11.5/css/dataTables.bootstrap5.min.css">
         <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css" crossorigin="">
-        <link rel="stylesheet" href="/site/assets/css/style.css?v=20240719105039">
+        <link rel="stylesheet" href="/site/assets/css/style.css?v=20240719105440">
         <link rel="stylesheet" href="https://unpkg.com/leaflet@1.3.4/dist/leaflet.css"
           integrity="sha512-puBpdR0798OZvTTbP4A8Ix/l+A4dHDD0DGqYW6RQ+9jxkRFclaxxQb/SJAWZfWAkuyeQUytO7+7N4QKrDh+drA=="
           crossorigin=""/>
@@ -476,57 +476,270 @@ data-event-label="high"
   <div class="mt-4">
 <ul class="nav nav-tabs" role="tablist">
     
-    
         
-        
-        
-        
-        <li role="presentation" class="nav-item">
-            <button
-                type="button"
-                class="nav-link active"
-                data-bs-toggle="tab"
-                id="tab-sources_alt"
-                data-bs-target="#sources_alt"
-                aria-controls="sources_alt"
-                role="tab"
-                data-on="click"
+
+  <li role="presentation" class="nav-item">
+    <button type="button" class="nav-link" data-bs-toggle="tab" id="tab-global" data-bs-target="#global" aria-controls="global" role="tab" data-on="click"
+data-event-category="Tab change"
+data-event-action="Change metadata view"
+data-event-label="Change to Global Metadata tab"
+>Global Metadata</button>
+  </li>
+
+<li role="presentation" class="nav-item">
+  <button type="button" class="nav-link" data-bs-toggle="tab" id="tab-sources" data-bs-target="#sources" aria-controls="sources" role="tab" data-on="click"
 data-event-category="Tab change"
 data-event-action="Change metadata view"
 data-event-label="Change to Sources tab"
+>Sources</button>
+</li>
 
-            >Sources</button>
-        </li>
-    
     
  </ul>
 
 <div class="tab-content">
     
         
-        
-        
-        
-        
-        
-        
-        
-        
-        <div role="tabpanel" class="tab-pane active" id="sources_alt">
-            <article>
-                
+<div role="tabpanel" class="tab-pane" id="global">
+    <!-- Global Metadata -->
+    <div>
+        <article>
+            <p>This table provides information on metadata for SDG indicators as defined by the UN Statistical Commission. <a href="https://unstats.un.org/sdgs/metadata/">Complete global metadata</a> is provided by the UN Statistics Division.</p>
+            <table class="table metadata-content">
+  <tbody>
+  
+      
+      
+      
+      
+      <tr>
+        <th scope="row">Indicator </th>
+        <td>
+          
+            <p>Indicator 5.4.1: Proportion of time spent on unpaid domestic and care work, by sex, age and location</p>
 
-                
+          
+        </td>
+        </tr>
+        
+      
+  
+      
+      
+      
+      
+      <tr>
+        <th scope="row">Target </th>
+        <td>
+          
+            <p>Target 5.4: Recognize and value unpaid care and domestic work through the provision of public services, infrastructure and social protection policies and the promotion of shared responsibility within the household and the family as nationally appropriate</p>
 
-    
-    <div class="empty-metadata-placeholder"><p>No sources are available at this time</p>
+          
+        </td>
+        </tr>
+        
+      
+  
+      
+      
+      
+      
+      <tr>
+        <th scope="row">Metadata update </th>
+        <td>
+          
+            <p>2023-03-31</p>
+
+          
+        </td>
+        </tr>
+        
+      
+  
+      
+      
+      
+      
+      <tr>
+        <th scope="row">International organisations(s) responsible for global monitoring </th>
+        <td>
+          
+            <p>UN Statistics Division (UNSD) and UN WOMEN</p>
+
+          
+        </td>
+        </tr>
+        
+      
+  
+      
+      
+      
+      
+      <tr>
+        <th scope="row">Related indicators </th>
+        <td>
+          
+            <p>Time-use information collected and analyzed around the world has shown that there is a very close link between economic poverty (SDG 1) and time poverty; most of health care is provided by households (SDG 3) and these activities are socially allocated to women in general; the provision of early childhood education services (SDG 4) not only prepares children for primary education but also frees up time for their caregivers; the sexual division of labour is a structural challenge of gender inequalities (SDG 5, 8 and 10); and the lack of services such as drinkable water, electricity or transport infrastructure increases unpaid work time and disproportionately affects women (SDG 6, 7, 9,11). Please see the section &#x201C;Time-use data crucial for monitoring the 2030 Agenda for Sustainable Development: going beyond SDG 5&#x201D; of the <em>Policy relevance: Making the case for time-use data collections in support of SDGs monitoring paper submitted to the SC</em> of 2020<sup><a href="#footnote-2" id="footnote-ref-2">[1]</a></sup>.</p>
+<div class="footnotes"><div><sup class="footnote-number" id="footnote-2">1</sup><p> <a href="https://unstats.un.org/unsd/statcom/51st-session/documents/BG-Item3m-PolicyRelevance-E.pdf">https://unstats.un.org/unsd/statcom/51st-session/documents/BG-Item3m-PolicyRelevance-E.pdf</a> <a href="#footnote-ref-2">&#x2191;</a></p></div></div>
+
+          
+        </td>
+        </tr>
+        
+      
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+      
+      
+      
+        
+          
+          
+          
+          
+        
+      
+      
+      <tr>
+        <th scope="row">UN designated tier </th>
+        <td>
+          
+            <p><span class="empty-metadata-placeholder">Not available for this indicator</span></p>
+
+          
+        </td>
+        </tr>
+        
+      
+  
+  </tbody>
+</table>
+
+        </article>
+    </div>
 </div>
-    
+<div role="tabpanel" class="tab-pane" id="sources">
+    <!-- Count the non-empty sources (up to 5) -->
 
 
-            </article>
-        </div>
-        
+
+
+
+</div>
+
     
     
         <div role="tabpanel" class="tab-pane" id="edit">
@@ -623,12 +836,12 @@ data-event-label="Change to Sources tab"
 <script>translations['search'] = translations['search'] || {};
     translations['search']['search'] = 'Search';</script>
 
-<script src='/site/assets/js/sdg.js?v=20240719105039'></script>
+<script src='/site/assets/js/sdg.js?v=20240719105440'></script>
 
 
     
     
-    <script src="/site/assets/js/custom.js?v=20240719105039"></script><script>
+    <script src="/site/assets/js/custom.js?v=20240719105440"></script><script>
     new indicatorInit();
     new accessibilitySwitcher();
 </script>
