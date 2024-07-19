@@ -202,11 +202,7 @@ menu:
   - path: nso/
     translation_key: NSO
 metadata_edit_url: ''
-metadata_tabs:
-  - scope: sources_alt
-    title: Sources
-    description: My blurb about the sources tab
-    placeholder: No sources are available at this time
+metadata_tabs: []
 meta_tags: []
 news:
   category_links: false
