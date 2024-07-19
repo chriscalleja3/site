@@ -203,8 +203,6 @@ menu:
     translation_key: NSO
 metadata_edit_url: ''
 metadata_tabs:
-    tab_1: ''
-    tab_2: ''
   - scope: sources_alt
     title: Sources
     description: My blurb about the sources tab
