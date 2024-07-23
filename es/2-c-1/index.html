@@ -145,7 +145,7 @@ var translations = {
         <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
         <link res="stylesheet" href="https://cdn.datatables.net/1.11.5/css/dataTables.bootstrap5.min.css">
         <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css" crossorigin="">
-        <link rel="stylesheet" href="/site/assets/css/style.css?v=20240723054002">
+        <link rel="stylesheet" href="/site/assets/css/style.css?v=20240723055024">
         <link rel="stylesheet" href="https://unpkg.com/leaflet@1.3.4/dist/leaflet.css"
           integrity="sha512-puBpdR0798OZvTTbP4A8Ix/l+A4dHDD0DGqYW6RQ+9jxkRFclaxxQb/SJAWZfWAkuyeQUytO7+7N4QKrDh+drA=="
           crossorigin=""/>
@@ -627,6 +627,201 @@ data-event-label="Change to Sources tab"
         
       
   
+      
+      
+      
+      
+      <tr>
+        <th scope="row">Definición y conceptos </th>
+        <td>
+          
+            <p><strong>Definition:</strong></p>
+<p>The indicator of food price anomalies (IFPA) identifies market prices that are abnormally high. The IFPA relies on a weighted compound growth rate that accounts for both within year and across year price growth. The indicator directly evaluates growth in prices over a particular month over many years, taking into account seasonality in agricultural markets and inflation, allowing to answer the question of whether or not a change in price is abnormal for any particular period.</p>
+<p><strong>Concepts:</strong></p>
+<p>The indicator of price anomalies (IFPA) relies on two compound growth rates (CGR&#x2019;s), a quarterly compound growth rate (CQGR) and an annual compound growth rate (CAGR). A CGR is a geometric mean<sup><a href="#footnote-2" id="footnote-ref-2">[1]</a></sup> that assumes that a random variable grows at a steady rate, compounded over a specific period of time. Because it assumes a steady rate of growth the CGR smoothes the effect of volatility of price changes. The CGR is the growth in any random variable from time period <math xmlns="http://www.w3.org/1998/Math/MathML">
+    <msub>
+      <mrow>
+        <mi>t</mi>
+      </mrow>
+      <mrow>
+        <mi>A</mi>
+      </mrow>
+    </msub>
+  </math> to <math xmlns="http://www.w3.org/1998/Math/MathML">
+    <msub>
+      <mrow>
+        <mi>t</mi>
+      </mrow>
+      <mrow>
+        <mi>B</mi>
+      </mrow>
+    </msub>
+  </math>, raised to the power of one over the length of the period of time being considered.</p>
+<p><math xmlns="http://www.w3.org/1998/Math/MathML">
+    <msub>
+      <mrow>
+        <mi>C</mi>
+        <mi>X</mi>
+        <mi>G</mi>
+        <mi>R</mi>
+      </mrow>
+      <mrow>
+        <mi>t</mi>
+      </mrow>
+    </msub>
+    <mo>=</mo>
+    <msup>
+      <mrow>
+        <mfenced separators="|">
+          <mrow>
+            <mfrac>
+              <mrow>
+                <msub>
+                  <mrow>
+                    <mi>P</mi>
+                  </mrow>
+                  <mrow>
+                    <msub>
+                      <mrow>
+                        <mi>t</mi>
+                      </mrow>
+                      <mrow>
+                        <mi>B</mi>
+                      </mrow>
+                    </msub>
+                  </mrow>
+                </msub>
+              </mrow>
+              <mrow>
+                <msub>
+                  <mrow>
+                    <mi>P</mi>
+                  </mrow>
+                  <mrow>
+                    <msub>
+                      <mrow>
+                        <mi>t</mi>
+                      </mrow>
+                      <mrow>
+                        <mi>A</mi>
+                      </mrow>
+                    </msub>
+                  </mrow>
+                </msub>
+              </mrow>
+            </mfrac>
+          </mrow>
+        </mfenced>
+      </mrow>
+      <mrow>
+        <mfrac>
+          <mrow>
+            <mn>1</mn>
+          </mrow>
+          <mrow>
+            <msub>
+              <mrow>
+                <mi>t</mi>
+              </mrow>
+              <mrow>
+                <mi>B</mi>
+              </mrow>
+            </msub>
+            <mo>-</mo>
+            <msub>
+              <mrow>
+                <mi>t</mi>
+              </mrow>
+              <mrow>
+                <mi>A</mi>
+              </mrow>
+            </msub>
+          </mrow>
+        </mfrac>
+      </mrow>
+    </msup>
+    <mo>-</mo>
+    <mn>1</mn>
+  </math> (1)</p>
+<p>where:</p>
+<p><math xmlns="http://www.w3.org/1998/Math/MathML">
+    <msub>
+      <mrow>
+        <mi>C</mi>
+        <mi>X</mi>
+        <mi>G</mi>
+        <mi>R</mi>
+      </mrow>
+      <mrow>
+        <mi>t</mi>
+      </mrow>
+    </msub>
+  </math> is the quarterly or annual compound growth rate in month t</p>
+<p><math xmlns="http://www.w3.org/1998/Math/MathML">
+    <msub>
+      <mrow>
+        <mi>P</mi>
+      </mrow>
+      <mrow>
+        <msub>
+          <mrow>
+            <mi>t</mi>
+          </mrow>
+          <mrow>
+            <mi>A</mi>
+          </mrow>
+        </msub>
+      </mrow>
+    </msub>
+  </math>is the price at the beginning of the period</p>
+<p><math xmlns="http://www.w3.org/1998/Math/MathML">
+    <msub>
+      <mrow>
+        <mi>P</mi>
+      </mrow>
+      <mrow>
+        <msub>
+          <mrow>
+            <mi>t</mi>
+          </mrow>
+          <mrow>
+            <mi>B</mi>
+          </mrow>
+        </msub>
+      </mrow>
+    </msub>
+  </math> is the price at the end of the period, </p>
+<p><math xmlns="http://www.w3.org/1998/Math/MathML">
+    <msub>
+      <mrow>
+        <mi>t</mi>
+      </mrow>
+      <mrow>
+        <mi>B</mi>
+      </mrow>
+    </msub>
+    <mo>-</mo>
+    <msub>
+      <mrow>
+        <mi>t</mi>
+      </mrow>
+      <mrow>
+        <mi>A</mi>
+      </mrow>
+    </msub>
+  </math> is the time in months between periods <math xmlns="http://www.w3.org/1998/Math/MathML">
+    <mi>A</mi>
+  </math> and <math xmlns="http://www.w3.org/1998/Math/MathML">
+    <mi>B</mi>
+  </math>.</p>
+<div class="footnotes"><div><sup class="footnote-number" id="footnote-2">1</sup><p> A geometric mean is a type of average, which indicates the typical value of a set of numbers by using the product of their values as opposed to the arithmetic mean which relies on their sum (<a href="https://en.wikipedia.org/wiki/Geometric_mean">Wikipedia, 2017</a>) <a href="#footnote-ref-2">&#x2191;</a></p></div></div>
+
+          
+        </td>
+        </tr>
+        
+      
+  
   
   
   
@@ -858,12 +1053,12 @@ data-event-label="Change to Sources tab"
 <script>translations['search'] = translations['search'] || {};
     translations['search']['search'] = 'Buscar';</script>
 
-<script src='/site/assets/js/sdg.js?v=20240723054002'></script>
+<script src='/site/assets/js/sdg.js?v=20240723055024'></script>
 
 
     
     
-    <script src="/site/assets/js/custom.js?v=20240723054002"></script><script>
+    <script src="/site/assets/js/custom.js?v=20240723055024"></script><script>
     new indicatorInit();
     new accessibilitySwitcher();
 </script>
