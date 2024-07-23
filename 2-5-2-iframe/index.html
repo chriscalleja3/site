@@ -145,7 +145,7 @@ var translations = {
         <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
         <link res="stylesheet" href="https://cdn.datatables.net/1.11.5/css/dataTables.bootstrap5.min.css">
         <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css" crossorigin="">
-        <link rel="stylesheet" href="/site/assets/css/style.css?v=20240723095625">
+        <link rel="stylesheet" href="/site/assets/css/style.css?v=20240723110827">
         <link rel="stylesheet" href="https://unpkg.com/leaflet@1.3.4/dist/leaflet.css"
           integrity="sha512-puBpdR0798OZvTTbP4A8Ix/l+A4dHDD0DGqYW6RQ+9jxkRFclaxxQb/SJAWZfWAkuyeQUytO7+7N4QKrDh+drA=="
           crossorigin=""/>
@@ -308,11 +308,11 @@ layout-indicator-iframe
   data-country="Malta"
   data-charttitle="Proportion of local breeds classified as being at risk of extinction"
   data-charttitles="[{&quot;series&quot;:&quot;Number of local breeds with unknown risk status (number)&quot;,&quot;title&quot;:&quot;Number of local breeds with unknown risk status (number)&quot;},{&quot;series&quot;:&quot;Proportion of local breeds classified as being at risk of extinction as a share of local breeds with known level of extinction risk (%)&quot;,&quot;title&quot;:&quot;Proportion of local breeds classified as being at risk of extinction as a share of local breeds with known level of extinction risk (%)&quot;},{&quot;series&quot;:&quot;Number of local breeds (not extinct) (number)&quot;,&quot;title&quot;:&quot;Number of local breeds (not extinct) (number)&quot;}]"
-  data-measurementunit="Number, Percentage (%), Number"
+  data-measurementunit=""
   data-xaxislabel=""
   data-showdata="true"
   data-graphtype="line"
-  data-graphtypes="[{&quot;type&quot;:&quot;line&quot;,&quot;unit&quot;:&quot;Total&quot;,&quot;series&quot;:&quot;Number of local breeds with unknown risk status (number)&quot;},{&quot;type&quot;:&quot;bar&quot;,&quot;unit&quot;:&quot;Percent&quot;,&quot;series&quot;:&quot;Proportion of local breeds classified as being at risk of extinction as a share of local breeds with known level of extinction risk (%)&quot;},{&quot;type&quot;:&quot;line&quot;,&quot;unit&quot;:&quot;Total&quot;,&quot;series&quot;:&quot;Number of local breeds (not extinct) (number)&quot;}]"
+  data-graphtypes="[{&quot;type&quot;:&quot;line&quot;,&quot;unit&quot;:&quot;Number&quot;,&quot;series&quot;:&quot;Number of local breeds with unknown risk status (number)&quot;},{&quot;type&quot;:&quot;bar&quot;,&quot;unit&quot;:&quot;Percentage (%)&quot;,&quot;series&quot;:&quot;Proportion of local breeds classified as being at risk of extinction as a share of local breeds with known level of extinction risk (%)&quot;},{&quot;type&quot;:&quot;line&quot;,&quot;unit&quot;:&quot;Number&quot;,&quot;series&quot;:&quot;Number of local breeds (not extinct) (number)&quot;}]"
   data-geocoderegex=""
   data-showmap="false"
   data-startvalues="[]"
@@ -322,7 +322,7 @@ layout-indicator-iframe
   data-graphtargetlines="null"
   data-graphseriesbreaks="null"
   data-indicatordownloads="null"
-  data-dataschema="{&quot;fields&quot;:[{&quot;name&quot;:&quot;Year&quot;,&quot;type&quot;:&quot;integer&quot;,&quot;title&quot;:&quot;Year&quot;},{&quot;name&quot;:&quot;Series&quot;,&quot;type&quot;:&quot;string&quot;,&quot;constraints&quot;:{&quot;enum&quot;:[&quot;Number of local breeds with unknown risk status (number)&quot;,&quot;Proportion of local breeds classified as being at risk of extinction as a share of local breeds with known level of extinction risk (%)&quot;,&quot;Number of local breeds (not extinct) (number)&quot;,&quot;&quot;]},&quot;title&quot;:&quot;Series&quot;},{&quot;name&quot;:&quot;Unnamed: 2&quot;,&quot;type&quot;:&quot;number&quot;,&quot;constraints&quot;:{&quot;enum&quot;:[&quot;&quot;]},&quot;title&quot;:&quot;Unnamed: 2&quot;},{&quot;name&quot;:&quot;Value&quot;,&quot;type&quot;:&quot;integer&quot;,&quot;title&quot;:&quot;Value&quot;}]}"
+  data-dataschema="{&quot;fields&quot;:[{&quot;name&quot;:&quot;Year&quot;,&quot;type&quot;:&quot;integer&quot;,&quot;title&quot;:&quot;Year&quot;},{&quot;name&quot;:&quot;Series&quot;,&quot;type&quot;:&quot;string&quot;,&quot;constraints&quot;:{&quot;enum&quot;:[&quot;Number of local breeds with unknown risk status (number)&quot;,&quot;Proportion of local breeds classified as being at risk of extinction as a share of local breeds with known level of extinction risk (%)&quot;,&quot;Number of local breeds (not extinct) (number)&quot;,&quot;&quot;]},&quot;title&quot;:&quot;Series&quot;},{&quot;name&quot;:&quot;Units&quot;,&quot;type&quot;:&quot;string&quot;,&quot;constraints&quot;:{&quot;enum&quot;:[&quot;Number&quot;,&quot;Percentage (%)&quot;,&quot;&quot;]},&quot;title&quot;:&quot;Units&quot;},{&quot;name&quot;:&quot;Value&quot;,&quot;type&quot;:&quot;integer&quot;,&quot;title&quot;:&quot;Value&quot;}]}"
   data-compositebreakdownlabel=""
   data-precision="[]"
   data-proxy=""
@@ -378,6 +378,10 @@ layout-indicator-iframe
         
         
         
+        <th scope="col">Units</th>
+        
+        
+        
         <th scope="col" class="table-value">Series</th>
         
         
@@ -392,6 +396,10 @@ layout-indicator-iframe
           
           
           <td>2</td>
+          
+          
+          
+          <td>Number</td>
           
           
           
@@ -411,6 +419,10 @@ layout-indicator-iframe
           
           
           
+          <td>Number</td>
+          
+          
+          
           <td class="table-value">Number of local breeds with unknown risk status (number)</td>
           
           
@@ -424,6 +436,10 @@ layout-indicator-iframe
           
           
           <td>2</td>
+          
+          
+          
+          <td>Number</td>
           
           
           
@@ -443,6 +459,10 @@ layout-indicator-iframe
           
           
           
+          <td>Number</td>
+          
+          
+          
           <td class="table-value">Number of local breeds with unknown risk status (number)</td>
           
           
@@ -456,6 +476,10 @@ layout-indicator-iframe
           
           
           <td>2</td>
+          
+          
+          
+          <td>Number</td>
           
           
           
@@ -475,6 +499,10 @@ layout-indicator-iframe
           
           
           
+          <td>Number</td>
+          
+          
+          
           <td class="table-value">Number of local breeds with unknown risk status (number)</td>
           
           
@@ -488,6 +516,10 @@ layout-indicator-iframe
           
           
           <td>2</td>
+          
+          
+          
+          <td>Number</td>
           
           
           
@@ -507,6 +539,10 @@ layout-indicator-iframe
           
           
           
+          <td>Number</td>
+          
+          
+          
           <td class="table-value">Number of local breeds with unknown risk status (number)</td>
           
           
@@ -520,6 +556,10 @@ layout-indicator-iframe
           
           
           <td>2</td>
+          
+          
+          
+          <td>Number</td>
           
           
           
@@ -539,6 +579,10 @@ layout-indicator-iframe
           
           
           
+          <td>Number</td>
+          
+          
+          
           <td class="table-value">Number of local breeds with unknown risk status (number)</td>
           
           
@@ -552,6 +596,10 @@ layout-indicator-iframe
           
           
           <td>2</td>
+          
+          
+          
+          <td>Number</td>
           
           
           
@@ -571,6 +619,10 @@ layout-indicator-iframe
           
           
           
+          <td>Number</td>
+          
+          
+          
           <td class="table-value">Number of local breeds with unknown risk status (number)</td>
           
           
@@ -587,6 +639,10 @@ layout-indicator-iframe
           
           
           
+          <td>Number</td>
+          
+          
+          
           <td class="table-value">Number of local breeds with unknown risk status (number)</td>
           
           
@@ -600,6 +656,10 @@ layout-indicator-iframe
           
           
           <td>2</td>
+          
+          
+          
+          <td>Number</td>
           
           
           
@@ -619,6 +679,10 @@ layout-indicator-iframe
           
           
           
+          <td>Percentage (%)</td>
+          
+          
+          
           <td class="table-value">Proportion of local breeds classified as being at risk of extinction as a share of local breeds with known level of extinction risk (%)</td>
           
           
@@ -632,6 +696,10 @@ layout-indicator-iframe
           
           
           <td>2</td>
+          
+          
+          
+          <td>Number</td>
           
           
           
@@ -651,6 +719,10 @@ layout-indicator-iframe
           
           
           
+          <td>Number</td>
+          
+          
+          
           <td class="table-value">Number of local breeds (not extinct) (number)</td>
           
           
@@ -664,6 +736,10 @@ layout-indicator-iframe
           
           
           <td>2</td>
+          
+          
+          
+          <td>Number</td>
           
           
           
@@ -683,6 +759,10 @@ layout-indicator-iframe
           
           
           
+          <td>Number</td>
+          
+          
+          
           <td class="table-value">Number of local breeds (not extinct) (number)</td>
           
           
@@ -696,6 +776,10 @@ layout-indicator-iframe
           
           
           <td>2</td>
+          
+          
+          
+          <td>Number</td>
           
           
           
@@ -715,6 +799,10 @@ layout-indicator-iframe
           
           
           
+          <td>Number</td>
+          
+          
+          
           <td class="table-value">Number of local breeds (not extinct) (number)</td>
           
           
@@ -728,6 +816,10 @@ layout-indicator-iframe
           
           
           <td>2</td>
+          
+          
+          
+          <td>Number</td>
           
           
           
@@ -747,6 +839,10 @@ layout-indicator-iframe
           
           
           
+          <td>Number</td>
+          
+          
+          
           <td class="table-value">Number of local breeds (not extinct) (number)</td>
           
           
@@ -760,6 +856,10 @@ layout-indicator-iframe
           
           
           <td>2</td>
+          
+          
+          
+          <td>Number</td>
           
           
           
@@ -779,6 +879,10 @@ layout-indicator-iframe
           
           
           
+          <td>Number</td>
+          
+          
+          
           <td class="table-value">Number of local breeds (not extinct) (number)</td>
           
           
@@ -792,6 +896,10 @@ layout-indicator-iframe
           
           
           <td>2</td>
+          
+          
+          
+          <td>Number</td>
           
           
           
@@ -811,6 +919,10 @@ layout-indicator-iframe
           
           
           
+          <td>Number</td>
+          
+          
+          
           <td class="table-value">Number of local breeds (not extinct) (number)</td>
           
           
@@ -827,6 +939,10 @@ layout-indicator-iframe
           
           
           
+          <td>Number</td>
+          
+          
+          
           <td class="table-value">Number of local breeds (not extinct) (number)</td>
           
           
@@ -840,6 +956,10 @@ layout-indicator-iframe
           
           
           <td>3</td>
+          
+          
+          
+          <td>Number</td>
           
           
           
@@ -860,7 +980,7 @@ layout-indicator-iframe
     <p>Geographical Area: </p>
     
     
-    <p>Unit of Measurement: Number, Percentage (%), Number</p>
+    <p>Unit of Measurement: </p>
     
     
     <p>Footnote: </p>
@@ -1434,12 +1554,12 @@ data-event-label="Change to Sources tab"
 <script>translations['search'] = translations['search'] || {};
     translations['search']['search'] = 'Search';</script>
 
-<script src='/site/assets/js/sdg.js?v=20240723095625'></script>
+<script src='/site/assets/js/sdg.js?v=20240723110827'></script>
 
 
     
     
-    <script src="/site/assets/js/custom.js?v=20240723095625"></script><script>
+    <script src="/site/assets/js/custom.js?v=20240723110827"></script><script>
     new indicatorInit();
     new accessibilitySwitcher();
 </script>
