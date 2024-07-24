@@ -7,17 +7,16 @@ opensdg.convertBinaryValue = function (value) {
 opensdg.chartTypes.binary = function (info) {
     var config = opensdg.chartTypes.base(info);
     var overrides = {
-        // Force the "bar" type instead of the "binary" type which Chart.js
-        // does not recognize.
-        type: 'bar',
-        // Assign some callbacks to convert 1/-1 to their original values.
+        type: 'bar',  // Force the bar type
         options: {
             plugins: {
                 tooltip: {
                     callbacks: {
-                        label: function (tooltipItem) {
-                            var label = tooltipItem.dataset.label || '';
-                            label += ': ' + opensdg.convertBinaryValue(tooltipItem.formattedValue);
+                        label: function (context) {
+                            var label = context.dataset.label || '';
+                            // Display 0 instead of -1 for tooltips
+                            var value = context.raw === -1 ? 0 : context.raw;
+                            label += ': ' + value;
                             return label;
                         },
                     },
@@ -25,17 +24,40 @@ opensdg.chartTypes.binary = function (info) {
             },
             scales: {
                 y: {
-                    // Set the min/max to -1/1 so that the bars will start from the
-                    // middle and either go up (for 1) or down (for -1).
                     min: -1,
                     max: 1,
                     ticks: {
-                        callback: opensdg.convertBinaryValue,
+                        stepSize: 1,  // Ensure only -1, 0, 1 are shown
+                        callback: function(value) {
+                            return value;
+                        },
                     },
                 },
             },
         }
-    }
+    };
+
+    // Tweak the data so that 0 is treated as -1 for rendering purposes
+    config.data.datasets = config.data.datasets.map(function(dataset) {
+        dataset.data = dataset.data.map(function(value) {
+            if (value === 0) {
+                return -1;  // Convert 0 to -1 for rendering
+            }
+            return value;
+        });
+        return dataset;
+    });
+
+    // Manually set the borderWidths to 0 to avoid a weird border effect on the bars.
+    config.data.datasets.forEach(function(dataset) {
+        dataset.borderWidth = 0;
+    });
+
+    // Add these overrides onto the normal config.
+    _.merge(config, overrides);
+    return config;
+};
+
 
     // Ensure that the data remains as -1 and 1 without converting 0 to -1.
     config.data.datasets = config.data.datasets.map(function(dataset) {
