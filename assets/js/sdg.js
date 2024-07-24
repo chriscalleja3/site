@@ -4270,22 +4270,15 @@ opensdg.chartTypes.base = function(info) {
     if (typeof value === 'string') {
         value = parseInt(value, 10);
     }
-    if (value === 1) {
-        return 'Yes';
-    }
-    else if (value === -1) {
-        return 'No';
-    }
-    return '';
+    return value; // Return the original value
 }
-
 opensdg.chartTypes.binary = function (info) {
     var config = opensdg.chartTypes.base(info);
     var overrides = {
         // Force the "bar" type instead of the "binary" type which Chart.js
         // does not recognize.
         type: 'bar',
-        // Assign some callbacks to convert 1/-1 to Yes/No.
+        // Assign some callbacks to convert 1/-1 to their original values.
         options: {
             plugins: {
                 tooltip: {
@@ -4312,14 +4305,10 @@ opensdg.chartTypes.binary = function (info) {
         }
     }
 
-    // Tweak the data so that 0 is treated as -1. This is done so that the bar appears
-    // to be pointed down.
+    // Ensure that the data remains as -1 and 1 without converting 0 to -1.
     config.data.datasets = config.data.datasets.map(function(dataset) {
         dataset.data = dataset.data.map(function(value) {
-            if (value === 0) {
-                return -1;
-            }
-            return value;
+            return value; // Keep original value
         });
         return dataset;
     });
