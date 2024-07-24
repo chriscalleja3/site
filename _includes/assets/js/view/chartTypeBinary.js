@@ -18,9 +18,9 @@ opensdg.chartTypes.binary = function (info) {
                     callbacks: {
                         label: function (tooltipItem) {
                             var label = tooltipItem.dataset.label || '';
-                            var formattedValue = opensdg.convertBinaryValue(tooltipItem.value);
+                            var formattedValue = opensdg.convertBinaryValue(tooltipItem.raw);
                             if (formattedValue === -1){
-                                formattedValue++;
+                                formattedValue = 0;
                             }
                             label += ': ' + formattedValue;
                             return label;
