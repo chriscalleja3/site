@@ -4286,11 +4286,11 @@ opensdg.chartTypes.binary = function (info) {
                     callbacks: {
                         label: function (tooltipItem) {
                             var label = tooltipItem.dataset.label || '';
-                            var formattedValue = opensdg.convertBinaryValue(value);
+                            var formattedValue = opensdg.convertBinaryValue(tooltipItem.value);
                             if (formattedValue === -1){
                                 formattedValue++;
                             }
-                            label += ': ' + tooltipItem.formattedValue;
+                            label += ': ' + formattedValue;
                             return label;
                         },
                     },
