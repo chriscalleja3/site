@@ -2,12 +2,7 @@ opensdg.convertBinaryValue = function (value) {
     if (typeof value === 'string') {
         value = parseInt(value, 10);
     }
-    if (value === -1) {
-        return '0';
-    }
-    else{
-        return value;
-    }
+    return value;
 }
 
 opensdg.chartTypes.binary = function (info) {
@@ -23,7 +18,11 @@ opensdg.chartTypes.binary = function (info) {
                     callbacks: {
                         label: function (tooltipItem) {
                             var label = tooltipItem.dataset.label || '';
-                            label += ': ' + opensdg.convertBinaryValue(tooltipItem.formattedValue);
+                            var formattedValue = opensdg.convertBinaryValue(value);
+                            if (formattedValue === -1){
+                                formattedValue++;
+                            }
+                            label += ': ' + tooltipItem.formattedValue;
                             return label;
                         },
                     },
