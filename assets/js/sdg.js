@@ -4270,7 +4270,12 @@ opensdg.chartTypes.base = function(info) {
     if (typeof value === 'string') {
         value = parseInt(value, 10);
     }
-    return value;
+    if (value === -1) {
+        return '0';
+    }
+    else{
+        return value;
+    }
 }
 
 opensdg.chartTypes.binary = function (info) {
@@ -4286,8 +4291,7 @@ opensdg.chartTypes.binary = function (info) {
                     callbacks: {
                         label: function (tooltipItem) {
                             var label = tooltipItem.dataset.label || '';
-                            var value = context.raw === -1 ? 0 : context.raw;
-                            label += ': ' + value;
+                            label += ': ' + opensdg.convertBinaryValue(tooltipItem.formattedValue);
                             return label;
                         },
                     },
