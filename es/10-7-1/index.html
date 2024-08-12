@@ -145,7 +145,7 @@ var translations = {
         <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
         <link res="stylesheet" href="https://cdn.datatables.net/1.11.5/css/dataTables.bootstrap5.min.css">
         <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css" crossorigin="">
-        <link rel="stylesheet" href="/site/assets/css/style.css?v=20240724064131">
+        <link rel="stylesheet" href="/site/assets/css/style.css?v=20240812062836">
         <link rel="stylesheet" href="https://unpkg.com/leaflet@1.3.4/dist/leaflet.css"
           integrity="sha512-puBpdR0798OZvTTbP4A8Ix/l+A4dHDD0DGqYW6RQ+9jxkRFclaxxQb/SJAWZfWAkuyeQUytO7+7N4QKrDh+drA=="
           crossorigin=""/>
@@ -569,7 +569,7 @@ data-event-label="Change to Sources tab"
         <th scope="row">Series </th>
         <td>
           
-            <p>Migrant Recruitment Costs</p>
+            <p>SL_EMP_RCOST_MO - Migrant recruitment costs (number of months of earnings) [10.7.1]</p>
 
           
         </td>
@@ -585,7 +585,7 @@ data-event-label="Change to Sources tab"
         <th scope="row">Actualización de metadatos </th>
         <td>
           
-            <p>2022-05-18</p>
+            <p>2024-08-02</p>
 
           
         </td>
@@ -617,7 +617,7 @@ data-event-label="Change to Sources tab"
         <th scope="row">Indicadores relacionados </th>
         <td>
           
-            <p>Not applicable</p>
+            <p>Applies to all series</p>
 
           
         </td>
@@ -634,13 +634,13 @@ data-event-label="Change to Sources tab"
         <td>
           
             <h2>Definitions:</h2>
-<p>SDG indicator 10.7.1 is defined as: &#x201C;Recruitment cost borne by employee as a proportion of monthly income earned in country of destination&#x201D;, i.e. a ratio between a cost measure and an income measure. The statistics used for the numerators and denominators for indicator 10.7.1 should be based on costs and earnings observed for the same individual international migrant worker.</p>
+<p>SDG indicator 10.7.1 is defined as: &#x201C;Recruitment cost borne by employee [migrants] as a proportion of monthly income earned in country of destination&#x201D;, i.e. a ratio between a cost measure and an income measure. The statistics used for the numerators and denominators for indicator 10.7.1 should be based on costs and earnings observed for the same individual international migrant worker.</p>
 <h2>Concepts:</h2>
-<p><u>Target population: </u> International migrant workers who, in a recent past period, changed their country of usual residence in order to work as wage or salary earners in another country, whether they were engaged through formal or through &#x2018;informal&#x2019; recruitment processes.</p>
-<p>This includes international migrant workers and/or international return migrant workers, as per the country of measurement. Excluded are migrant workers who moved to a foreign country for self-employment purposes, short-term migrant workers who (are/were) employed in a foreign country for such short-periods that they (do/did) not change their usual residence (often taken as residence in a country for at least 12 months). Also excluded are persons who migrated to a destination country with intentions other than employment such as for leisure, tourism, family union, education and the like, even if they end up working in the foreign country at a later date, as they are not likely to incur recruitment costs since their primary motive for the move was not work related. However, employed persons who moved to a destination country with employment intentions but without work visas are covered. </p>
+<p><u>Target population: </u> International migrant workers who, in a recent past period, changed their country of usual residence in order to work as wage or salary earners in another country, whether they were engaged through formal or through &#x2018;informal&#x2019; recruitment processes. From a country of destination perspective, the target population are immigrant workers, whereas from a country of origin perspective, the target population may refer to emigrant workers and/or to returned international migrant workers. </p>
+<p>. Excluded are migrant workers who moved to a foreign country for self-employment purposes, short-term migrant workers who (are/were) employed in a foreign country for such short-periods that they (do/did) not change their usual residence (often taken as residence in a country for at least 12 months). Also excluded are persons who migrated to a destination country with intentions other than employment such as for leisure, tourism, family union, education and the like, even if they end up working in the foreign country at a later date, as they are not likely to incur recruitment costs since their primary motive for the move was not work related. However, employed persons who moved to a destination country with employment intentions but without work visas are covered. </p>
 <p><u>Reference period: </u>the statistics/estimates on costs and earnings used to calculate 10.7.1 should refer to the first job obtained in the last country of destination, within a recent past period (e.g. 3 years prior to the date of measurement).</p>
 <p><u>Costs:</u> Recruitment costs refer to any fees or costs incurred in the recruitment process in order for workers to secure employment or placement, regardless of the manner, timing or location of their imposition or collection. These are equal to the total amount that migrant workers and/or their families paid to find, qualify for, and secure a concrete job offer from a foreign employer and to reach the place of employment for the first job abroad. Recommended costs items are indicated in Paragraphs 22 to 24 of the draft Guidelines on statistics for SDG indicator 10.7.1.</p>
-<p><u>Earnings: </u>The measure of earnings for the calculation of recruitment costs should<u> </u>be the monthly earnings in the first job held in the last destination country within the established recent past period. Monthly earnings should cover the actual income received for the first full month of employment within the reference period, including bonuses and other earnings (e.g. for over-time work). Adjustments should be made for any deductions for destination country taxes and social security contributions, as well as for any deductions in wages made to recover any recruitment costs initially paid by the employer.</p>
+<p><u>Earnings: </u>The measure of earnings for the calculation of recruitment costs should<u> </u>be the monthly earnings in the first job held in the last destination country within the established recent past period. Monthly earnings should cover the gross income received or accrued for the first full month of employment within the reference period, including bonuses and other earnings (e.g. for over-time work). Adjustments should be made for any deductions for destination country taxes and social security contributions, as well as for any deductions in wages made to recover any recruitment costs initially paid by the employer.</p>
 
           
         </td>
@@ -879,12 +879,12 @@ data-event-label="Change to Sources tab"
 <script>translations['search'] = translations['search'] || {};
     translations['search']['search'] = 'Buscar';</script>
 
-<script src='/site/assets/js/sdg.js?v=20240724064131'></script>
+<script src='/site/assets/js/sdg.js?v=20240812062836'></script>
 
 
     
     
-    <script src="/site/assets/js/custom.js?v=20240724064131"></script><script>
+    <script src="/site/assets/js/custom.js?v=20240812062836"></script><script>
     new indicatorInit();
     new accessibilitySwitcher();
 </script>

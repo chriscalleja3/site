@@ -145,7 +145,7 @@ var translations = {
         <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
         <link res="stylesheet" href="https://cdn.datatables.net/1.11.5/css/dataTables.bootstrap5.min.css">
         <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css" crossorigin="">
-        <link rel="stylesheet" href="/site/assets/css/style.css?v=20240724064131">
+        <link rel="stylesheet" href="/site/assets/css/style.css?v=20240812062836">
         <link rel="stylesheet" href="https://unpkg.com/leaflet@1.3.4/dist/leaflet.css"
           integrity="sha512-puBpdR0798OZvTTbP4A8Ix/l+A4dHDD0DGqYW6RQ+9jxkRFclaxxQb/SJAWZfWAkuyeQUytO7+7N4QKrDh+drA=="
           crossorigin=""/>
@@ -569,25 +569,26 @@ data-event-label="Change to Sources tab"
         <th scope="row">Series </th>
         <td>
           
-            <p>Electronic waste generated (Tonnes)<strong> EN_EWT_GENV</strong></p>
-<p>Electronic waste generated, per capita (Kg)<strong> EN_EWT_GENPCAP</strong></p>
-<p>Electronic waste collected (Tonnes)<strong> EN_EWT_COLLV</strong></p>
-<p>Electronic waste collected, per capita (KG)<strong> EN_EWT_COLLPCAP</strong></p>
-<p>Electronic waste collection rate (%)<strong> EN_EWT_COLLR</strong>Hazardous waste generated (Tonnes)<strong> EN_HAZ_GENV</strong></p>
-<p>Hazardous waste generated, per capita (Kg)<strong> EN_HAZ_PCAP</strong></p>
-<p>Hazardous waste generated, per unit of GDP (kilograms per constant 2015 United States dollars)<strong> EN_HAZ_GENGDP</strong></p>
-<p>Hazardous waste treated, by type of treatment (Tonnes)<strong> EN_HAZ_TREATV</strong></p>
-<p>Hazardous waste treated or disposed, rate (%)<strong> EN_HAZ_TRTDISR</strong></p>
-<p>Hazardous waste treated or disposed (Tonnes)<strong> EN_HAZ_TRTDISV</strong></p>
-<p>Hazardous waste exported, (Tonnes)<strong> EN_HAZ_EXP</strong></p>
-<p>Hazardous waste imported, (Tonnes)<strong> EN_HAZ_IMP</strong></p>
-<p>Municipal waste collected (Tonnes)<strong> EN_MWT_COLLV</strong></p>
-<p>Municipal waste treated, by type of treatment (%)<strong> EN_MWT_TREATR</strong></p>
-<p>Municipal waste treated, by type of treatment (Tonnes)<strong> EN_MWT_TREATV</strong></p>
-<p>Municipal waste generated (Tonnes)<strong> EN_MWT_GENV</strong></p>
-<p>Municipal<strong> waste exported, (Tonnes) EN_MWT_EXP</strong></p>
-<p>Municipal<strong> waste imported, (Tonnes) EN_MWT_IMP</strong></p>
-<p>Total waste generation, by activity (Tonnes)<strong> EN_TWT_GENV</strong></p>
+            <p>EN_EWT_COLLPCAP - Electronic waste collected, per capita (KG) [12.4.2]</p>
+<p>EN_EWT_COLLR - Proportion of electronic waste collected (%) [12.4.2]</p>
+<p>EN_EWT_COLLV - Electronic waste collected (Tonnes) [12.4.2]</p>
+<p>EN_EWT_GENPCAP - Electronic waste generated, per capita (Kg) [12.4.2]</p>
+<p>EN_EWT_GENV - Electronic waste generated (Tonnes) [12.4.2]</p>
+<p>EN_HAZ_EXP - Hazardous waste exported (Tonnes) [12.4.2]</p>
+<p>EN_HAZ_GENGDP - Hazardous waste generated, per unit of GDP [12.4.2]</p>
+<p>EN_HAZ_GENV - Hazardous waste generated (Tonnes) [12.4.2]</p>
+<p>EN_HAZ_IMP - Hazardous waste imported (Tonnes) [12.4.2]</p>
+<p>EN_HAZ_PCAP - Hazardous waste generated, per capita (Kg) [12.4.2]</p>
+<p>EN_HAZ_TREATV - Hazardous waste treated and by type of treatment (Tonnes) [12.4.2]</p>
+<p>EN_HAZ_TRTDISR - Proportion of hazardous waste treated or disposed (%) [12.4.2]</p>
+<p>EN_HAZ_TRTDISV - Hazardous waste treated or disposed (Tonnes) [12.4.2]</p>
+<p>EN_MWT_COLLV - Municipal waste collected (Tonnes) [12.4.2]</p>
+<p>EN_MWT_EXP - Municipal waste exported (Tonnes) [12.4.2]</p>
+<p>EN_MWT_GENV - Municipal waste generated (Tonnes) [12.4.2]</p>
+<p>EN_MWT_IMP - Municipal waste imported (Tonnes) [12.4.2]</p>
+<p>EN_MWT_TREATR - Proportion of municipal waste treated, by type of treatment (%) [12.4.2]</p>
+<p>EN_MWT_TREATV - Municipal waste treated by type of treatment (Tonnes) [12.4.2]</p>
+<p>EN_TWT_GENV - Total waste generation, by activity (Tonnes) [12.4.2]</p>
 
           
         </td>
@@ -603,7 +604,7 @@ data-event-label="Change to Sources tab"
         <th scope="row">Metadata update </th>
         <td>
           
-            <p>2023-03-31</p>
+            <p>2024-07-29</p>
 
           
         </td>
@@ -903,12 +904,12 @@ data-event-label="Change to Sources tab"
 <script>translations['search'] = translations['search'] || {};
     translations['search']['search'] = 'Search';</script>
 
-<script src='/site/assets/js/sdg.js?v=20240724064131'></script>
+<script src='/site/assets/js/sdg.js?v=20240812062836'></script>
 
 
     
     
-    <script src="/site/assets/js/custom.js?v=20240724064131"></script><script>
+    <script src="/site/assets/js/custom.js?v=20240812062836"></script><script>
     new indicatorInit();
     new accessibilitySwitcher();
 </script>

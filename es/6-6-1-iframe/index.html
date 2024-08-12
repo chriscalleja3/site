@@ -145,7 +145,7 @@ var translations = {
         <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
         <link res="stylesheet" href="https://cdn.datatables.net/1.11.5/css/dataTables.bootstrap5.min.css">
         <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css" crossorigin="">
-        <link rel="stylesheet" href="/site/assets/css/style.css?v=20240724064131">
+        <link rel="stylesheet" href="/site/assets/css/style.css?v=20240812062836">
         <link rel="stylesheet" href="https://unpkg.com/leaflet@1.3.4/dist/leaflet.css"
           integrity="sha512-puBpdR0798OZvTTbP4A8Ix/l+A4dHDD0DGqYW6RQ+9jxkRFclaxxQb/SJAWZfWAkuyeQUytO7+7N4QKrDh+drA=="
           crossorigin=""/>
@@ -427,23 +427,8 @@ data-event-label="Change to Sources tab"
         <th scope="row">Series </th>
         <td>
           
-            <p>EN_WBE_NDQTGRW - Nationally derived quantity of groundwater (millions of cubic metres per annum) [6.6.1]</p>
-<p>EN_WBE_NDQTRVR - Nationally derived quantity of rivers (million of cubic metres per annum) [6.6.1]</p>
-<p>EN_LKRV_PWAC - Lakes and rivers permanent water area change (%) [6.6.1]</p>
-<p>EN_LKRV_PWAN - Lakes and rivers permanent water area (square kilometres) [6.6.1]</p>
-<p>EN_LKRV_PWAP - Lakes and rivers permanent water area (% of total land area) [6.6.1]</p>
-<p>EN_LKRV_SWAC - Lakes and rivers seasonal water area change (%) [6.6.1]</p>
-<p>EN_LKRV_SWAN - Lakes and rivers seasonal water area (square kilometres) [6.6.1]</p>
-<p>EN_LKRV_SWAP - Lakes and rivers seasonal water area (% of total land area) [6.6.1]</p>
-<p>EN_LKW_QLTRB - Lake water quality turbidity (%) [6.6.1]</p>
-<p>EN_LKW_QLTRST - Lake water quality trophic state (%) [6.6.1]</p>
-<p>EN_RSRV_MNWAN - Reservoir minimum water area (square kilometres) [6.6.1]</p>
-<p>EN_RSRV_MNWAP - Reservoir minimum water area (% of total land area) [6.6.1]</p>
-<p>EN_RSRV_MXWAN - Reservoir maximum water area (square kilometres) [6.6.1]</p>
-<p>EN_RSRV_MXWAP - Reservoir maximum water area (% of total land area) [6.6.1</p>
-<p>EN_WBE_MANGC - Mangrove total area change (%) [6.6.1]</p>
-<p>EN_WBE_MANGN - Mangrove area (square kilometres) [6.6.1]</p>
-<p>EN_WBE_WTLN - Wetlands area (square kilometres) [6.6.1]</p>
+            <p>EN_WBE_HMWTL - Extent of human made wetlands (square kilometres) [6.6.1]</p>
+<p>EN_WBE_INWTL - Extent of inland wetlands (square kilometres) [6.6.1]</p>
 
           
         </td>
@@ -459,7 +444,7 @@ data-event-label="Change to Sources tab"
         <th scope="row">Actualización de metadatos </th>
         <td>
           
-            <p>2024-05-24</p>
+            <p>2024-07-29</p>
 
           
         </td>
@@ -475,7 +460,7 @@ data-event-label="Change to Sources tab"
         <th scope="row">Organizaciones internacionales responsables del seguimiento global </th>
         <td>
           
-            <p>United Nations Environment Programme (UNEP)</p>
+            <p>Secretariat of the Ramsar Convention on Wetlands</p>
 
           
         </td>
@@ -491,7 +476,7 @@ data-event-label="Change to Sources tab"
         <th scope="row">Indicadores relacionados </th>
         <td>
           
-            <p>6.3.2, 6.4.1, 6.4.2, 6.5.1, 6.5.2, 15.3.1</p>
+            <p>15.1</p>
 
           
         </td>
@@ -508,170 +493,264 @@ data-event-label="Change to Sources tab"
         <td>
           
             <p><strong>Definition:</strong></p>
-<p>SDG indicator 6.6.1 tracks the extent to which different types of water-related ecosystems are changing in extent over time. The indicator is multifaceted capturing data on different types of freshwater ecosystems and to measure extent change the indicator considers spatial area changes, water quality and water quantity changes. The indicator uses satellite-based Earth observations to globally monitor different freshwater ecosystems types. Earth observation data series on surface area are available on permanent water, seasonal water, reservoirs, wetlands, mangroves; as well as generating data on water quality, using trophic state and turbidity of water bodies. Satellite images can be represented as numerical data, which in turn are aggregated into meaningful statistics of ecosystem change attributed to administrative areas such as national, sub-national (e.g. regions and provinces) and river basin boundaries. Global data products for river flows and groundwater level have not yet been produced at useful spatial and temporal resolutions to be incorporated into this SDG 6.6.1 methodology. Currently, these data should continue to be provided from modelling or from ground-based measurements and required from the countries.</p>
-<p><em>Table 1: SDG indicator 6.6.1 data derived from Earth observations</em></p>
-<table>
-  <thead>
-    <tr>
-      <th>
-        <p><strong><em>Ecosystem</em></strong></p>
-      </th>
-      <th>
-        <p><strong><em>Unit </em></strong></p>
-      </th>
-      <th>
-        <p><strong><em>Features </em></strong></p>
-      </th>
-    </tr>
-  </thead>
-  <tbody>
-    <tr>
-      <td>
-        <p><strong>Lakes &amp; Rivers (permanent water area)</strong></p>
-      </td>
-      <td>
-        <p>surface area</p>
-      </td>
-      <td>
-        <ul>
-          <li>annual information on <strong>permanent water area</strong> (2000-present)</li>
-          <li>statistics for changes in the areal extent of permanent water (2000-present)</li>
-          <li>statistics aggregated at national and sub-national basin scales</li>
-        </ul>
-      </td>
-    </tr>
-    <tr>
-      <td>
-        <p><strong>Lakes &amp; Rivers (seasonal water area)</strong></p>
-      </td>
-      <td>
-        <p>surface area</p>
-      </td>
-      <td>
-        <ul>
-          <li>annual information on <strong>seasonal water area</strong> (2000-present)</li>
-          <li>statistics for changes in the areal extent of seasonal water (2000-present)</li>
-          <li>annual seasonality statistics for periods: 0-1, 3-6, 7-11 months</li>
-          <li>statistics aggregated at national and sub-national basin scales</li>
-        </ul>
-      </td>
-    </tr>
-    <tr>
-      <td>
-        <p><strong>Reservoirs</strong></p>
-      </td>
-      <td>
-        <p>surface area</p>
-      </td>
-      <td>
-        <ul>
-          <li>annual information on reservoir minimum and maximum surface area (1984present)</li>
-          <li>statistics for changes in minimum area (2000-present)</li>
-          <li>statistics aggregated at national and sub-national basin scales</li>
-        </ul>
-      </td>
-    </tr>
-    <tr>
-      <td>
-        <p><strong>Mangroves</strong></p>
-      </td>
-      <td>
-        <p>surface area</p>
-      </td>
-      <td>
-        <ul>
-          <li>near annual information on mangrove area (2000-present)</li>
-          <li>Statistics on changes in mangrove area (2000-present)</li>
-          <li>statistics aggregated at national scales</li>
-        </ul>
-      </td>
-    </tr>
-    <tr>
-      <td>
-        <p><strong>Wetlands</strong></p>
-      </td>
-      <td>
-        <p>surface area</p>
-      </td>
-      <td>
-        <ul>
-          <li>wetlands area (baseline area comprised of data btw 2016-2018)</li>
-          <li>statistics aggregated at national and sub-national basin scales</li>
-          <li>wetlands area changes to be included in 2025/26</li>
-        </ul>
-      </td>
-    </tr>
-    <tr>
-      <td>
-        <p><strong>Lakes &amp; Reservoirs</strong></p>
-      </td>
-      <td>
-        <p>water quality</p>
-      </td>
-      <td>
-        <ul>
-          <li>Monthly, annual and multi-annual measurements of trophic state and turbidity for 4,200 lakes and reservoirs globally (at 300m resolution)</li>
-        </ul>
-      </td>
-    </tr>
-  </tbody>
-</table>
-<p><em>Table 2: SDG indicator 6.6.1 data derived from models and/or national in-situ measurements</em></p>
-<table>
-  <tbody>
-    <tr>
-      <td>
-        <p><strong><em>Ecosystem</em></strong></p>
-      </td>
-      <td>
-        <p><strong><em>Unit </em></strong></p>
-      </td>
-      <td>
-        <p><strong><em>Features </em></strong></p>
-      </td>
-    </tr>
-    <tr>
-      <td>
-        <p><strong>Rivers</strong></p>
-      </td>
-      <td>
-        <p>flow </p>
-      </td>
-      <td>
-        <ul>
-          <li>Annually modelled stream flow (2000-present) </li>
-          <li>Statistics for changes in minimum and maximum stream flow (2000-present)</li>
-          <li>Statistics aggregated at national and sub-national basin scales</li>
-        </ul>
-      </td>
-    </tr>
-    <tr>
-      <td>
-        <p><strong>Groundwater</strong></p>
-      </td>
-      <td>
-        <p>level</p>
-      </td>
-      <td>
-        <ul>
-          <li>Changes to volume measurements, over time, of all major groundwater aquifers</li>
-        </ul>
-      </td>
-    </tr>
-  </tbody>
-</table>
+<ul>
+  <li>&#x201C;extent of wetlands&#x201D; </li>
+</ul>
+<p>This term can be defined as the surface area of wetlands. It is measured in km2 or hectares. It is expected that the surface reported by countries in 2018 correspond to that of 2017; if not, the reference year should be indicated. </p>
+<ul>
+  <li>&#x201C;change in the extent of wetlands&#x201D; </li>
+</ul>
+<p>This term refers to the percentage change in area of wetlands from a baseline reference. For reporting such change, the previous extent, if known, and the period over which the change has taken place should be specified. </p>
 <p><strong>Concepts:</strong></p>
-<p>The concepts and definitions used in the methodology have been based on existing international frameworks and glossaries unless indicated otherwise below.</p>
-<p><strong>Water-related ecosystems</strong> are a sub-set of all ecosystems. They contain the world&#x2019;s freshwater resources and can be defined as &#x201C;a dynamic complex of plant, animal, and micro-organism communities and the non-living environment dominated by the presence of flowing or still water, interacting as a functional unit.&#x201D; (MEA, 2005; Dickens et al, 2019). The indicator is framed around the monitoring of different types of water-related ecosystems including lakes, rivers, wetlands, groundwater and artificial waterbodies such as reservoirs. These water-related ecosystems contain freshwater, except for mangroves which contain brackish water (i.e. a combination of fresh and saltwater), however, mangroves are still included within indicator 6.6.1. Reservoirs are also included as a category of water-related ecosystem within the indicator methodology; while it is recognized that reservoirs are not traditional water ecosystems which should necessarily warrant protection and restoration, in many countries they hold a noteworthy amount of freshwater and have thus been included. By including data on reservoirs, it is intended that countries can better understand changes occurring to artificial water bodies in conjunction with changes occurring to natural water bodies. Ecosystems that are not included under indicator 6.6.1 are: coral reefs and sea grass which are covered within Goal 14 (Oceans); and mountains, forests, and drylands which are covered within Goal 15 (Land). The extent to which each of the water-related ecosystems included under indicator 6.6.1 can be measured, uses one or more of the following physical parameters of change: spatial area, quantity (or volume) of water, and water quality. The full monitoring methodology for indicator 6.6.1 is available here. The extent to which each of the water-related ecosystems included under indicator 6.6.1 can be measured, uses one or more of the following physical parameters of change: spatial area, quantity (or volume) of water, and water quality.</p>
-<p><strong>Permanent and seasonal water</strong>. A permanent water surface is underwater throughout the year whilst a seasonal water surface is underwater for less than 12 months of the year. Some locations don&#x2019;t have observations for all 12 months of the year (for reasons such as polar night). In these cases, water is considered as seasonal if the number of months where water is present is less than the number of months where valid observations were acquired.</p>
-<p>A second consideration is lakes and rivers that freeze for part of the year. During the frozen period water is still present under the ice (true both for rivers/lakes and the sea). If water is present throughout the observation period (i.e. unfrozen period), the water body is considered as a permanent water surface. If the area of the water body contracts during the unfrozen period, then the pixels along the borders of the lake or river are no longer water, and those pixels will be considered as a seasonal water surface.</p>
-<p><strong>Reservoirs</strong> are artificial (or human-made) bodies of freshwater, as opposed to lakes which are naturally occurring. The reservoirs dataset represents surface area data on artificial water bodies including reservoirs formed by dams, flooded areas such as opencast mines and quarries, flood irrigation areas, and water bodies created by hydro-engineering projects such as waterway and harbour construction.</p>
-<p><strong>Inland vegetated wetlands</strong> include areas of marshes, peatlands, swamps, bogs and fens, the vegetated parts of floodplains as well as rice paddies and flood recession agriculture. Inland vegetated wetlands do not include coastal mangroves. Data on mangroves which are produced separately to inland wetlands. This SDG indicator methodology is used for official reporting of SDG indicator 6.6.1 statistics. The SDG indicator 6.6.1 methodology does not apply the definition of wetlands defined by the Ramsar Convention on Wetlands, which is: &#x201C;areas of marsh, fen, peatland or water, whether natural or artificial, permanent or temporary, with water that is static or flowing, fresh, brackish or salt, including areas of marine water the depth of which at low tide does not exceed six meters&#x201D;. The Ramsar definition of wetlands may be interpreted to mean all water within a country including the marine environment. The SDG indicator 6.6.1 definition refers to only a specific group of inland vegetated wetlands typologies.</p>
-<p><strong>Turbidity</strong> is an indicator of water clarity, quantifying the haziness of the water and acting as an indicator of underwater light availability.</p>
-<p><strong>Trophic State</strong> refers to the degree at which organic matter accumulates in the water body and is most commonly used in relation to monitoring eutrophication.</p>
-<p><strong>Surface Water</strong> refers to any area of surface water unobstructed by aquatic vegetation. This includes the following 3 water-related ecosystem categories: rivers and estuaries, lakes, and artificial waterbodies.</p>
-<p><strong>Extent</strong> &#x2013; has been expanded beyond spatial extent to capture additional basic parameters needed for the protection and restoration of water-related ecosystems. Extent includes three components: the spatial extent or surface area, the quality, and the quantity of water-related ecosystems. </p>
-<p><strong>Change</strong> means a shift from one condition of extent to another over time within a water-related ecosystem, measured against a point of reference.</p>
+<p>In order to provide a precise definition of the indicator, it is crucial to provide a definition of </p>
+<p><strong>&#x201C;Water related ecosystems</strong>&#x201D;. For this purpose, the definition of the Ramsar Convention on Wetlands is used.</p>
+<ul>
+  <li><strong>the Ramsar definition of &#x201C;wetlands&#x201D;</strong></li>
+</ul>
+<p>The Ramsar definition is very broad, reflecting the purpose and global coverage of the Convention:</p>
+<p>In accordance with Article 1.1 of the Convention, <br /><em>&#x201C;Wetlands are areas of marsh, fen, peatland or water, whether natural or artificial, permanent or temporary, with water that is static or flowing, fresh, brackish or salt, including areas of marine water the depth of which at low tide does not exceed six metres&#x201D;.</em></p>
+<p>In addition, in accordance with Article 2.1, Ramsar Sites <br /><em>&#x201C;may incorporate riparian and coastal zones adjacent to the wetlands, and islands or bodies of marine water deeper than six metres at low tide lying within the wetlands&#x201D;.</em></p>
+<p><strong>- the Ramsar system of classifying wetland types</strong></p>
+<p>Many national definitions and classifications of &#x201C;wetlands&#x201D; are in use. They have been developed in response to different national needs and take into account the main biophysical features (generally vegetation, landform and water regime, and sometimes also water chemistry such as salinity) and the variety and size of wetlands in the locality or region being considered.</p>
+<p>The Ramsar Classification System for Wetland Types, adopted at COP4 in 1990, and amended at COP6 in 1996 (Resolution VI.5) and at COP7 in 1999 (Resolution VII.11) has value as a basic internationally applicable habitat description for sites designated for the Ramsar List of Wetlands of International Importance.</p>
+<p>The System (see Annex 1) describes the types of wetland covered by each of the wetland type codes. Note that the wetland types are grouped in three major categories: marine/coastal, inland, and human-made wetlands. Within a single Ramsar Site or other wetland, there may be wetland types from two or more of these categories, particularly if the wetland is large. </p>
+<p>For the purpose of the Target and Indicator, and based on the National Reports Parties report on the use of the three major categories. Countries also use Ramsar definition that has been internationally agreed under the Convention. The minimum information that should be provided is the total area of wetlands for each of these three categories with an emphasis on inland wetlands or freshwater ecosystems for purpose of indicator 6.6.1 (see table below, the explanations of each wetland type code is in Annex 1). </p>
+<p><strong>Table 1: Tabulations of Wetland Type characteristics, Inland Wetlands:</strong></p>
+<table>
+  <tbody>
+    <tr>
+      <td rowspan="16">
+        <p>Fresh water</p>
+      </td>
+      <td rowspan="4">
+        <p>Flowing water</p>
+      </td>
+      <td rowspan="3">
+        <p>Permanent</p>
+      </td>
+      <td>
+        <p>Rivers, streams, creeks </p>
+      </td>
+      <td>
+        <p>M</p>
+      </td>
+    </tr>
+    <tr>
+      <td>
+        <p>Deltas</p>
+      </td>
+      <td>
+        <p>L</p>
+      </td>
+    </tr>
+    <tr>
+      <td>
+        <p> Springs, oases</p>
+      </td>
+      <td>
+        <p>Y</p>
+      </td>
+    </tr>
+    <tr>
+      <td>
+        <p>Seasonal/intermittent</p>
+      </td>
+      <td>
+        <p>Rivers, streams, creeks</p>
+      </td>
+      <td>
+        <p>N</p>
+      </td>
+    </tr>
+    <tr>
+      <td rowspan="4">
+        <p>Lakes and pools</p>
+      </td>
+      <td rowspan="2">
+        <p>Permanent</p>
+      </td>
+      <td>
+        <p>&gt; 8 ha</p>
+      </td>
+      <td>
+        <p>O</p>
+      </td>
+    </tr>
+    <tr>
+      <td>
+        <p>&lt; 8 ha</p>
+      </td>
+      <td>
+        <p>Tp</p>
+      </td>
+    </tr>
+    <tr>
+      <td>
+        <p>Seasonal/intermittent</p>
+      </td>
+      <td>
+        <p>&gt; 8 ha</p>
+      </td>
+      <td>
+        <p>P</p>
+      </td>
+    </tr>
+    <tr>
+      <td></td>
+      <td>
+        <p>&lt; 8 ha</p>
+      </td>
+      <td>
+        <p>Ts</p>
+      </td>
+    </tr>
+    <tr>
+      <td rowspan="4">
+        <p>Marshes on inorganic soils</p>
+      </td>
+      <td>
+        <p>Permanent</p>
+      </td>
+      <td>
+        <p>Herb-dominated</p>
+      </td>
+      <td>
+        <p>Tp</p>
+      </td>
+    </tr>
+    <tr>
+      <td rowspan="2">
+        <p>Permanent/ Seasonal/intermittent</p>
+      </td>
+      <td>
+        <p>Shrub-dominated</p>
+      </td>
+      <td>
+        <p>W</p>
+      </td>
+    </tr>
+    <tr>
+      <td>
+        <p>Tree-dominated</p>
+      </td>
+      <td>
+        <p>Xf</p>
+      </td>
+    </tr>
+    <tr>
+      <td>
+        <p>Seasonal/intermittent</p>
+      </td>
+      <td>
+        <p>Herb-dominated</p>
+      </td>
+      <td>
+        <p>Ts</p>
+      </td>
+    </tr>
+    <tr>
+      <td rowspan="2">
+        <p>Marshes on peat soils</p>
+      </td>
+      <td rowspan="2">
+        <p>Permanent</p>
+      </td>
+      <td>
+        <p>Non-forested</p>
+      </td>
+      <td>
+        <p>U</p>
+      </td>
+    </tr>
+    <tr>
+      <td>
+        <p>Forested</p>
+      </td>
+      <td>
+        <p>Xp</p>
+      </td>
+    </tr>
+    <tr>
+      <td rowspan="2">
+        <p>Marshes on inorganic or peat soils</p>
+      </td>
+      <td colspan="2">
+        <p>High altitude (alpine)</p>
+      </td>
+      <td>
+        <p>Va</p>
+      </td>
+    </tr>
+    <tr>
+      <td colspan="2">
+        <p>Tundra</p>
+      </td>
+      <td>
+        <p>Vt</p>
+      </td>
+    </tr>
+    <tr>
+      <td rowspan="4">
+        <p>Saline, brackish or alkaline water</p>
+      </td>
+      <td rowspan="2">
+        <p>Lakes</p>
+      </td>
+      <td colspan="2">
+        <p>Permanent</p>
+      </td>
+      <td>
+        <p>Q</p>
+      </td>
+    </tr>
+    <tr>
+      <td colspan="2">
+        <p>Seasonal/intermittent</p>
+      </td>
+      <td>
+        <p>R</p>
+      </td>
+    </tr>
+    <tr>
+      <td rowspan="2">
+        <p>Marshes &amp; pools</p>
+      </td>
+      <td colspan="2">
+        <p>Permanent</p>
+      </td>
+      <td>
+        <p>Sp</p>
+      </td>
+    </tr>
+    <tr>
+      <td colspan="2">
+        <p>Seasonal/intermittent</p>
+      </td>
+      <td>
+        <p>Ss</p>
+      </td>
+    </tr>
+    <tr>
+      <td rowspan="2">
+        <p>Fresh, saline, brackish or alkaline water</p>
+      </td>
+      <td colspan="3">
+        <p>Geothermal</p>
+      </td>
+      <td>
+        <p>Zg</p>
+      </td>
+    </tr>
+    <tr>
+      <td colspan="3">
+        <p>Subterranean</p>
+      </td>
+      <td>
+        <p>Zk(b)</p>
+      </td>
+    </tr>
+  </tbody>
+</table>
 
           
         </td>
@@ -851,12 +930,12 @@ data-event-label="Change to Sources tab"
 <script>translations['search'] = translations['search'] || {};
     translations['search']['search'] = 'Buscar';</script>
 
-<script src='/site/assets/js/sdg.js?v=20240724064131'></script>
+<script src='/site/assets/js/sdg.js?v=20240812062836'></script>
 
 
     
     
-    <script src="/site/assets/js/custom.js?v=20240724064131"></script><script>
+    <script src="/site/assets/js/custom.js?v=20240812062836"></script><script>
     new indicatorInit();
     new accessibilitySwitcher();
 </script>

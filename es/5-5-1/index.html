@@ -145,7 +145,7 @@ var translations = {
         <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
         <link res="stylesheet" href="https://cdn.datatables.net/1.11.5/css/dataTables.bootstrap5.min.css">
         <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css" crossorigin="">
-        <link rel="stylesheet" href="/site/assets/css/style.css?v=20240724064131">
+        <link rel="stylesheet" href="/site/assets/css/style.css?v=20240812062836">
         <link rel="stylesheet" href="https://unpkg.com/leaflet@1.3.4/dist/leaflet.css"
           integrity="sha512-puBpdR0798OZvTTbP4A8Ix/l+A4dHDD0DGqYW6RQ+9jxkRFclaxxQb/SJAWZfWAkuyeQUytO7+7N4QKrDh+drA=="
           crossorigin=""/>
@@ -569,7 +569,9 @@ data-event-label="Change to Sources tab"
         <th scope="row">Series </th>
         <td>
           
-            <p>Proportion of elected seats held by women in deliberative bodies of local government (%) SG_GEN_LOCGELS</p>
+            <p>SG_GEN_PARL - Proportion of seats held by women in national parliaments (% of total number of seats) [5.5.1]</p>
+<p>SG_GEN_PARLN - Number of seats held by women in national parliaments [5.5.1]</p>
+<p>SG_GEN_PARLNT - Current number of seats in national parliaments [5.5.1]</p>
 
           
         </td>
@@ -585,7 +587,7 @@ data-event-label="Change to Sources tab"
         <th scope="row">Actualización de metadatos </th>
         <td>
           
-            <p>2023-07-10</p>
+            <p>2023-12-15</p>
 
           
         </td>
@@ -601,7 +603,7 @@ data-event-label="Change to Sources tab"
         <th scope="row">Organizaciones internacionales responsables del seguimiento global </th>
         <td>
           
-            <p>United Nations Entity for Gender Equality and the Empowerment of Women (UN-Women)</p>
+            <p>Inter-Parliamentary Union (IPU)</p>
 
           
         </td>
@@ -617,8 +619,7 @@ data-event-label="Change to Sources tab"
         <th scope="row">Indicadores relacionados </th>
         <td>
           
-            <p>Indicator 5.5.1(a): proportion of seats held by women in single or lower chambers of national parliaments.</p>
-<p>Indicator 16.7.1: Proportions of positions (by age group, sex, persons with disabilities and population groups) in public institutions (national and local), including (a) the legislatures; (b) the public service; and (c) the judiciary, compared to national distributions</p>
+            <p>Indicator 16.7.1: Proportions of positions (by age group, sex, persons with disabilities and population groups) in public institutions (national and local), including (a) the legislatures; (b) the public service; and (c) the judiciary, compared to national distributions.</p>
 
           
         </td>
@@ -635,15 +636,11 @@ data-event-label="Change to Sources tab"
         <td>
           
             <p><strong>Definition:</strong></p>
-<p>Indicator 5.5.1(b) measures the proportion of positions held by women in local government.</p>
-<p>It is expressed as a percentage of elected positions held by women in legislative/ deliberative bodies of local government. </p>
-<h2>Concepts: </h2>
-<p><strong><u>Local government</u></strong> is a result of decentralization, a process of transferring political, fiscal, and administrative powers from the central government to sub-national units of government to regulate and/or run certain government functions or public services, on their own, in the administrative-territorial areas of a country. </p>
-<p>The definition of local government follows the 2008 System of National Accounts (SNA) distinction between central, state, and local government (para 4.129). Local government consists of local government units, defined in the SNA as &#x201C;institutional units whose fiscal, legislative and executive authority extends over the smallest geographical areas distinguished for administrative and political purposes&#x201D; (para 4.145). What constitutes the local government of a given country is defined by that country&#x2019;s national legal framework, including national constitutions and local government acts or equivalent legislation.</p>
-<p>Each local government unit typically includes a legislative/ deliberative body and an executive body. <u>Legislative/ deliberative bodies</u>, such as councils or assemblies, are formal entities with a prescribed number of members as per national or state legislation. They are usually elected by universal suffrage and have decision-making power, including the ability to issue by-laws, on a range of local aspects of public affairs. </p>
-<p>Executive bodies, consisting of an executive committee or a mayor, may be elected or appointed. They prepare and execute decisions made by the legislative/ deliberative body. </p>
-<p><u>Elected positions</u> are the most common manner of selection of local government members. They are selected in local elections, based on a system of choosing political office holders in which the voters cast ballots for the person, persons, or political party that they desire to see elected. The category of elected positions includes both elected persons who competed on openly contested seats and persons selected during the electoral processes on reserved seats or through a candidate quota.</p>
-<p>By comparison, members selected for appointed positions (the least common manner of selection of local government members) are nominated, typically by government officials from higher-ranking tiers of government. Appointed members of local government are more frequent among the leadership positions, such as the heads of the executive body, representatives of specific groups (e.g., women, disadvantaged groups, youth); and temporary committees/delegations/caretakers appointed by government officials when a council has been dissolved.</p>
+<p>The proportion of seats held by women in national parliaments, currently as of 1 January of reporting year, is currently measured as the number of seats held by women members in single or lower chambers of national parliaments, expressed as a percentage of all occupied seats.</p>
+<p>National parliaments can be bicameral or unicameral. This indicator covers the single chamber in unicameral parliaments and the lower chamber in bicameral parliaments. It does not cover the upper chamber of bicameral parliaments. Seats are usually won by members in general parliamentary elections. Seats may also be filled by nomination, appointment, indirect election, rotation of members, and by-election.</p>
+<p>Seats refer to the number of parliamentary mandates or the number of members of parliament.</p>
+<p><strong>Concepts:</strong></p>
+<p>Seats refer to the number of parliamentary mandates, also known as the number of members of parliament. Seats are usually won by members in general parliamentary elections. Seats may also be filled by nomination, appointment, indirect election, rotation of members, and by-election.</p>
 
           
         </td>
@@ -882,12 +879,12 @@ data-event-label="Change to Sources tab"
 <script>translations['search'] = translations['search'] || {};
     translations['search']['search'] = 'Buscar';</script>
 
-<script src='/site/assets/js/sdg.js?v=20240724064131'></script>
+<script src='/site/assets/js/sdg.js?v=20240812062836'></script>
 
 
     
     
-    <script src="/site/assets/js/custom.js?v=20240724064131"></script><script>
+    <script src="/site/assets/js/custom.js?v=20240812062836"></script><script>
     new indicatorInit();
     new accessibilitySwitcher();
 </script>
