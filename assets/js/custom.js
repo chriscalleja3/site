@@ -1,6 +1,11 @@
 document.addEventListener('DOMContentLoaded', function() {
+    // Check if the current indicator is 2.5.1
+    var indicatorElement = document.getElementById('indicator_number');
+    var indicatorNumber = indicatorElement ? indicatorElement.textContent.trim() : null;
+
+    if (indicatorNumber === "2.5.1") {
         // Select the series input that is checked (selected by default or by the user)
-        var selectedSeriesInput = document.querySelector('input[name="series"]');
+        var selectedSeriesInput = document.querySelector('input[name="series"]:checked');
 
         if (selectedSeriesInput) {
             var selectedSeries = selectedSeriesInput.value;
@@ -20,4 +25,5 @@ document.addEventListener('DOMContentLoaded', function() {
                 if (mapPane) mapPane.style.display = 'none';
             }
         }
+    }
 });
