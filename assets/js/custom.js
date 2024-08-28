@@ -1,8 +1,7 @@
 function handleTabVisibility() {
-    var selectedSeriesInput = document.querySelector('input[name="series"]:Number of local breeds for which sufficient genetic resources are stored for reconstitution);
+    var selectedSeries = document.querySelector('input[value="Number of local breeds for which sufficient genetic resources are stored for reconstitution"]);
     if (selectedSeriesInput) {
-        var selectedSeries = selectedSeriesInput.value;
-        console.log('Selected Series:', selectedSeries);
+        
 
         var targetSeriesName = "Number of local breeds for which sufficient genetic resources are stored for reconstitution";
         console.log('Target Series Name:', targetSeriesName);
