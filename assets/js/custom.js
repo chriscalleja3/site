@@ -5,31 +5,40 @@ document.addEventListener('DOMContentLoaded', function() {
     if (seriesInputs.length > 0) {
         seriesInputs.forEach(function(input) {
             input.addEventListener('change', function() {
-                var selectedSeries = input.value;
-                var targetSeriesName = "Number of local breeds for which sufficient genetic resources are stored for reconstitution";
-
-                // If the selected series matches the one you want to hide tabs for
-                if (selectedSeries === targetSeriesName) {
-                    // Hide specific tabs
-                    var chartTab = document.querySelector('#tab-chartview');
-                    var mapTab = document.querySelector('#tab-mapview');
-
-                    if (chartTab) chartTab.style.display = 'none';
-                    if (mapTab) mapTab.style.display = 'none';
-                } else {
-                    // Ensure tabs are shown for other series
-                    var chartTab = document.querySelector('#tab-chartview');
-                    var mapTab = document.querySelector('#tab-mapview');
-
-                    if (chartTab) chartTab.style.display = 'block';
-                    if (mapTab) mapTab.style.display = 'block';
-                }
+                handleTabVisibility();
             });
 
-            // Trigger change event on page load to ensure correct tabs are shown
+            // Trigger the change event on page load for the initially checked series
             if (input.checked) {
-                input.dispatchEvent(new Event('change'));
+                handleTabVisibility();
             }
         });
+    }
+
+    function handleTabVisibility() {
+        var selectedSeriesInput = document.querySelector('input[name="series"]:checked');
+        if (selectedSeriesInput) {
+            var selectedSeries = selectedSeriesInput.value;
+            var targetSeriesName = "Number of local breeds for which sufficient genetic resources are stored for reconstitution";
+
+            var chartTab = document.querySelector('#tab-chartview');
+            var mapTab = document.querySelector('#tab-mapview');
+            var chartPane = document.querySelector('#chartview');
+            var mapPane = document.querySelector('#mapview');
+
+            // Hide the chart and map tabs and their panes if the selected series matches the target series
+            if (selectedSeries === targetSeriesName) {
+                if (chartTab) chartTab.style.display = 'none';
+                if (mapTab) mapTab.style.display = 'none';
+                if (chartPane) chartPane.style.display = 'none';
+                if (mapPane) mapPane.style.display = 'none';
+            } else {
+                // Ensure tabs and panes are shown for other series
+                if (chartTab) chartTab.style.display = 'block';
+                if (mapTab) mapTab.style.display = 'block';
+                if (chartPane) chartPane.style.display = 'block';
+                if (mapPane) mapPane.style.display = 'block';
+            }
+        }
     }
 });
