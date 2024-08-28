@@ -1,6 +1,6 @@
 document.addEventListener('DOMContentLoaded', function() {
         // Select the series input that is checked (selected by default or by the user)
-        var selectedSeriesInput = document.querySelector('input[name="series"]:checked');
+        var selectedSeriesInput = document.querySelector('input[name="series"]');
 
         if (selectedSeriesInput) {
             var selectedSeries = selectedSeriesInput.value;
