@@ -5,9 +5,7 @@
 <ul class="nav nav-tabs non-stacking-tabs data-view" role="tablist">
     {% for tab in page.indicator.indicator_tabs_list %}
         {% if tab.type == 'chart' %}
-            {% if page.t.indicator.series == 'Number of local breeds for which sufficient genetic resources are stored for reconstitution' %}
-                {# Skip rendering the chart tab button #}
-            {% else %}
+            {% if page.t.indicator.series != 'Number of local breeds for which sufficient genetic resources are stored for reconstitution' %}
                 <li role="presentation" class="nav-item">
                     <button
                         class="nav-link {% if forloop.first %}active{% endif %}"
