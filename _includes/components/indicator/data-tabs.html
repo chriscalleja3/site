@@ -7,6 +7,7 @@
         {% if tab.type == 'chart' %}
             {% if page.t.indicator.series != 'Number of local breeds for which sufficient genetic resources are stored for reconstitution' %}
                 <li role="presentation" class="nav-item">
+                    <p>Series Value: {{ page.t.indicator.series }}</p>
                     <button
                         class="nav-link {% if forloop.first %}active{% endif %}"
                         data-bs-toggle="tab"
