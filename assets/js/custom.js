@@ -1,7 +1,6 @@
 document.addEventListener('DOMContentLoaded', function() {
     // Function to handle tab visibility based on the selected series
     function handleTabVisibility() {
-        var seriesInputs = document.querySelectorAll('input[name="series"]');
         var selectedSeriesInput = document.querySelector('input[name="series"]:checked');
         
         if (selectedSeriesInput) {
@@ -14,18 +13,18 @@ document.addEventListener('DOMContentLoaded', function() {
             var chartPane = document.querySelector('#chartview');
             var mapPane = document.querySelector('#mapview');
 
+            // First, reset the visibility of all tabs and panes (make sure they are visible)
+            if (chartTab) chartTab.style.display = 'block';
+            if (mapTab) mapTab.style.display = 'block';
+            if (chartPane) chartPane.style.display = 'block';
+            if (mapPane) mapPane.style.display = 'block';
+
             // If the selected series matches the one you want to hide tabs and panes for
             if (selectedSeries === targetSeriesName) {
                 if (chartTab) chartTab.style.display = 'none';
                 if (mapTab) mapTab.style.display = 'none';
                 if (chartPane) chartPane.style.display = 'none';
                 if (mapPane) mapPane.style.display = 'none';
-            } else {
-                // Ensure tabs and panes are shown for other series
-                if (chartTab) chartTab.style.display = 'block';
-                if (mapTab) mapTab.style.display = 'block';
-                if (chartPane) chartPane.style.display = 'block';
-                if (mapPane) mapPane.style.display = 'block';
             }
         }
     }
@@ -41,6 +40,3 @@ document.addEventListener('DOMContentLoaded', function() {
     // Trigger the tab visibility function on page load to set the correct initial state
     handleTabVisibility();
 });
-
-
-
