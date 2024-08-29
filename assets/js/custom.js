@@ -1,45 +1,46 @@
-function handleTabVisibility() {
-    // Fetch the currently selected series radio button
-    var selectedSeriesInput = document.querySelector('input[name="series"]:checked');
-    
-    if (selectedSeriesInput) {
-        var selectedSeries = selectedSeriesInput.value;
+document.addEventListener('DOMContentLoaded', function() {
+    // Function to handle tab visibility based on the selected series
+    function handleTabVisibility() {
+        var seriesInputs = document.querySelectorAll('input[name="series"]');
+        var selectedSeriesInput = document.querySelector('input[name="series"]:checked');
+        
+        if (selectedSeriesInput) {
+            var selectedSeries = selectedSeriesInput.value;
+            var targetSeriesName = "Number of local breeds for which sufficient genetic resources are stored for reconstitution";
 
-        var targetSeriesName = "Number of local breeds for which sufficient genetic resources are stored for reconstitution";
-        console.log('Selected Series:', selectedSeries);
-        console.log('Target Series Name:', targetSeriesName);
+            // Tabs and panes
+            var chartTab = document.querySelector('#tab-chartview');
+            var mapTab = document.querySelector('#tab-mapview');
+            var chartPane = document.querySelector('#chartview');
+            var mapPane = document.querySelector('#mapview');
 
-        var chartTab = document.querySelector('#tab-chartview');
-        var mapTab = document.querySelector('#tab-mapview');
-        var chartPane = document.querySelector('#chartview');
-        var mapPane = document.querySelector('#mapview');
-
-        // Debug output
-        console.log('Chart Tab:', chartTab);
-        console.log('Map Tab:', mapTab);
-        console.log('Chart Pane:', chartPane);
-        console.log('Map Pane:', mapPane);
-
-        if (selectedSeries === targetSeriesName) {
-            if (chartTab) chartTab.style.display = 'none';
-            if (mapTab) mapTab.style.display = 'none';
-            if (chartPane) chartPane.style.display = 'none';
-            if (mapPane) mapPane.style.display = 'none';
-        } else {
-            if (chartTab) chartTab.style.display = 'block';
-            if (mapTab) mapTab.style.display = 'block';
-            if (chartPane) chartPane.style.display = 'block';
-            if (mapPane) mapPane.style.display = 'block';
+            // If the selected series matches the one you want to hide tabs and panes for
+            if (selectedSeries === targetSeriesName) {
+                if (chartTab) chartTab.style.display = 'none';
+                if (mapTab) mapTab.style.display = 'none';
+                if (chartPane) chartPane.style.display = 'none';
+                if (mapPane) mapPane.style.display = 'none';
+            } else {
+                // Ensure tabs and panes are shown for other series
+                if (chartTab) chartTab.style.display = 'block';
+                if (mapTab) mapTab.style.display = 'block';
+                if (chartPane) chartPane.style.display = 'block';
+                if (mapPane) mapPane.style.display = 'block';
+            }
         }
-    } else {
-        console.error('No series input is currently selected.');
     }
-}
 
-// Attach event listener to run the function when the series selection changes
-document.querySelectorAll('input[name="series"]').forEach(function(element) {
-    element.addEventListener('change', handleTabVisibility);
+    // Attach event listener to all series inputs to handle tab visibility when changed
+    var seriesInputs = document.querySelectorAll('input[name="series"]');
+    if (seriesInputs.length > 0) {
+        seriesInputs.forEach(function(input) {
+            input.addEventListener('change', handleTabVisibility);
+        });
+    }
+
+    // Trigger the tab visibility function on page load to set the correct initial state
+    handleTabVisibility();
 });
 
-// Run on page load in case a series is pre-selected
-document.addEventListener('DOMContentLoaded', handleTabVisibility);
+
+
