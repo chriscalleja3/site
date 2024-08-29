@@ -140,8 +140,8 @@ indicator_metadata_form:
   exclude_fields: []
   translated: false
 indicator_tabs:
-  tab_1: ''
-  tab_2: ''
+  tab_1: table
+  tab_2: embed
   tab_3: ''
   tab_4: ''
 languages:
