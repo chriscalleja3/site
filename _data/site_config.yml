@@ -142,8 +142,8 @@ indicator_metadata_form:
 indicator_tabs:
   tab_1: table
   tab_2: embed
-  tab_3: ''
-  tab_4: ''
+  tab_3: hide
+  tab_4: hide
 languages:
   - en
   - es
