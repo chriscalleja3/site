@@ -47,7 +47,7 @@ var indicatorInit = function () {
                         proxy: domData.proxy,
                         proxySeries: domData.proxyseries,
                         eu: domData.eu,
-                        euSeries: domData.euseries
+                        euSeries: domData.euseries,
                     });
                     var view = new indicatorView(model, {
                         rootElement: '#indicatorData',
