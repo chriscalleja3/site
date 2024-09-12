@@ -5265,8 +5265,6 @@ var indicatorInit = function () {
                         precision: domData.precision,
                         proxy: domData.proxy,
                         proxySeries: domData.proxyseries,
-                        eu: domData.eu,
-                        euSeries: domData.euseries,
                     });
                     var view = new indicatorView(model, {
                         rootElement: '#indicatorData',
