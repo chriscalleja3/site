@@ -3558,7 +3558,7 @@ function alterChartConfig(config, info) {
  * @param {String} chartTitle
  * @return null
  */
-function updateChartTitle(chartTitle, isProxy) {
+function updateChartTitleWithProxy(chartTitle, isProxy) {
     if (typeof chartTitle !== 'undefined') {
         if (isProxy) {
             chartTitle += ' ' + PROXY_PILL;
@@ -3566,6 +3566,7 @@ function updateChartTitle(chartTitle, isProxy) {
         $('.chart-title').html(chartTitle);
     }
 }
+
 function updateChartTitle(chartTitle, isEu) {
     if (typeof chartTitle !== 'undefined') {
         if (isEu) {
