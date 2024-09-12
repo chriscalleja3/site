@@ -9,10 +9,13 @@
         <% var isProxy = (proxySerieses.includes(seriesItem)) %>
         <% var isEu = (euSerieses.includes(seriesItem)) %>
         <% var checked = (selectedSeries) ? (selectedSeries==seriesItem) : (index==0); %>
-        <label><input type="radio" name="series" value="<%=seriesItem%>" tabindex=0 <%=checked ? 'checked' : ''%> /> <%=translations.t(seriesItem)%> <%=isProxy ? proxyPill : ''%></label>
-        <label><input type="radio" name="series" value="<%=seriesItem%>" tabindex=0 <%=checked ? 'checked' : ''%> /> <%=translations.t(seriesItem)%> <%=isEu ? euPill : ''%></label>
- 
-     <% }); %>
+        <label>
+          <input type="radio" name="series" value="<%=seriesItem%>" tabindex=0 <%=checked ? 'checked' : ''%> />
+          <%=translations.t(seriesItem)%>
+          <%=isProxy ? proxyPill : ''%>
+          <%=isEu ? euPill : ''%>
+        </label>
+      <% }); %>
     </fieldset>
   {% if site.hide_single_series %}
   <% } %>
