@@ -4985,8 +4985,11 @@ function createIndicatorDownloadButtons(indicatorDownloads, indicatorId, el) {
                 $main.removeClass('indicator-main-full');
                 // Make sure the unit/series items are updated, in case
                 // they were changed while on the map.
-                helpers.updateChartTitle(VIEW._dataCompleteArgs.chartTitle, VIEW._dataCompleteArgs.isProxy);
-                helpers.updateChartTitle(VIEW._dataCompleteArgs.chartTitle, VIEW._dataCompleteArgs.isEu);
+                if (VIEW._dataCompleteArgs.isEu) {
+                    helpers.updateChartTitle(VIEW._dataCompleteArgs.chartTitle, VIEW._dataCompleteArgs.isEu);
+                } else if (VIEW._dataCompleteArgs.isProxy) {
+                    helpers.updateChartTitle(VIEW._dataCompleteArgs.chartTitle, VIEW._dataCompleteArgs.isProxy);
+                }
                 helpers.updateSeriesAndUnitElements(VIEW._dataCompleteArgs.selectedSeries, VIEW._dataCompleteArgs.selectedUnit);
                 helpers.updateUnitElements(VIEW._dataCompleteArgs.selectedUnit);
                 helpers.updateTimeSeriesAttributes(VIEW._dataCompleteArgs.timeSeriesAttributes);
