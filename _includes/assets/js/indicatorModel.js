@@ -136,9 +136,6 @@ var indicatorModel = function (options) {
     this.getData();
   };
 
-  this.updateChartTitleWithProxy = function(){
-    this.chartTitle = helpers.getChartTitle(this.chartTitle, this.chartTitles, this.selectedUnit, this.selectedSeries);
-  }
   this.updateChartTitle = function() {
     this.chartTitle = helpers.getChartTitle(this.chartTitle, this.chartTitles, this.selectedUnit, this.selectedSeries);
   }
