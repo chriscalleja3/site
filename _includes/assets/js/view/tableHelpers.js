@@ -162,7 +162,7 @@ function createTable(table, indicatorId, el, isProxy, isEu, observationAttribute
         if (isProxy) {
             tableTitle += ' ' + PROXY_PILL;
         }
-        else if (isEu) {
+        if (isEu) {
             tableTitle += ' ' + EU_PILL;
         }
         currentTable.append('<caption>' + tableTitle + '</caption>');
