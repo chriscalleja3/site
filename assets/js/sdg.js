@@ -3048,9 +3048,6 @@ function getAllObservationAttributes(rows) {
     this.getData();
   };
 
-  this.updateChartTitleWithProxy = function(){
-    this.chartTitle = helpers.getChartTitle(this.chartTitle, this.chartTitles, this.selectedUnit, this.selectedSeries);
-  }
   this.updateChartTitle = function() {
     this.chartTitle = helpers.getChartTitle(this.chartTitle, this.chartTitles, this.selectedUnit, this.selectedSeries);
   }
@@ -5016,7 +5013,7 @@ function createIndicatorDownloadButtons(indicatorDownloads, indicatorId, el) {
         }
 
         helpers.createSelectionsTable(args);
-        helpers.updateChartTitle(args.chartTitle, args.isProxy);
+        helpers.updateChartTitleWithProxy(args.chartTitle, args.isProxy);
         helpers.updateChartTitle(args.chartTitle, args.isEu);
         helpers.updateSeriesAndUnitElements(args.selectedSeries, args.selectedUnit);
         helpers.updateUnitElements(args.selectedUnit);
