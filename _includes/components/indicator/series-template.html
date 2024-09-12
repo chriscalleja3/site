@@ -12,8 +12,11 @@
         <label>
           <input type="radio" name="series" value="<%=seriesItem%>" tabindex=0 <%=checked ? 'checked' : ''%> />
           <%=translations.t(seriesItem)%>
-          <%=isProxy ? proxyPill : ''%>
-          <%=isEu ? euPill : ''%>
+          <% if (isEu) { %>
+            <%=euPill%>
+          <% } else if (isProxy) { %>
+            <%=proxyPill%>
+          <% } %>
         </label>
       <% }); %>
     </fieldset>
