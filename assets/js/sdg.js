@@ -4452,7 +4452,7 @@ function initialiseDataTable(el, info) {
  * @return null
  */
 function createSelectionsTable(chartInfo) {
-    createTable(chartInfo.selectionsTable, chartInfo.indicatorId, '#selectionsTable', chartInfo.isProxy, chartInfo.observationAttributesTable);
+    createTable(chartInfo.selectionsTable, chartInfo.indicatorId, '#selectionsTable', chartInfo.isProxy, chartInfo.isEu, chartInfo.observationAttributesTable);
     $('#tableSelectionDownload').empty();
     createTableTargetLines(chartInfo.graphAnnotations);
     createDownloadButton(chartInfo.selectionsTable, 'Table', chartInfo.indicatorId, '#tableSelectionDownload', chartInfo.selectedSeries, chartInfo.selectedUnit);
@@ -4522,7 +4522,7 @@ function createTable(table, indicatorId, el, isProxy, isEu, observationAttribute
         if (isProxy) {
             tableTitle += ' ' + PROXY_PILL;
         }
-        if (isEu) {
+        else if (isEu) {
             tableTitle += ' ' + EU_PILL;
         }
         currentTable.append('<caption>' + tableTitle + '</caption>');
