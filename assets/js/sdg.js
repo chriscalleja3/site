@@ -127,6 +127,8 @@ opensdg.autotrack = function(preset, category, action, label) {
     this.chartTitles = options.chartTitles;
     this.proxy = options.proxy;
     this.proxySerieses = options.proxySerieses;
+    this.eu = options.eu;
+    this.euSerieses = options.euSerieses;
     this.startValues = options.startValues;
     this.configObsAttributes = [];
     this.allObservationAttributes = options.allObservationAttributes;
@@ -176,6 +178,10 @@ opensdg.autotrack = function(preset, category, action, label) {
       if (newTitle) {
         if (this.proxy === 'proxy' || this.proxySerieses.includes(currentSeries)) {
             newTitle += ' ' + this.viewHelpers.PROXY_PILL;
+        }
+      if (newTitle) {
+        if (this.eu === 'eu' || this.euSerieses.includes(currentSeries)) {
+            newTitle += ' ' + this.viewHelpers.EU_PILL;
         }
         $('#map-heading').html(newTitle);
       }
@@ -2959,6 +2965,8 @@ function getAllObservationAttributes(rows) {
   this.dataSchema = options.dataSchema;
   this.proxy = options.proxy;
   this.proxySerieses = (this.proxy === 'both') ? options.proxySeries : [];
+  this.eu = options.eu;
+  this.euSerieses = (this.eu === 'both') ? options.euSeries : [];
   this.observationAttributes = [];
 
   this.initialiseUnits = function() {
@@ -3164,6 +3172,7 @@ function getAllObservationAttributes(rows) {
         serieses: this.serieses,
         selectedSeries: this.selectedSeries,
         proxySerieses: this.proxySerieses,
+        euSerieses: this.euSerieses,
       });
     }
 
@@ -3193,6 +3202,8 @@ function getAllObservationAttributes(rows) {
         chartTitles: this.chartTitles,
         proxy: this.proxy,
         proxySerieses: this.proxySerieses,
+        eu: this.eu,
+        euSerieses: this.euSerieses
       });
     }
 
@@ -3259,6 +3270,7 @@ function getAllObservationAttributes(rows) {
       timeSeriesAttributes: timeSeriesAttributes,
       allObservationAttributes: this.allObservationAttributes,
       isProxy: this.proxy === 'proxy' || this.proxySerieses.includes(this.selectedSeries),
+      isEu: this.eu === 'eu' || this.euSerieses.includes(this.selectedSeries),
     });
   };
 };
@@ -3312,6 +3324,7 @@ var indicatorView = function (model, options) {
 
   var HIDE_SINGLE_SERIES = true;
 var HIDE_SINGLE_UNIT = true;
+var EU_PILL = '<span aria-describedby="eu-description" class="eu-pill">' + translations.t("indicator.eu") + '</span>';
 var PROXY_PILL = '<span aria-describedby="proxy-description" class="proxy-pill">' + translations.t("indicator.proxy") + '</span>';
 
   /**
@@ -3502,11 +3515,14 @@ function initialiseSerieses(args) {
             serieses = args.serieses || [],
             selectedSeries = args.selectedSeries || null,
             proxySerieses = args.proxySerieses || [];
+            euSerieses = args.euSerieses || [];
         $('#serieses').html(template({
             serieses: serieses,
             selectedSeries: selectedSeries,
             proxySerieses: proxySerieses,
             proxyPill: PROXY_PILL,
+            euSerieses: euSerieses,
+            euPill: EU_PILL,
         }));
 
         var noSerieses = (serieses.length < 1);
@@ -3550,7 +3566,14 @@ function updateChartTitle(chartTitle, isProxy) {
         $('.chart-title').html(chartTitle);
     }
 }
-
+function updateChartTitle(chartTitle, isEu) {
+    if (typeof chartTitle !== 'undefined') {
+        if (isEu) {
+            chartTitle += ' ' + EU_PILL;
+        }
+        $('.chart-title').html(chartTitle);
+    }
+}
 /**
  * @param {Array} oldDatasets
  * @param {Array} newDatasets
@@ -4477,10 +4500,11 @@ function tableHasData(table) {
  * @param {String} indicatorId
  * @param {Element} el
  * @param {bool} isProxy
+ * @param {bool} isEu
  * @param {Object} observationAttributesTable
  * @return null
  */
-function createTable(table, indicatorId, el, isProxy, observationAttributesTable) {
+function createTable(table, indicatorId, el, isProxy, isEu, observationAttributesTable) {
 
     var table_class = OPTIONS.table_class || 'table table-hover';
 
@@ -4496,6 +4520,9 @@ function createTable(table, indicatorId, el, isProxy, observationAttributesTable
         var tableTitle = MODEL.chartTitle;
         if (isProxy) {
             tableTitle += ' ' + PROXY_PILL;
+        }
+        if (isEu) {
+            tableTitle += ' ' + EU_PILL;
         }
         currentTable.append('<caption>' + tableTitle + '</caption>');
 
@@ -4959,6 +4986,7 @@ function createIndicatorDownloadButtons(indicatorDownloads, indicatorId, el) {
                 // Make sure the unit/series items are updated, in case
                 // they were changed while on the map.
                 helpers.updateChartTitle(VIEW._dataCompleteArgs.chartTitle, VIEW._dataCompleteArgs.isProxy);
+                helpers.updateChartTitle(VIEW._dataCompleteArgs.chartTitle, VIEW._dataCompleteArgs.isEu);
                 helpers.updateSeriesAndUnitElements(VIEW._dataCompleteArgs.selectedSeries, VIEW._dataCompleteArgs.selectedUnit);
                 helpers.updateUnitElements(VIEW._dataCompleteArgs.selectedUnit);
                 helpers.updateTimeSeriesAttributes(VIEW._dataCompleteArgs.timeSeriesAttributes);
@@ -4982,6 +5010,7 @@ function createIndicatorDownloadButtons(indicatorDownloads, indicatorId, el) {
 
         helpers.createSelectionsTable(args);
         helpers.updateChartTitle(args.chartTitle, args.isProxy);
+        helpers.updateChartTitle(args.chartTitle, args.isEu);
         helpers.updateSeriesAndUnitElements(args.selectedSeries, args.selectedUnit);
         helpers.updateUnitElements(args.selectedUnit);
         helpers.updateTimeSeriesAttributes(args.timeSeriesAttributes);
@@ -5008,6 +5037,8 @@ function createIndicatorDownloadButtons(indicatorDownloads, indicatorId, el) {
                 args.startValues,
                 args.proxy,
                 args.proxySerieses,
+                args.eu,
+                args.euSerieses,
                 MODEL.allObservationAttributes,
             );
         }
@@ -5232,6 +5263,8 @@ var indicatorInit = function () {
                         precision: domData.precision,
                         proxy: domData.proxy,
                         proxySeries: domData.proxyseries,
+                        eu: domData.eu,
+                        euSeries: domData.euseries
                     });
                     var view = new indicatorView(model, {
                         rootElement: '#indicatorData',
@@ -6359,6 +6392,9 @@ $(function() {
                     label.innerHTML = series;
                     if (that.plugin.proxySerieses.includes(series)) {
                         label.innerHTML += ' ' + that.plugin.viewHelpers.PROXY_PILL;
+                    }
+                    if (that.plugin.euSerieses.includes(series)) {
+                        label.innerHTML += ' ' + that.plugin.viewHelpers.EU_PILL;
                     }
                     label.prepend(input);
                     fieldset.append(label);
