@@ -52,9 +52,9 @@ var indicatorModel = function (options) {
   this.precision = options.precision;
   this.dataSchema = options.dataSchema;
   this.proxy = options.proxy;
-  this.euSDG = options.euSDG;
   this.proxySerieses = (this.proxy === 'both') ? options.proxySeries : [];
-  this.euSDG = (this.proxy === 'both') ? options.proxySeries : [];
+  this.euSDG = options.euSDG;
+  this.euSDGSerieses = (this.euSDG === 'both') ? options.euSDGSeries : [];
   this.observationAttributes = [];
 
   this.initialiseUnits = function() {
