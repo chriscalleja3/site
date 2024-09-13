@@ -3552,7 +3552,7 @@ function alterChartConfig(config, info) {
  * @param {String} chartTitle
  * @return null
  */
-function updateChartTitleWithProxy(chartTitle, isProxy) {
+function updateChartTitle(chartTitle, isProxy) {
     if (typeof chartTitle !== 'undefined') {
         if (isProxy) {
             chartTitle += ' ' + PROXY_PILL;
@@ -3561,14 +3561,6 @@ function updateChartTitleWithProxy(chartTitle, isProxy) {
     }
 }
 
-function updateChartTitle(chartTitle, isEu) {
-    if (typeof chartTitle !== 'undefined') {
-        if (isEu) {
-            chartTitle += ' ' + EU_PILL;
-        }
-        $('.chart-title').html(chartTitle);
-    }
-}
 /**
  * @param {Array} oldDatasets
  * @param {Array} newDatasets
