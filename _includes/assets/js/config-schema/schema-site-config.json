@@ -1741,7 +1741,7 @@
                     "title": "Github Proxy URL",
                     "description": "The Proxy URL, for use with Github authentication."
                 },
-                "github_eu_url": {
+                "github_euSDG_url": {
                     "type": "string",
                     "title": "Github EU URL",
                     "description": "The EU URL, for use with Github authentication."
