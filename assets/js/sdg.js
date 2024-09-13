@@ -3506,14 +3506,11 @@ function initialiseSerieses(args) {
             serieses = args.serieses || [],
             selectedSeries = args.selectedSeries || null,
             proxySerieses = args.proxySerieses || [];
-            euSDGSerieses = args.euSDGSerieses || [];
         $('#serieses').html(template({
             serieses: serieses,
             selectedSeries: selectedSeries,
             proxySerieses: proxySerieses,
             proxyPill: PROXY_PILL,
-            euSDGSerieses: euSDGSerieses,
-            euSDGPill: EUSDG_PILL,
         }));
 
         var noSerieses = (serieses.length < 1);
