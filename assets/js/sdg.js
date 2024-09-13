@@ -3316,7 +3316,6 @@ var indicatorView = function (model, options) {
 
   var HIDE_SINGLE_SERIES = true;
 var HIDE_SINGLE_UNIT = true;
-var EU_PILL = '<span aria-describedby="eu-description" class="eu-pill">' + translations.t("indicator.eu") + '</span>';
 var PROXY_PILL = '<span aria-describedby="proxy-description" class="proxy-pill">' + translations.t("indicator.proxy") + '</span>';
 
   /**
