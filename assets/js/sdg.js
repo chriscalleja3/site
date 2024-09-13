@@ -3546,10 +3546,13 @@ function alterChartConfig(config, info) {
  * @param {String} chartTitle
  * @return null
  */
-function updateChartTitle(chartTitle, isProxy) {
+function updateChartTitle(chartTitle, isProxy, isEUDSG) {
     if (typeof chartTitle !== 'undefined') {
         if (isProxy) {
             chartTitle += ' ' + PROXY_PILL;
+        }
+        if (isEUSDG) {
+            chartTitle += ' ' + EUSDG_PILL;
         }
         $('.chart-title').html(chartTitle);
     }
