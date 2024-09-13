@@ -1447,20 +1447,20 @@
                 }
             }
         },
-        "eu_indicators": {
+        "euSDG_indicators": {
             "type": "object",
-            "title": "EU indicators",
-            "description": "Configuration for the EU indicator functionality.",
+            "title": "EUSDG indicators",
+            "description": "Configuration for the EUSDG indicator functionality.",
             "properties": {
                 "label": {
                     "type": "string",
                     "title": "Label",
-                    "description": "The label to display when flagging an EU indicator. Defaults to 'EU'."
+                    "description": "The label to display when flagging an EU indicator. Defaults to 'EUSDG'."
                 },
                 "description": {
                     "type": "string",
                     "title": "Description",
-                    "description": "The description to display at the top of indicator pages, explaining what 'EU' means."
+                    "description": "The description to display at the top of indicator pages, explaining what 'EUSDG' means."
                 }
             }
         },
@@ -1743,8 +1743,8 @@
                 },
                 "github_euSDG_url": {
                     "type": "string",
-                    "title": "Github EU URL",
-                    "description": "The EU URL, for use with Github authentication."
+                    "title": "Github EUSDG URL",
+                    "description": "The EUSDG URL, for use with Github authentication."
                 },
                 "github_repo": {
                     "type": "string",
