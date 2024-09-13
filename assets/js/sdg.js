@@ -4432,7 +4432,7 @@ function initialiseDataTable(el, info) {
  * @return null
  */
 function createSelectionsTable(chartInfo) {
-    createTable(chartInfo.selectionsTable, chartInfo.indicatorId, '#selectionsTable', chartInfo.isProxy, chartInfo.observationAttributesTable);
+    createTable(chartInfo.selectionsTable, chartInfo.indicatorId, '#selectionsTable', chartInfo.isProxy, chartInfo.isEUSDG, chartInfo.observationAttributesTable);
     $('#tableSelectionDownload').empty();
     createTableTargetLines(chartInfo.graphAnnotations);
     createDownloadButton(chartInfo.selectionsTable, 'Table', chartInfo.indicatorId, '#tableSelectionDownload', chartInfo.selectedSeries, chartInfo.selectedUnit);
@@ -4481,10 +4481,11 @@ function tableHasData(table) {
  * @param {String} indicatorId
  * @param {Element} el
  * @param {bool} isProxy
+ * @param {bool} isEUSDG
  * @param {Object} observationAttributesTable
  * @return null
  */
-function createTable(table, indicatorId, el, isProxy, observationAttributesTable) {
+function createTable(table, indicatorId, el, isProxy, isEUSDG, observationAttributesTable) {
 
     var table_class = OPTIONS.table_class || 'table table-hover';
 
@@ -4500,6 +4501,9 @@ function createTable(table, indicatorId, el, isProxy, observationAttributesTable
         var tableTitle = MODEL.chartTitle;
         if (isProxy) {
             tableTitle += ' ' + PROXY_PILL;
+        }
+        if (isEUSDG) {
+            tableTitle += ' ' + EUSDG_PILL;
         }
         currentTable.append('<caption>' + tableTitle + '</caption>');
 
