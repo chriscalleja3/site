@@ -424,12 +424,12 @@
                 },
                 {
                       "type": "GroupWithAccordion",
-                      "label": "EU indicators",
-                      "documentationKey": "eu_indicators",
+                      "label": "EUSDG indicators",
+                      "documentationKey": "euSDG_indicators",
                       "elements": [
                           {
                               "type": "Control",
-                              "scope": "#/properties/eu_indicators"
+                              "scope": "#/properties/euSDG_indicators"
                           }
                       ]
                   }
