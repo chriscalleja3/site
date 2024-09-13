@@ -4881,7 +4881,6 @@ function createIndicatorDownloadButtons(indicatorDownloads, indicatorId, el) {
     HIDE_SINGLE_SERIES: HIDE_SINGLE_SERIES,
     HIDE_SINGLE_UNIT: HIDE_SINGLE_UNIT,
     PROXY_PILL: PROXY_PILL,
-    EU_PILL: EU_PILL,
     initialiseFields: initialiseFields,
     initialiseUnits: initialiseUnits,
     initialiseSerieses: initialiseSerieses,
