@@ -267,8 +267,8 @@
                     if (that.plugin.proxySerieses.includes(series)) {
                         label.innerHTML += ' ' + that.plugin.viewHelpers.PROXY_PILL;
                     }
-                    if (that.plugin.euSerieses.includes(series)) {
-                        label.innerHTML += ' ' + that.plugin.viewHelpers.EU_PILL;
+                    if (that.plugin.euSDGSerieses.includes(series)) {
+                        label.innerHTML += ' ' + that.plugin.viewHelpers.EUSDG_PILL;
                     }
                     label.prepend(input);
                     fieldset.append(label);
