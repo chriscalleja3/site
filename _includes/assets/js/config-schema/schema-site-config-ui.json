@@ -424,7 +424,7 @@
                 },
                 {
                       "type": "GroupWithAccordion",
-                      "label": "Eu indicators",
+                      "label": "EU indicators",
                       "documentationKey": "eu_indicators",
                       "elements": [
                           {
@@ -801,6 +801,10 @@
                         {
                             "type": "Control",
                             "scope": "#/properties/site_config_form/properties/github_proxy_url"
+                        },
+                        {
+                            "type": "Control",
+                            "scope": "#/properties/site_config_form/properties/github_euSDG_url"
                         },
                         {
                             "type": "Control",
