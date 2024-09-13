@@ -11,7 +11,7 @@ function initialiseSerieses(args) {
         var template = _.template(templateElement.html()),
             serieses = args.serieses || [],
             selectedSeries = args.selectedSeries || null,
-            proxySerieses = args.proxySerieses || [];
+            proxySerieses = args.proxySerieses || [],
             euSDGSerieses = args.euSDGSerieses || [];
         $('#serieses').html(template({
             serieses: serieses,
