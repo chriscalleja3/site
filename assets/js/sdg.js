@@ -5234,7 +5234,9 @@ var indicatorInit = function () {
                         compositeBreakdownLabel: domData.compositebreakdownlabel,
                         precision: domData.precision,
                         proxy: domData.proxy,
+                        euSDG: domData.euSDG,
                         proxySeries: domData.proxyseries,
+                        euSDGSeries: domData.euSDGseries,
                     });
                     var view = new indicatorView(model, {
                         rootElement: '#indicatorData',
