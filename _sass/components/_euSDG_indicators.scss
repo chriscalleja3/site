@@ -1,15 +1,15 @@
 .euSDG-pill {
     padding: 4px;
-    font-size: $eu-fontSize;
-    color: $eu-color;
-    border: $eu-border;
-    background: $eu-backgroundColor;
+    font-size: $euSDG-fontSize;
+    color: $euSDG-color;
+    border: $euSDG-border;
+    background: $euSDG-backgroundColor;
     white-space: nowrap;
 }
 
 #serieses {
     .euSDG-pill {
-        font-size: $eu-fontSize-small;
+        font-size: $euSDG-fontSize-small;
         float: right;
         margin: 5px;
     }
