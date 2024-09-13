@@ -1462,6 +1462,30 @@ body.contrast-high .proxy-pill {
   background: #FFDD00;
   color: black; }
 
+.euSDG-pill {
+  padding: 4px;
+  font-size: 16px;
+  color: white;
+  border: 1px solid transparent;
+  background: #005ea5;
+  white-space: nowrap; }
+
+#serieses .euSDG-pill {
+  font-size: 14px;
+  float: right;
+  margin: 5px; }
+
+#chart-heading .euSDG-pill, #selectionsTable .euSDG-pill, #map-heading .euSDG-pill {
+  margin-left: 10px;
+  line-height: 3em; }
+
+.euSDG-banner {
+  border-left: solid 10px #767676; }
+
+body.contrast-high .euSDG-pill {
+  background: #FFDD00;
+  color: black; }
+
 .status {
   color: #0b0c0c;
   font-weight: normal;
