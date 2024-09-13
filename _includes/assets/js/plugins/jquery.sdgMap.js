@@ -96,6 +96,8 @@
     this.chartTitles = options.chartTitles;
     this.proxy = options.proxy;
     this.proxySerieses = options.proxySerieses;
+    this.euSDG = options.euSDG;
+    this.euSDGSerieses = options.euSDGSerieses;
     this.startValues = options.startValues;
     this.configObsAttributes = {{ site.observation_attributes | jsonify }};
     this.allObservationAttributes = options.allObservationAttributes;
@@ -145,6 +147,9 @@
       if (newTitle) {
         if (this.proxy === 'proxy' || this.proxySerieses.includes(currentSeries)) {
             newTitle += ' ' + this.viewHelpers.PROXY_PILL;
+        }
+        if (this.euSDG === 'euSDG' || this.euSDGSerieses.includes(currentSeries)){
+            newTitle += ' ' + this.viewHelpers.EUSDG_PILL;
         }
         $('#map-heading').html(newTitle);
       }
