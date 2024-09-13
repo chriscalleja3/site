@@ -4965,7 +4965,7 @@ function createIndicatorDownloadButtons(indicatorDownloads, indicatorId, el) {
                 $main.removeClass('indicator-main-full');
                 // Make sure the unit/series items are updated, in case
                 // they were changed while on the map.
-                helpers.updateChartTitle(VIEW._dataCompleteArgs.chartTitle, VIEW._dataCompleteArgs.isProxy);
+                helpers.updateChartTitle(VIEW._dataCompleteArgs.chartTitle, VIEW._dataCompleteArgs.isProxy, VIEW._dataCompleteArgs.isEUSDG);
                 helpers.updateSeriesAndUnitElements(VIEW._dataCompleteArgs.selectedSeries, VIEW._dataCompleteArgs.selectedUnit);
                 helpers.updateUnitElements(VIEW._dataCompleteArgs.selectedUnit);
                 helpers.updateTimeSeriesAttributes(VIEW._dataCompleteArgs.timeSeriesAttributes);
@@ -4988,7 +4988,7 @@ function createIndicatorDownloadButtons(indicatorDownloads, indicatorId, el) {
         }
 
         helpers.createSelectionsTable(args);
-        helpers.updateChartTitle(args.chartTitle, args.isProxy);
+        helpers.updateChartTitle(args.chartTitle, args.isProxy, args.isEUSDG);
         helpers.updateSeriesAndUnitElements(args.selectedSeries, args.selectedUnit);
         helpers.updateUnitElements(args.selectedUnit);
         helpers.updateTimeSeriesAttributes(args.timeSeriesAttributes);
@@ -5015,6 +5015,8 @@ function createIndicatorDownloadButtons(indicatorDownloads, indicatorId, el) {
                 args.startValues,
                 args.proxy,
                 args.proxySerieses,
+                args.euSDG, 
+                args.euSDGSerieses,
                 MODEL.allObservationAttributes,
             );
         }
