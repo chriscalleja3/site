@@ -127,8 +127,6 @@ opensdg.autotrack = function(preset, category, action, label) {
     this.chartTitles = options.chartTitles;
     this.proxy = options.proxy;
     this.proxySerieses = options.proxySerieses;
-    this.eu = options.eu;
-    this.euSerieses = options.euSerieses;
     this.startValues = options.startValues;
     this.configObsAttributes = [];
     this.allObservationAttributes = options.allObservationAttributes;
@@ -178,10 +176,6 @@ opensdg.autotrack = function(preset, category, action, label) {
       if (newTitle) {
         if (this.proxy === 'proxy' || this.proxySerieses.includes(currentSeries)) {
             newTitle += ' ' + this.viewHelpers.PROXY_PILL;
-        }
-      if (newTitle) {
-        if (this.eu === 'eu' || this.euSerieses.includes(currentSeries)) {
-            newTitle += ' ' + this.viewHelpers.EU_PILL;
         }
         $('#map-heading').html(newTitle);
       }
