@@ -6,14 +6,15 @@
     <fieldset>
       <legend class="sr-only">{{ page.t.indicator.series }}</legend>
       <% _.each(serieses, function(seriesItem, index) { %>
-        <% var isProxy = (proxySerieses.includes(seriesItem)) %>
-        <% var checked = (selectedSeries) ? (selectedSeries==seriesItem) : (index==0); %>
-        <label><input type="radio" name="series" value="<%=seriesItem%>" tabindex=0 <%=checked ? 'checked' : ''%> /> <%=translations.t(seriesItem)%> <%=isProxy ? proxyPill : ''%></label>
-        <% var isEUSDG = (euSDGSerieses.includes(seriesItem)) %>
-        <% var checkedEUSDG = (selectedSeries) ? (selectedSeries==seriesItem) : (index==0); %>
-        <label><input type="radio" name="series" value="<%=seriesItem%>" tabindex=0 <%=checkedEUSDG ? 'checkedEUSDG' : ''%> /> <%=translations.t(seriesItem)%> <%=isEUSDG ? euSDGPill : ''%></label>
-  
-  
+        <% var isProxy = (proxySerieses.includes(seriesItem)); %>
+        <% var isEUSDG = (eusdgSeries.includes(seriesItem)); %>
+        <% var checked = (selectedSeries) ? (selectedSeries == seriesItem) : (index == 0); %>
+        <label>
+          <input type="radio" name="series" value="<%= seriesItem %>" tabindex=0 <%= checked ? 'checked' : '' %> />
+          <%= translations.t(seriesItem) %>
+          <%= isProxy ? proxyPill : '' %>
+          <%= isEUSDG ? eusdgPill : '' %>
+        </label>
       <% }); %>
     </fieldset>
   {% if site.hide_single_series %}
