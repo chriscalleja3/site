@@ -2963,7 +2963,9 @@ function getAllObservationAttributes(rows) {
   this.precision = options.precision;
   this.dataSchema = options.dataSchema;
   this.proxy = options.proxy;
+  this.euSDG = options.euSDG;
   this.proxySerieses = (this.proxy === 'both') ? options.proxySeries : [];
+  this.euSDG = (this.proxy === 'both') ? options.proxySeries : [];
   this.observationAttributes = [];
 
   this.initialiseUnits = function() {
@@ -3169,6 +3171,7 @@ function getAllObservationAttributes(rows) {
         serieses: this.serieses,
         selectedSeries: this.selectedSeries,
         proxySerieses: this.proxySerieses,
+        euSDGSerieses: this.euSDGSerieses,
       });
     }
 
@@ -3197,7 +3200,9 @@ function getAllObservationAttributes(rows) {
         dataSchema: this.dataSchema,
         chartTitles: this.chartTitles,
         proxy: this.proxy,
+        euSDG: this.euSDG,
         proxySerieses: this.proxySerieses,
+        euSDGSerieses: this.euSDGSerieses,
       });
     }
 
@@ -3264,6 +3269,7 @@ function getAllObservationAttributes(rows) {
       timeSeriesAttributes: timeSeriesAttributes,
       allObservationAttributes: this.allObservationAttributes,
       isProxy: this.proxy === 'proxy' || this.proxySerieses.includes(this.selectedSeries),
+      isEUSDG: this.euSDG === 'euSDG' || this.euSDGSerieses.includes(this.selectedSeries),
     });
   };
 };
