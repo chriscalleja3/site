@@ -1,22 +1,26 @@
 $(document).ready(function() {
-    // Define your target series and indicator
-    var targetSeries = 'Number of local breeds kept in the country'; // Replace with your specific series
-
+    // Define your target series
+    var targetSeries = 'Number of transboundary breeds (including extinct ones)'; // Ensure this matches exactly
 
     // Function to check and update visibility
     function updateTabVisibility() {
         var selectedSeries = $('input[name="series"]:checked').val(); // Get the selected series
 
+        console.log('Selected Series:', selectedSeries); // Debugging line
+        console.log('Target Series:', targetSeries); // Debugging line
+
         if (selectedSeries === targetSeries) {
-            $('#tab-chartview').hide(); // Replace with your tab selector
-            $('#chartview').hide(); // Replace with your view selector
-            $('#tab-embeddedmapview').show(); // Replace with your tab selector
-            $('#embedmapview').show(); // Replace with your view selector
+            // Show the map tab and hide the chart tab
+            $('#tab-chartview').removeClass('active');
+            $('#chartview').removeClass('show active');
+            $('#tab-embeddedmapview').addClass('active');
+            $('#embedmapview').addClass('show active');
         } else {
-            $('#tab-chartview').show(); // Replace with your tab selector
-            $('#chartview').show(); // Replace with your view selector
-            $('#tab-embeddedmapview').hide(); // Replace with your tab selector
-            $('#embedmapview').hide(); // Replace with your view selector
+            // Show the chart tab and hide the map tab
+            $('#tab-chartview').addClass('active');
+            $('#chartview').addClass('show active');
+            $('#tab-embeddedmapview').removeClass('active');
+            $('#embedmapview').removeClass('show active');
         }
     }
 
