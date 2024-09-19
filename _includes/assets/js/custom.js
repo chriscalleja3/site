@@ -1,6 +1,6 @@
 function handleTabVisibility() {
     // Fetch the currently selected series radio button
-    var selectedSeriesInput = document.querySelector('input[name="series"]:checked');
+    var selectedSeriesInput = document.querySelector('input[name="series"]:checked').val();
     
     if (selectedSeriesInput) {
         var selectedSeries = selectedSeriesInput.value;
