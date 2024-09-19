@@ -1,6 +1,6 @@
 $(document).ready(function() {
     // Check if the series contains 'Lakes and rivers seasonal water area (% of total land area)'
-    if ($('select.series-selector').val().includes('Lakes and rivers seasonal water area (% of total land area)')) {
+    if ($('select.series-selector').val().includes('Number of local breeds kept in the country)')) {
         // Hide the Chart tab
         $('.nav-tabs li').each(function() {
             if ($(this).text().trim() === 'Chart') {
