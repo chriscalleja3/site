@@ -85,7 +85,7 @@ function initialiseDataTable(el, info) {
     table.removeAttr('role');
     table.find('thead th').removeAttr('rowspan').removeAttr('colspan').removeAttr('aria-label');
     setDataTableWidth(table);
-    updateTabVisibility();
+   
 };
 
 /**
@@ -234,7 +234,7 @@ function createTable(table, indicatorId, el, isProxy, isEUSDG, observationAttrib
                 }
             });
         }
-        updateTabVisibility();
+
     } else {
         $(el).append($('<h3 />').text(translations.indicator.data_not_available));
         $(el).addClass('table-has-no-data');
@@ -309,24 +309,5 @@ function updateChartDownloadButton(table, selectedSeries, selectedUnit) {
         }
     }
 }
-function updateTabVisibility() {
-    var selectedSeries = $('input[name="series"]:checked').val();
-    var targetSeriesName = "Number of local breeds for which sufficient genetic resources are stored for reconstitution"; // Adjust as needed
 
-    if (selectedSeries === targetSeriesName) {
-        $('#chart-tab').hide();
-        $('#embed-tab').show();
-    } else {
-        $('#chart-tab').show();
-        $('#embed-tab').hide();
-    }
-}
-
-// Call this function within relevant parts of your code
-$(document).ready(function() {
-    updateTabVisibility(); // Initial call
-    $('input[name="series"]').change(function() {
-        updateTabVisibility(); // Call on series change
-    });
-});
 
