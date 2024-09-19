@@ -1,6 +1,6 @@
 $(document).ready(function() {
     // Define your target series and indicator
-    var targetSeries = 'Number of local breeds for which sufficient genetic resources are stored for reconstitution'; // Replace with your specific series
+    var targetSeries = 'Number of local breeds kept in the country'; // Replace with your specific series
 
 
     // Function to check and update visibility
