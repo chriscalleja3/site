@@ -1,34 +1,45 @@
-$(document).ready(function() {
-    // Define your target series
-    var targetSeries = 'Number of transboundary breeds (including extinct ones)'; // Ensure this matches exactly
+function handleTabVisibility() {
+    // Fetch the currently selected series radio button
+    var selectedSeriesInput = document.querySelector('input[name="series"]:checked');
+    
+    if (selectedSeriesInput) {
+        var selectedSeries = selectedSeriesInput.value;
 
-    // Function to check and update visibility
-    function updateTabVisibility() {
-        var selectedSeries = $('input[name="series"]:checked').val(); // Get the selected series
+        var targetSeriesName = "Number of local breeds for which sufficient genetic resources are stored for reconstitution";
+        console.log('Selected Series:', selectedSeries);
+        console.log('Target Series Name:', targetSeriesName);
 
-        console.log('Selected Series:', selectedSeries); // Debugging line
-        console.log('Target Series:', targetSeries); // Debugging line
+        var chartTab = document.querySelector('#tab-chartview');
+        var mapTab = document.querySelector('#tab-mapview');
+        var chartPane = document.querySelector('#chartview');
+        var mapPane = document.querySelector('#mapview');
 
-        if (selectedSeries === targetSeries) {
-            // Show the map tab and hide the chart tab
-            $('#tab-chartview').removeClass('active');
-            $('#chartview').removeClass('show active');
-            $('#tab-embeddedmapview').addClass('active');
-            $('#embedmapview').addClass('show active');
+        // Debug output
+        console.log('Chart Tab:', chartTab);
+        console.log('Map Tab:', mapTab);
+        console.log('Chart Pane:', chartPane);
+        console.log('Map Pane:', mapPane);
+
+        if (selectedSeries === targetSeriesName) {
+            if (chartTab) chartTab.style.display = 'none';
+            if (mapTab) mapTab.style.display = 'none';
+            if (chartPane) chartPane.style.display = 'none';
+            if (mapPane) mapPane.style.display = 'none';
         } else {
-            // Show the chart tab and hide the map tab
-            $('#tab-chartview').addClass('active');
-            $('#chartview').addClass('show active');
-            $('#tab-embeddedmapview').removeClass('active');
-            $('#embedmapview').removeClass('show active');
+            if (chartTab) chartTab.style.display = 'block';
+            if (mapTab) mapTab.style.display = 'block';
+            if (chartPane) chartPane.style.display = 'block';
+            if (mapPane) mapPane.style.display = 'block';
         }
+    } else {
+        console.error('No series input is currently selected.');
     }
+}
 
-    // Initial visibility update
-    updateTabVisibility();
-
-    // Update visibility when series selection changes
-    $('input[name="series"]').on('change', function() {
-        updateTabVisibility();
-    });
+// Attach event listener to run the function when the series selection changes
+document.querySelectorAll('input[name="series"]').forEach(function(element) {
+    element.addEventListener('change', handleTabVisibility);
 });
+
+// Run on page load in case a series is pre-selected
+document.addEventListener('DOMContentLoaded', handleTabVisibility);
