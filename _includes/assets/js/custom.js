@@ -1,4 +1,3 @@
-<script>
 $(document).ready(function() {
     // Define your target series and indicator
     var targetSeries = 'Number of local breeds for which sufficient genetic resources are stored for reconstitution'; // Replace with your specific series
@@ -29,4 +28,3 @@ $(document).ready(function() {
         updateTabVisibility();
     });
 });
-</script>
