@@ -1,20 +1,8 @@
-$(document).ready(function() {
-    // Check if the series contains 'Lakes and rivers seasonal water area (% of total land area)'
-    if ($('select.series-selector').val().includes('Number of local breeds kept in the country)')) {
-        // Hide the Chart tab
-        $('.nav-tabs li').each(function() {
-            if ($(this).text().trim() === 'Chart') {
-                $(this).hide();
-            }
-        });
-        
-        // Show only Embed and Table tabs
-        $('.nav-tabs li').each(function() {
-            if ($(this).text().trim() === 'Embed' || $(this).text().trim() === 'Table') {
-                $(this).show();
-            } else {
-                $(this).hide();
-            }
-        });
+document.addEventListener('DOMContentLoaded', function() {
+    var seriesName = "Number of local breeds for which sufficient genetic resources are stored for reconstitution"; // Replace with your series name
+
+    if (document.querySelector('#serieses').textContent === seriesName) {
+        document.querySelector('#tab-chartview').style.display = 'none'; // Hide the chart tab
+        document.querySelector('#tab-embeddedmapview').style.display = 'block'; // Show the embed tab
     }
 });
