@@ -1,37 +1,32 @@
+<script>
 $(document).ready(function() {
-    // Define the target series
-    var targetSeriesName = "Number of local breeds for which sufficient genetic resources are stored for reconstitution"; // Adjust as needed
+    // Define your target series and indicator
+    var targetSeries = 'Number of local breeds for which sufficient genetic resources are stored for reconstitution'; // Replace with your specific series
 
-    // Function to update tab visibility based on series
+
+    // Function to check and update visibility
     function updateTabVisibility() {
-        var seriesSelected = $('input[name="series"]:checked').val(); // Get the selected series
+        var selectedSeries = $('input[name="series"]:checked').val(); // Get the selected series
 
-        if (seriesSelected === targetSeriesName) {
-            $('#tab-chartview').hide(); // Hide the chart tab
-            $('#tab-embeddedmapview').show(); // Show the embed tab
-            
+        if (selectedSeries === targetSeries) {
+            $('#tab-chartview').hide(); // Replace with your tab selector
+            $('#chartview').hide(); // Replace with your view selector
+            $('#tab-embeddedmapview').show(); // Replace with your tab selector
+            $('#embedmapview').show(); // Replace with your view selector
         } else {
-            $('#tab-chartview').show(); // Show the chart tab
-            $('#tab-embeddedmapview').hide(); // Hide the embed tab
+            $('#tab-chartview').show(); // Replace with your tab selector
+            $('#chartview').show(); // Replace with your view selector
+            $('#tab-embeddedmapview').hide(); // Replace with your tab selector
+            $('#embedmapview').hide(); // Replace with your view selector
         }
     }
 
-    // Initial call to update tab visibility
+    // Initial visibility update
     updateTabVisibility();
 
-    // Update tab visibility when the series is changed
-    $('input[name="series"]').change(function() {
+    // Update visibility when series selection changes
+    $('input[name="series"]').on('change', function() {
         updateTabVisibility();
     });
-
-    // Allow clicking on the <li> to trigger tab click
-    $('.nav-tabs').each(function() {
-        var tabsList = $(this);
-
-        tabsList.find('li').click(function(event) {
-            if (event.target.tagName === 'LI') {
-                $(event.target).find('> button').click();
-            }
-        });
-    });
 });
+</script>
